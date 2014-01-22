@@ -19,3 +19,16 @@ Data Sources (expand me?)
 ---
 
 1. Team Liquid calendar [link](http://www.teamliquid.net/calendar/2014/01/)
+
+
+Language choices
+---
+
+* Python
+  * The ATZ server is already ready to support it.
+  * Reddit side of things is already written
+  * Some of the twitch stuff have been written as well
+
+* Language old event tracker was written in?
+  * still unknown
+  * would save work if it is almost up and running already  
