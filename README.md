@@ -5,7 +5,7 @@ The r/Starcraft Event Tracker
 
 
 (Lofty?) Goals
-==============
+---
 
 1. Showcase currently live (and very soon to be live) events with link
 2. Showcase upcoming events
@@ -16,6 +16,6 @@ The r/Starcraft Event Tracker
 
 
 Data Sources (expand me?)
-============
+---
 
 1. Team Liquid calendar [link](http://www.teamliquid.net/calendar/2014/01/)
