@@ -15,20 +15,15 @@ The r/Starcraft Event Tracker
 6. Integrate into sidebar
 
 
-Data Sources (expand me?)
+Data Sources
 ---
 
 1. Team Liquid calendar [link](http://www.teamliquid.net/calendar/2014/01/)
+2. Liquipedia upcoming tournaments [api](http://wiki.teamliquid.net/starcraft2/api.php?format=txt&action=query&titles=Liquipedia:Tournament_News&prop=revisions&rvprop=content) [wiki](http://wiki.teamliquid.net/starcraft2/Liquipedia:Tournament_News)
 
 
-Language choices
----
+Language 
 
 * Python
-  * The ATZ server is already ready to support it.
-  * Reddit side of things is already written
-  * Some of the twitch stuff have been written as well
+  * All existing code is already written in python
 
-* Language old event tracker was written in?
-  * still unknown
-  * would save work if it is almost up and running already  
