@@ -22,8 +22,3 @@ Data Sources
 2. Liquipedia upcoming tournaments [api](http://wiki.teamliquid.net/starcraft2/api.php?format=txt&action=query&titles=Liquipedia:Tournament_News&prop=revisions&rvprop=content) [wiki](http://wiki.teamliquid.net/starcraft2/Liquipedia:Tournament_News)
 
 
-Language 
-
-* Python
-  * All existing code is already written in python
-
