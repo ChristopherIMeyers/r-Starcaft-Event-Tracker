@@ -1,4 +1,4 @@
-r-Starcaft-Event-Tracker
+r-Starcaft-Event-Tracker [![Build Status](https://travis-ci.org/Jo3M3tal/r-Starcaft-Event-Tracker.png?branch=master)](https://travis-ci.org/Jo3M3tal/r-Starcaft-Event-Tracker)
 ========================
 
 The r/Starcraft Event Tracker
