@@ -14,6 +14,12 @@ def getLiquipediaEvents():
 def isEventLine(str):
   return re.match("{{TNL\|link=\[\[.*}}", str) != None
 
+def isSectionLine(str):
+  return re.match(".*box_header tnl-header.*", str) != None
+
+def getSectionName(str):
+  return re.match(".*box_header tnl-header.*>([A-Z]+)", str).group(1)
+
 
 class CheckSanity(unittest.TestCase):
   def test_praw(self):
@@ -29,6 +35,14 @@ class CheckSanity(unittest.TestCase):
     lines = f.readlines()
     maps = filter(isEventLine, lines);
     self.assertEqual(len(maps), 13)
+
+  def test_getSections(self):
+    f = open('lpevents.txt', 'r')
+    lines = f.readlines()
+    maps = filter(isSectionLine, lines);
+    self.assertEqual(len(maps), 3)
+    sections = map(getSectionName, maps);
+    self.assertEqual(sections, ['UPCOMING', 'ONGOING', 'COMPLETED'])
 
 
 
