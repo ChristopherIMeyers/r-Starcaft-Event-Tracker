@@ -1,6 +1,7 @@
 import unittest
 import praw
 import httplib
+import re
 
 def getLiquipediaEvents():
   conn = httplib.HTTPConnection('wiki.teamliquid.net')
@@ -10,6 +11,10 @@ def getLiquipediaEvents():
   conn.send('')
   return conn.getresponse().read()
 
+def isEventLine(str):
+  return re.match("{{TNL\|link=\[\[.*}}", str) != None
+
+
 class CheckSanity(unittest.TestCase):
   def test_praw(self):
     r = praw.Reddit(user_agent='r/starcraft event tracker')
@@ -18,7 +23,14 @@ class CheckSanity(unittest.TestCase):
 
   def test_http(self):
     self.assertTrue(len(getLiquipediaEvents()) > 4000)
-    
+
+  def test_isEventLine(self):
+    f = open('lpevents.txt', 'r')
+    lines = f.readlines()
+    maps = filter(isEventLine, lines);
+    self.assertEqual(len(maps), 13)
+
+
 
 if __name__ == '__main__':
   unittest.main()
