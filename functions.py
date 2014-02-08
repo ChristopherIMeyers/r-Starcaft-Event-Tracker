@@ -31,3 +31,9 @@ def formatEventRow(event):
 
 def formatSectionRow(sectionName):
   return "| **{0}**| | |".format(sectionName)
+
+def formatTableHeader():
+  return "| |Starts |Ends |\n|:-----------|:------------|:------------|"
+
+def formatWikiHeader():
+  return "#Starcraft Event List\nUpdated by /u/Automaton2000    \nSourced from [Liquipedia](http://wiki.teamliquid.net/starcraft2/Main_Page)"

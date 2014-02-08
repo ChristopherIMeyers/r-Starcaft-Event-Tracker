@@ -53,5 +53,7 @@ class CheckSanity(unittest.TestCase):
     expectedOutput = "| **Upcoming**| | |"
     self.assertEqual(functions.formatSectionRow(sectionName), expectedOutput)
 
+
+
 if __name__ == '__main__':
   unittest.main()
