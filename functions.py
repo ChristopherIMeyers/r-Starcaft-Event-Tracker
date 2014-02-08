@@ -18,12 +18,21 @@ def isEventLine(str):
   return re.match("{{TNL\|link=\[\[.*}}", str) != None
 
 def convertEventLineToEventDict(eventLine):
-  matches = re.match("{{TNL\|link=\[\[(.*)\|(.*)\]\]\|.*\|sdate=(.*)\|edate=(.*)}}", eventLine)
-  eventName = matches.group(2)
-  eventLink = matches.group(1)
-  eventStart = matches.group(3)
-  eventEnd = matches.group(4)
-  return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/"+eventLink, start = eventStart, end = eventEnd)
+  matches = re.match("{{TNL\|link=\[\[(.*)\|(.*)\]\].*sdate=(.*)\|edate=(.*)}}", eventLine)
+  if matches != None:
+    eventName = matches.group(2)
+    eventLink = matches.group(1)
+    eventStart = matches.group(3)
+    eventEnd = matches.group(4)
+    return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/"+eventLink, start = eventStart, end = eventEnd)
+  matches = re.match("{{TNL\|link=\[\[(.*)\]\].*sdate=(.*)\|edate=(.*)}}", eventLine)
+  if matches != None:
+    eventName = matches.group(1)
+    eventLink = matches.group(1).replace(" ", "_")
+    eventStart = matches.group(2)
+    eventEnd = matches.group(3)
+    return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/"+eventLink, start = eventStart, end = eventEnd)
+  return None
 
 def isSectionLine(str):
   return re.match(".*box_header tnl-header.*", str) != None
