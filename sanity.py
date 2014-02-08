@@ -53,7 +53,10 @@ class CheckSanity(unittest.TestCase):
     expectedOutput = "| **Upcoming**| | |"
     self.assertEqual(functions.formatSectionRow(sectionName), expectedOutput)
 
-
+  def test_convertEventLineToEventDict(self):
+    exampleEventLine = "{{TNL|link=[[2014_Proleague/Round_1/Playoffs|2014 Proleague]]|league=pl|sdate=29 Dec|edate=9 Aug}}"
+    expectedDict = dict(name= "2014 Proleague", link = "http://wiki.teamliquid.net/starcraft2/2014_Proleague/Round_1/Playoffs", start = "29 Dec", end = "9 Aug")
+    self.assertEqual(functions.convertEventLineToEventDict(exampleEventLine), expectedDict)
 
 if __name__ == '__main__':
   unittest.main()

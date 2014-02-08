@@ -17,6 +17,14 @@ def getLiquipediaEvents():
 def isEventLine(str):
   return re.match("{{TNL\|link=\[\[.*}}", str) != None
 
+def convertEventLineToEventDict(eventLine):
+  matches = re.match("{{TNL\|link=\[\[(.*)\|(.*)\]\]\|.*\|sdate=(.*)\|edate=(.*)}}", eventLine)
+  eventName = matches.group(2)
+  eventLink = matches.group(1)
+  eventStart = matches.group(3)
+  eventEnd = matches.group(4)
+  return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/"+eventLink, start = eventStart, end = eventEnd)
+
 def isSectionLine(str):
   return re.match(".*box_header tnl-header.*", str) != None
 
