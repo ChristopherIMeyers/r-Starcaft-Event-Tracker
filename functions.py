@@ -25,3 +25,6 @@ def getSectionName(str):
 
 def splitBySection(lines):
   return [list(group) for k, group in groupby(lines, lambda x: isSectionLine(x)) if not k]
+
+def formatEventRow(event):
+  return "|[{0}]({1}) | {2} | {3} |".format(event['name'], event['link'], event['start'], event['end'])
