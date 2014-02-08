@@ -28,3 +28,6 @@ def splitBySection(lines):
 
 def formatEventRow(event):
   return "|[{0}]({1}) | {2} | {3} |".format(event['name'], event['link'], event['start'], event['end'])
+
+def formatSectionRow(sectionName):
+  return "| **{0}**| | |".format(sectionName)

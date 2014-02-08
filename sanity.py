@@ -48,6 +48,10 @@ class CheckSanity(unittest.TestCase):
     expectedOutput = "|[2013 DH Summer](http://wiki.teamliquid.net/starcraft2/2013_DreamHack_Open/Summer) | 15 Jun | 17 Jun |"
     self.assertEqual(functions.formatEventRow(eventObj), expectedOutput)
 
+  def test_formatSectionRow(self):
+    sectionName = "Upcoming"
+    expectedOutput = "| **Upcoming**| | |"
+    self.assertEqual(functions.formatSectionRow(sectionName), expectedOutput)
 
 if __name__ == '__main__':
   unittest.main()
