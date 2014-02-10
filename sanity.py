@@ -15,6 +15,9 @@ class CheckSanity(unittest.TestCase):
   def test_http(self):
     self.assertTrue(len(functions.getLiquipediaEvents()) > 4000)
 
+  def test_intoLines(self):
+    self.assertTrue(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEvents())) > 70)
+
   def test_isEventLine(self):
     f = open('lpevents.txt', 'r')
     lines = f.readlines()

@@ -14,6 +14,9 @@ def getLiquipediaEvents():
   conn.send('')
   return conn.getresponse().read()
 
+def liquipediaEventsIntoLines(events):
+  return events.split('\n')
+
 def isEventLine(str):
   return re.match("{{TNL\|link=\[\[.*}}", str) != None
 
@@ -54,3 +57,11 @@ def formatTableHeader():
 
 def formatWikiHeader():
   return "#Starcraft Event List\nUpdated by /u/Automaton2000    \nSourced from [Liquipedia](http://wiki.teamliquid.net/starcraft2/Main_Page)"
+
+def liquipediaStringToWiki():
+  f = open('lpevents.txt', 'r')
+  lines = f.readlines()
+  sections = splitBySection(lines)
+  eventLines = (filter(isEventLine, sections[1]), filter(isEventLine, sections[2]), filter(isEventLine, sections[3]))
+  eventDicts = (map(convertEventLineToEventDict, eventLines[0]), map(convertEventLineToEventDict, eventLines[1]), map(convertEventLineToEventDict, eventLines[2]))
+  return eventDicts
