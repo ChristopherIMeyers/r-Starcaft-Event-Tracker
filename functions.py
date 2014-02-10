@@ -4,8 +4,6 @@ import httplib
 import re
 from itertools import groupby
 
-import settings as settings
-
 def getLiquipediaEvents():
   conn = httplib.HTTPConnection('wiki.teamliquid.net')
   conn.connect()
