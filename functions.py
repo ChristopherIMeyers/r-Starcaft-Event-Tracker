@@ -75,8 +75,5 @@ def liquipediaStringToWiki(lines):
   return output
 
 def getCurrentLiquipediaEvents():
-  ret = formatWikiHeader()
-  ret += formatTableHeader()
-  sections = splitBySection(liquipediaEventsIntoLines(getLiquipediaEvents()))
-  ret += formatSectionRow(Upcoming)
-  return ret
+  wiki = liquipediaStringToWiki(liquipediaEventsIntoLines(getLiquipediaEvents()))
+  return wiki
