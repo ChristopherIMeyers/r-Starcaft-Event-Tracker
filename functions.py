@@ -48,18 +48,35 @@ def formatEventRow(event):
   return "|[{0}]({1}) | {2} | {3} |".format(event['name'], event['link'], event['start'], event['end'])
 
 def formatSectionRow(sectionName):
-  return "| **{0}**| | |".format(sectionName)
+  return "| **{0}**| | |\n".format(sectionName)
 
 def formatTableHeader():
-  return "| |Starts |Ends |\n|:-----------|:------------|:------------|"
+  return "| |Starts |Ends |\n|:-----------|:------------|:------------|\n"
 
 def formatWikiHeader():
-  return "#Starcraft Event List\nUpdated by /u/Automaton2000    \nSourced from [Liquipedia](http://wiki.teamliquid.net/starcraft2/Main_Page)"
+  return "#Starcraft Event List\nUpdated by /u/Automaton2000    \nSourced from [Liquipedia](http://wiki.teamliquid.net/starcraft2/Main_Page)\n\n"
 
-def liquipediaStringToWiki():
-  f = open('lpevents.txt', 'r')
-  lines = f.readlines()
+def liquipediaStringToWiki(lines):
   sections = splitBySection(lines)
   eventLines = (filter(isEventLine, sections[1]), filter(isEventLine, sections[2]), filter(isEventLine, sections[3]))
   eventDicts = (map(convertEventLineToEventDict, eventLines[0]), map(convertEventLineToEventDict, eventLines[1]), map(convertEventLineToEventDict, eventLines[2]))
-  return eventDicts
+  eventStrings = (map(formatEventRow, eventDicts[0]), map(formatEventRow, eventDicts[1]), map(formatEventRow, eventDicts[2]))
+  eventSections = ("\n".join(eventStrings[0]), "\n".join(eventStrings[1]), "\n".join(eventStrings[2]))
+  output = formatWikiHeader()
+  output += formatTableHeader()
+  output += formatSectionRow("Upcoming")
+  output += eventSections[0]
+  output += "\n"
+  output += formatSectionRow("Ongoing")
+  output += eventSections[1]
+  output += "\n"
+  output += formatSectionRow("Completed")
+  output += eventSections[2]
+  return output
+
+def getCurrentLiquipediaEvents():
+  ret = formatWikiHeader()
+  ret += formatTableHeader()
+  sections = splitBySection(liquipediaEventsIntoLines(getLiquipediaEvents()))
+  ret += formatSectionRow(Upcoming)
+  return ret

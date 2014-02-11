@@ -53,7 +53,7 @@ class CheckSanity(unittest.TestCase):
 
   def test_formatSectionRow(self):
     sectionName = "Upcoming"
-    expectedOutput = "| **Upcoming**| | |"
+    expectedOutput = "| **Upcoming**| | |\n"
     self.assertEqual(functions.formatSectionRow(sectionName), expectedOutput)
 
   def test_convertEventLineToEventDict(self):
@@ -68,6 +68,11 @@ class CheckSanity(unittest.TestCase):
     exampleEventLine = "{{TNL|link=[[Warer.com Invitational]]|sdate=23 Jan|edate=7 Feb}}"
     expectedDict = dict(name= "Warer.com Invitational", link = "http://wiki.teamliquid.net/starcraft2/Warer.com_Invitational", start = "23 Jan", end = "7 Feb")
     self.assertEqual(functions.convertEventLineToEventDict(exampleEventLine), expectedDict)
+
+  def test_liquipediaStringToWiki(self):
+    f = open('lpevents.txt', 'r')
+    wiki = functions.liquipediaStringToWiki(f.readlines())
+    self.assertEqual(len(wiki), 1670)
 
 if __name__ == '__main__':
   unittest.main()
