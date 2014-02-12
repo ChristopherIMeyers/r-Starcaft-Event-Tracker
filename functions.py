@@ -77,3 +77,6 @@ def liquipediaStringToWiki(lines):
 def getCurrentLiquipediaEvents():
   wiki = liquipediaStringToWiki(liquipediaEventsIntoLines(getLiquipediaEvents()))
   return wiki
+
+def setWikiPage(prawLogin):
+  prawLogin.edit_wiki_page(prawLogin.get_subreddit("Starcraft"), "eventlist", getCurrentLiquipediaEvents(), "beep boop")
