@@ -1,0 +1,124 @@
+>* Filters
+* *[How to use Filters](/r/starcraft/w/filtering_guide)*
+* [Normal (everything)](http://www.reddit.com/r/starcraft/)
+* [Fluff](http://fl.reddit.com/r/starcraft/)
+* [Fluffless](http://nf.reddit.com/r/starcraft/)
+* [No Spoilers](http://qq.reddit.com/r/starcraft/)
+* [No Spoilers/Fluff](http://fs.reddit.com/r/starcraft/)
+* [Videos](http://vd.reddit.com/r/starcraft/)
+* [Discussions](http://dp.reddit.com/r/starcraft/)
+* [Press](http://pr.reddit.com/r/starcraft/)
+* [Results](http://gg.reddit.com/r/starcraft/)
+* [No Flair](http://ff.reddit.com/r/starcraft/)
+
+>#
+
+>* Community
+* [New to /r/starcraft?](/r/starcraft/w/new)
+* [Rules](/r/starcraft/w/rules)
+* [FAQ](/r/starcraft/w/FAQ)
+* [Wiki](/r/starcraft/w/index)
+* [IRC channel](http://webchat.quakenet.org/?channels=r/starcraft&uio=d4)
+* [Reddit In-Game Group](/19zg8o)
+* [Wallpapers](http://mrmaple.imgur.com/)
+
+>#
+
+>* Events
+* *General*
+* [Liquipedia WCS 2014 Portal](http://wiki.teamliquid.net/starcraft2/Portal:2014_WCS)
+* [TL Event Tracker](http://goo.gl/PDDVL)
+* [TL Calendar](http://www.teamliquid.net/calendar/)
+* [TL Tournament Tracker](http://www.teamliquid.net/tournaments/)
+* [TL Liquipedia Listing](http://wiki.teamliquid.net/starcraft2/Main_Page)
+* *Redditors*
+* [NA - rCraft Open & KotHs](http://rcraftgaming.com/)
+* [EU - Community Tournament #36 - June 2](http://goo.gl/ZMtPg)
+* [Tournament Archive](http://www.screddit.eu/tournaments/)
+
+>#
+
+>* Streams
+* [Team Liquid list](http://www.teamliquid.net/video/streams/)
+* [Teevox](http://teevox.com/sc)
+* [Twitch.tv](http://goo.gl/Bl0KW)
+* [More...](/r/starcraft/w/streams_vods)
+
+
+>#
+
+>* VODs
+* [SC2Casts](http://sc2casts.com/)
+* [SC2Ratings](http://sc2ratings.com/)
+* [SC2Links](http://sc2links.com/)
+* /r/SpoilerFreeSC
+* [More...](/r/starcraft/w/streams_vods)
+
+>#
+
+>* Replays
+* [drop.sc](http://drop.sc/)
+* [GGTracker](http://ggtracker.com/)
+* [StarcraftTools](http://sct.sc/replay.php)
+* [SC2ReplayStats](http://sc2replaystats.com/)
+* [More...](http://goo.gl/rstHt)
+
+**General information**
+
+* Use the "Filters" menu across the top to tailor the content here.  [Use RES](/r/starcraft/w/filtering_guide) to customize even more.
+
+* [Green verification check mark guide and verified users list](/r/starcraft/w/verified_users)
+
+* To hide spoilers use format: \[text to hide](/spoiler) ([details](/r/StarcraftArchives/comments/14dwcy/_/c7ceync))
+
+
+**Tag Meanings**
+
+Color|Meaning
+:---|:---
+&nbsp;|Discussions & Selfposts
+&nbsp;|Videos & Stream
+&nbsp;|News & Events
+&nbsp;|Spoilers
+&nbsp;|User Created
+&nbsp;|Fluff & Offbeat
+
+
+**Moderators remove** ([rule list](/r/starcraft/w/rules)):
+
+* Personal information
+
+* Direct threats
+
+* Blatant spam
+
+* Deceptive links to shock sites, malware, etc
+
+* Submissions irrelevant to *StarCraft*
+
+* Submissions with vague or no context
+
+* Uncorroborated accusations
+
+* Promotional submissions that exceed "2 per 1 per 1"
+
+* Same- and similar-topic submissions that exceed 10 per top 25
+
+* Excessive trolling
+
+
+**Related reddits**
+
+* /r/allthingsprotoss
+* /r/AllThingsTerran
+* /r/allthingszerg
+* /r/BarCraft
+* /r/castit
+* /r/day9
+* /r/esports
+* /r/sc2partners
+* /r/SpoilerFreeSC
+* /r/starcraft_strategy
+* /r/starcraft2_class
+* /r/StarcraftCirclejerk
+* [More related reddits](/r/starcraft/w/related_reddits)
