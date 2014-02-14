@@ -48,7 +48,7 @@ class CheckSanity(unittest.TestCase):
 
   def test_formatEventRow(self):
     eventObj = dict(name= "2013 DH Summer", link = "http://wiki.teamliquid.net/starcraft2/2013_DreamHack_Open/Summer", start = "15 Jun", end = "17 Jun")
-    expectedOutput = "|[2013 DH Summer](http://wiki.teamliquid.net/starcraft2/2013_DreamHack_Open/Summer) | 15 Jun | 17 Jun |"
+    expectedOutput = "|[2013 DH Summer](http://wiki.teamliquid.net/starcraft2/2013_DreamHack_Open/Summer) | 15 Jun | 17 Jun |\n"
     self.assertEqual(functions.formatEventRow(eventObj), expectedOutput)
 
   def test_formatSectionRow(self):
@@ -72,7 +72,7 @@ class CheckSanity(unittest.TestCase):
   def test_liquipediaStringToWiki(self):
     f = open('lpevents.txt', 'r')
     wiki = functions.liquipediaStringToWiki(f.readlines())
-    self.assertEqual(len(wiki), 1670)
+    self.assertEqual(len(wiki), 1671)
 
 if __name__ == '__main__':
   unittest.main()

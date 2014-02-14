@@ -45,7 +45,7 @@ def splitBySection(lines):
   return [list(group) for k, group in groupby(lines, lambda x: isSectionLine(x)) if not k]
 
 def formatEventRow(event):
-  return "|[{0}]({1}) | {2} | {3} |".format(event['name'], event['link'], event['start'], event['end'])
+  return "|[{0}]({1}) | {2} | {3} |\n".format(event['name'], event['link'], event['start'], event['end'])
 
 def formatSectionRow(sectionName):
   return "| **{0}**| | |\n".format(sectionName)
@@ -61,15 +61,13 @@ def liquipediaStringToWiki(lines):
   eventLines = (filter(isEventLine, sections[1]), filter(isEventLine, sections[2]), filter(isEventLine, sections[3]))
   eventDicts = (map(convertEventLineToEventDict, eventLines[0]), map(convertEventLineToEventDict, eventLines[1]), map(convertEventLineToEventDict, eventLines[2]))
   eventStrings = (map(formatEventRow, eventDicts[0]), map(formatEventRow, eventDicts[1]), map(formatEventRow, eventDicts[2]))
-  eventSections = ("\n".join(eventStrings[0]), "\n".join(eventStrings[1]), "\n".join(eventStrings[2]))
+  eventSections = ("".join(eventStrings[0]), "".join(eventStrings[1]), "".join(eventStrings[2]))
   output = formatWikiHeader()
   output += formatTableHeader()
   output += formatSectionRow("Upcoming")
   output += eventSections[0]
-  output += "\n"
   output += formatSectionRow("Ongoing")
   output += eventSections[1]
-  output += "\n"
   output += formatSectionRow("Completed")
   output += eventSections[2]
   return output
