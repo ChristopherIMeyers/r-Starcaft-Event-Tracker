@@ -56,20 +56,22 @@ def formatTableHeader():
 def formatWikiHeader():
   return "#Starcraft Event List\nUpdated by /u/Automaton2000    \nSourced from [Liquipedia](http://wiki.teamliquid.net/starcraft2/Main_Page)\n\n"
 
+def formatSection(sectionName, sectionData):
+  output = formatSectionRow(sectionName)
+  if sectionData == []:
+    return output
+  return output + "".join(sectionData)
+
 def liquipediaStringToWiki(lines):
   sections = splitBySection(lines)
   eventLines = (filter(isEventLine, sections[1]), filter(isEventLine, sections[2]), filter(isEventLine, sections[3]))
   eventDicts = (map(convertEventLineToEventDict, eventLines[0]), map(convertEventLineToEventDict, eventLines[1]), map(convertEventLineToEventDict, eventLines[2]))
   eventStrings = (map(formatEventRow, eventDicts[0]), map(formatEventRow, eventDicts[1]), map(formatEventRow, eventDicts[2]))
-  eventSections = ("".join(eventStrings[0]), "".join(eventStrings[1]), "".join(eventStrings[2]))
   output = formatWikiHeader()
   output += formatTableHeader()
-  output += formatSectionRow("Upcoming")
-  output += eventSections[0]
-  output += formatSectionRow("Ongoing")
-  output += eventSections[1]
-  output += formatSectionRow("Completed")
-  output += eventSections[2]
+  output += formatSection("Upcoming", eventStrings[0])
+  output += formatSection("Ongoing", eventStrings[1])
+  output += formatSection("Completed", eventStrings[2])
   return output
 
 def getCurrentLiquipediaEvents():
