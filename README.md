@@ -3,6 +3,15 @@ r-Starcaft-Event-Tracker [![Build Status](https://travis-ci.org/Jo3M3tal/r-Starc
 
 The r/Starcraft Event Tracker
 
+Update Script on Server
+---
+```bash
+rm -r eventtracker
+wget https://github.com/Jo3M3tal/r-Starcaft-Event-Tracker/archive/master.zip
+unzip master.zip
+rm master.zip
+mv r-Starcaft-Event-Tracker-master eventtracker
+```
 
 Project Goals
 ---
