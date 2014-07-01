@@ -62,6 +62,12 @@ def formatSection(sectionName, sectionData):
     return output
   return output + "".join(sectionData)
 
+def linesToEventStrings(lines):
+  sections = splitBySection(lines)
+  eventLines = (filter(isEventLine, sections[1]), filter(isEventLine, sections[2]), filter(isEventLine, sections[3]))
+  eventDicts = (map(convertEventLineToEventDict, eventLines[0]), map(convertEventLineToEventDict, eventLines[1]), map(convertEventLineToEventDict, eventLines[2]))
+  return (map(formatEventRow, eventDicts[0]), map(formatEventRow, eventDicts[1]), map(formatEventRow, eventDicts[2]))
+
 def formatTable(eventStrings):
   output = formatTableHeader()
   output += formatSection("Upcoming", eventStrings[0])
@@ -70,20 +76,12 @@ def formatTable(eventStrings):
   return output
 
 def liquipediaStringToWiki(lines):
-  sections = splitBySection(lines)
-  eventLines = (filter(isEventLine, sections[1]), filter(isEventLine, sections[2]), filter(isEventLine, sections[3]))
-  eventDicts = (map(convertEventLineToEventDict, eventLines[0]), map(convertEventLineToEventDict, eventLines[1]), map(convertEventLineToEventDict, eventLines[2]))
-  eventStrings = (map(formatEventRow, eventDicts[0]), map(formatEventRow, eventDicts[1]), map(formatEventRow, eventDicts[2]))
   output = formatWikiHeader()
-  output += formatTable(eventStrings)
+  output += formatTable(linesToEventStrings(lines))
   return output
 
 def liquipediaStringToSidebar(lines):
-  sections = splitBySection(lines)
-  eventLines = (filter(isEventLine, sections[1]), filter(isEventLine, sections[2]), filter(isEventLine, sections[3]))
-  eventDicts = (map(convertEventLineToEventDict, eventLines[0]), map(convertEventLineToEventDict, eventLines[1]), map(convertEventLineToEventDict, eventLines[2]))
-  eventStrings = (map(formatEventRow, eventDicts[0]), map(formatEventRow, eventDicts[1]), map(formatEventRow, eventDicts[2]))
-  return formatTable(eventStrings)
+  return formatTable(linesToEventStrings(lines))
 
 def getCurrentLiquipediaEvents():
   wiki = liquipediaStringToWiki(liquipediaEventsIntoLines(getLiquipediaEvents()))
