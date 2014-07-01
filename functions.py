@@ -87,6 +87,9 @@ def getCurrentLiquipediaEvents():
   wiki = liquipediaStringToWiki(liquipediaEventsIntoLines(getLiquipediaEvents()))
   return wiki
 
+def getCurrentSidebar(prawLogin):
+  return prawLogin.get_settings(prawLogin.get_subreddit("Starcraft"))['description']
+
 def setWikiPage(prawLogin):
   prawLogin.edit_wiki_page(prawLogin.get_subreddit("Starcraft"), "eventlist", getCurrentLiquipediaEvents(), "beep boop")
 
