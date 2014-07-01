@@ -1,0 +1,145 @@
+>* Filters
+* *[How to use Filters](/r/starcraft/w/filtering_guide)*
+* [Normal (everything)](http://www.reddit.com/r/starcraft/)
+* [Fluff](http://fl.reddit.com/r/starcraft/)
+* [Fluffless](http://nf.reddit.com/r/starcraft/)
+* [No Spoilers](http://qq.reddit.com/r/starcraft/)
+* [No Spoilers/Fluff](http://fs.reddit.com/r/starcraft/)
+* [Videos](http://vd.reddit.com/r/starcraft/)
+* [Discussions](http://dp.reddit.com/r/starcraft/)
+* [Press](http://pr.reddit.com/r/starcraft/)
+* [Results](http://gg.reddit.com/r/starcraft/)
+* [No Flair](http://ff.reddit.com/r/starcraft/)
+
+>#
+
+>* Community
+* [New to /r/starcraft?](/r/starcraft/w/new)
+* [Rules](/r/starcraft/w/rules)
+* [FAQ](/r/starcraft/w/FAQ)
+* [Wiki](/r/starcraft/w/index)
+* [IRC channel](http://webchat.quakenet.org/?channels=r/starcraft&uio=d4)
+* [Reddit In-Game Group](/19zg8o)
+* [Wallpapers](http://mrmaple.imgur.com/)
+
+>#
+
+>* Events
+* *General*
+* [Liquipedia WCS 2014 Portal](http://wiki.teamliquid.net/starcraft2/Portal:2014_WCS)
+* [TL Event Tracker](http://goo.gl/PDDVL)
+* [TL Calendar](http://www.teamliquid.net/calendar/)
+* [TL Tournament Tracker](http://www.teamliquid.net/tournaments/)
+* [TL Liquipedia Listing](http://wiki.teamliquid.net/starcraft2/Main_Page)
+* *Redditors*
+* [Tournament Archive](http://www.screddit.eu/tournaments/)
+
+>#
+
+>* Streams
+* [Team Liquid list](http://www.teamliquid.net/video/streams/)
+* [Teevox](http://teevox.com/sc)
+* [Twitch.tv](http://goo.gl/Bl0KW)
+* [More...](/r/starcraft/w/streams_vods)
+
+
+>#
+
+>* VODs
+* [SC2Casts](http://sc2casts.com/)
+* [SC2Ratings](http://sc2ratings.com/)
+* [SC2Links](http://sc2links.com/)
+* /r/SpoilerFreeSC
+* [More...](/r/starcraft/w/streams_vods)
+
+>#
+
+>* Replays
+* [drop.sc](http://drop.sc/)
+* [GGTracker](http://ggtracker.com/)
+* [SC2ReplayStats](http://sc2replaystats.com/)
+* [More...](http://goo.gl/rstHt)
+
+
+**General information**
+
+* Use the "Filters" menu across the top to tailor the content here.  [Use RES](/r/starcraft/w/filtering_guide) to customize even more.
+
+* [Green verification check mark guide and verified users list](/r/starcraft/w/verified_users)
+
+* To hide spoilers use format: \[text to hide](/spoiler) ([details](/r/StarcraftArchives/comments/14dwcy/_/c7ceync))
+
+
+**Tag Meanings**
+
+Color|Meaning
+:---|:---
+&nbsp;|Discussions & Selfposts
+&nbsp;|Videos & Stream
+&nbsp;|News & Events
+&nbsp;|Spoilers
+&nbsp;|User Created
+&nbsp;|Fluff & Offbeat
+
+**Event List**
+
+| |Starts |Ends |
+|:-----------|:------------|:------------|
+| **Upcoming**| | |
+|[2014 Dreamhack Valencia](http://wiki.teamliquid.net/starcraft2/2014_DreamHack_Open/Valencia) | 18 Jul | 19 Jul |
+|[2014 GSL Season 3](http://wiki.teamliquid.net/starcraft2/2014_Global_StarCraft_II_League_Season_3) | 16 Jul | 4 Oct |
+|[IEM Season IX - Shenzhen](http://wiki.teamliquid.net/starcraft2/IEM_Season_IX_-_Shenzhen) | 16 Jul | 21 Jul |
+|[Red Bull BG: Atlanta](http://wiki.teamliquid.net/starcraft2/2014 Red Bull Battle Grounds: Atlanta) | 11 Jul | 13 Jul |
+| **Ongoing**| | |
+|[2014 Proleague](http://wiki.teamliquid.net/starcraft2/2014_Proleague/Round_4/Round_Robin) | 29 Dec | 9 Aug |
+|[EPS Germany 2014](http://wiki.teamliquid.net/starcraft2/ESL_Pro_Series_Germany/Summer_Season_2014) | 18 Jun | 8 Aug |
+|[Acer TeamStory Cup S3](http://wiki.teamliquid.net/starcraft2/Acer_TeamStory_Cup_Season_3/Playoffs) | 31 Mar | 27 Jul |
+|[Nation Wars II](http://wiki.teamliquid.net/starcraft2/NationWars_II) | 7 May | 26 July |
+|[TeSL 2013-2014 S4](http://wiki.teamliquid.net/starcraft2/Taiwan_eSports_League/2013-2014/Season_4) | 9 May | 6 July |
+|[2014 WCS S2 America](http://wiki.teamliquid.net/starcraft2/2014_WCS_Season_2_America/Premier) | 29 Apr | 6 Jul |
+|[2014 WCS S2 Europe](http://wiki.teamliquid.net/starcraft2/2014_WCS_Season_2_Europe/Premier) | 29 Apr | 6 Jul |
+| **Completed**| | |
+|[2014 GSL Season 2](http://wiki.teamliquid.net/starcraft2/2014_Global_StarCraft_II_League_Season_2/Code_S) | 9 Apr | 28 Jun |
+|[2014 MLG Anaheim](http://wiki.teamliquid.net/starcraft2/2014_MLG_Anaheim) | 20 Jun | 22 Jun |
+
+
+[^^source](http://wiki.teamliquid.net/starcraft2/Main_Page)
+
+**Moderators remove** ([rule list](/r/starcraft/w/rules)):
+
+* Personal information
+
+* Direct threats
+
+* Blatant spam
+
+* Deceptive links to shock sites, malware, etc
+
+* Submissions irrelevant to *StarCraft*
+
+* Submissions with vague or no context
+
+* Uncorroborated accusations
+
+* Promotional submissions that exceed "2 per 1 per 1"
+
+* Same- and similar-topic submissions that exceed 10 per top 25
+
+* Excessive trolling
+
+
+**Related reddits**
+
+* /r/allthingsprotoss
+* /r/AllThingsTerran
+* /r/allthingszerg
+* /r/BarCraft
+* /r/castit
+* /r/day9
+* /r/esports
+* /r/sc2partners
+* /r/SpoilerFreeSC
+* /r/starcraft_strategy
+* /r/starcraft2_class
+* /r/StarcraftCirclejerk
+* [More related reddits](/r/starcraft/w/related_reddits)
