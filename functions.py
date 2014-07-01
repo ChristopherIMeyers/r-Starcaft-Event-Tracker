@@ -74,6 +74,17 @@ def liquipediaStringToWiki(lines):
   output += formatSection("Completed", eventStrings[2])
   return output
 
+def liquipediaStringToSidebar(lines):
+  sections = splitBySection(lines)
+  eventLines = (filter(isEventLine, sections[1]), filter(isEventLine, sections[2]), filter(isEventLine, sections[3]))
+  eventDicts = (map(convertEventLineToEventDict, eventLines[0]), map(convertEventLineToEventDict, eventLines[1]), map(convertEventLineToEventDict, eventLines[2]))
+  eventStrings = (map(formatEventRow, eventDicts[0]), map(formatEventRow, eventDicts[1]), map(formatEventRow, eventDicts[2]))
+  output = formatTableHeader()
+  output += formatSection("Upcoming", eventStrings[0])
+  output += formatSection("Ongoing", eventStrings[1])
+  output += formatSection("Completed", eventStrings[2])
+  return output
+
 def getCurrentLiquipediaEvents():
   wiki = liquipediaStringToWiki(liquipediaEventsIntoLines(getLiquipediaEvents()))
   return wiki

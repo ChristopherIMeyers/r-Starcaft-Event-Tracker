@@ -88,5 +88,10 @@ class CheckSanity(unittest.TestCase):
     newSidebar = functions.subEventTableIntoSidebar(oldSidebar, newTable)
     self.assertEqual(newSidebar, expectedSidebar)
 
+  def test_liquipediaStringToSidebar(self):
+    f = open('lpevents.txt', 'r')
+    sidebar = functions.liquipediaStringToSidebar(f.readlines())
+    self.assertEqual(len(sidebar), 1541)
+
 if __name__ == '__main__':
   unittest.main()
