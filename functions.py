@@ -98,3 +98,12 @@ def setWikiPage(prawLogin):
 
 def subEventTableIntoSidebar(sidebar, table):
   return re.sub(r"\*\*Event List\*\*\n\n(\|[^\n]+\n)+", "**Event List**\n\n" + table, sidebar)
+
+def cleanHtml(html):
+  return html.replace("&gt;",">").replace("&amp;","&")
+
+def setSidebar(prawLogin):
+  currentSidebar = getCurrentSidebar(prawLogin)
+  newTable = getCurrentLiquipediaEventsForSidebar()
+  newSidebar = cleanHtml(subEventTableIntoSidebar(currentSidebar, newTable))
+  prawLogin.update_settings(prawLogin.get_subreddit("Starcraft"), description=newSidebar)
