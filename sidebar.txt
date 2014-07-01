@@ -32,8 +32,6 @@
 * [TL Tournament Tracker](http://www.teamliquid.net/tournaments/)
 * [TL Liquipedia Listing](http://wiki.teamliquid.net/starcraft2/Main_Page)
 * *Redditors*
-* [NA - rCraft Open & KotHs](http://rcraftgaming.com/)
-* [EU - Community Tournament #36 - June 2](http://goo.gl/ZMtPg)
 * [Tournament Archive](http://www.screddit.eu/tournaments/)
 
 >#
@@ -59,9 +57,9 @@
 >* Replays
 * [drop.sc](http://drop.sc/)
 * [GGTracker](http://ggtracker.com/)
-* [StarcraftTools](http://sct.sc/replay.php)
 * [SC2ReplayStats](http://sc2replaystats.com/)
 * [More...](http://goo.gl/rstHt)
+
 
 **General information**
 
@@ -83,6 +81,29 @@ Color|Meaning
 &nbsp;|User Created
 &nbsp;|Fluff & Offbeat
 
+**Event List**
+
+| |Starts |Ends |
+|:-----------|:------------|:------------|
+| **Upcoming**| | |
+|[2014 Dreamhack Valencia](http://wiki.teamliquid.net/starcraft2/2014_DreamHack_Open/Valencia) | 18 Jul | 19 Jul |
+|[2014 GSL Season 3](http://wiki.teamliquid.net/starcraft2/2014_Global_StarCraft_II_League_Season_3) | 16 Jul | 4 Oct |
+|[IEM Season IX - Shenzhen](http://wiki.teamliquid.net/starcraft2/IEM_Season_IX_-_Shenzhen) | 16 Jul | 21 Jul |
+|[Red Bull BG: Atlanta](http://wiki.teamliquid.net/starcraft2/2014 Red Bull Battle Grounds: Atlanta) | 11 Jul | 13 Jul |
+| **Ongoing**| | |
+|[2014 Proleague](http://wiki.teamliquid.net/starcraft2/2014_Proleague/Round_4/Round_Robin) | 29 Dec | 9 Aug |
+|[EPS Germany 2014](http://wiki.teamliquid.net/starcraft2/ESL_Pro_Series_Germany/Summer_Season_2014) | 18 Jun | 8 Aug |
+|[Nation Wars II](http://wiki.teamliquid.net/starcraft2/NationWars_II) | 7 May | 26 July |
+|[TeSL 2013-2014 S4](http://wiki.teamliquid.net/starcraft2/Taiwan_eSports_League/2013-2014/Season_4) | 9 May | 6 July |
+|[2014 WCS S2 America](http://wiki.teamliquid.net/starcraft2/2014_WCS_Season_2_America/Premier) | 29 Apr | 6 Jul |
+|[2014 WCS S2 Europe](http://wiki.teamliquid.net/starcraft2/2014_WCS_Season_2_Europe/Premier) | 29 Apr | 6 Jul |
+|[2014 GSL Season 2](http://wiki.teamliquid.net/starcraft2/2014_Global_StarCraft_II_League_Season_2/Code_S) | 9 Apr | 28 Jun |
+| **Completed**| | |
+|[2014 MLG Anaheim](http://wiki.teamliquid.net/starcraft2/2014_MLG_Anaheim) | 20 Jun | 22 Jun |
+|[Red Bull BG North America](http://wiki.teamliquid.net/starcraft2/2014_Red_Bull_Battle_Grounds:_North_America) | 17 Jun | 19 Jun |
+
+
+[^^source](http://wiki.teamliquid.net/starcraft2/Main_Page)
 
 **Moderators remove** ([rule list](/r/starcraft/w/rules)):
 
