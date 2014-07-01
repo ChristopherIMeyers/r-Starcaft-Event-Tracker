@@ -80,3 +80,6 @@ def getCurrentLiquipediaEvents():
 
 def setWikiPage(prawLogin):
   prawLogin.edit_wiki_page(prawLogin.get_subreddit("Starcraft"), "eventlist", getCurrentLiquipediaEvents(), "beep boop")
+
+def subEventTableIntoSidebar(sidebar, table):
+  return re.sub(r"\*\*Event List\*\*\n\n(\|[^\n]+\n)+", "**Event List**\n\n" + table, sidebar)

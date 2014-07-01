@@ -74,5 +74,19 @@ class CheckSanity(unittest.TestCase):
     wiki = functions.liquipediaStringToWiki(f.readlines())
     self.assertEqual(len(wiki), 1671)
 
+  def test_subEventTableIntoSidebar(self):
+    oldSidebar = "**Event List**\n\n| table|\n| cells|\n\n"
+    expectedSidebar = "**Event List**\n\nnew table text\n\n"
+    newTable = "new table text\n"
+    newSidebar = functions.subEventTableIntoSidebar(oldSidebar, newTable)
+    self.assertEqual(newSidebar, expectedSidebar)
+
+  def test_subEventTableIntoSidebarReal(self):
+    oldSidebar = open('sidebar.old.txt', 'r').read()
+    expectedSidebar = open('sidebar.new.txt', 'r').read()
+    newTable = open('newtable.txt', 'r').read()
+    newSidebar = functions.subEventTableIntoSidebar(oldSidebar, newTable)
+    self.assertEqual(newSidebar, expectedSidebar)
+
 if __name__ == '__main__':
   unittest.main()
