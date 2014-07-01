@@ -87,6 +87,9 @@ def getCurrentLiquipediaEvents():
   wiki = liquipediaStringToWiki(liquipediaEventsIntoLines(getLiquipediaEvents()))
   return wiki
 
+def getCurrentLiquipediaEventsForSidebar():
+  return liquipediaStringToSidebar(liquipediaEventsIntoLines(getLiquipediaEvents()))
+
 def getCurrentSidebar(prawLogin):
   return prawLogin.get_settings(prawLogin.get_subreddit("Starcraft"))['description']
 

@@ -98,7 +98,7 @@ class CheckSanity(unittest.TestCase):
     r = praw.Reddit(user_agent='r/starcraft event tracker')
     r.login(settings.reddituser, settings.redditpass)
     originalSidebar = functions.getCurrentSidebar(r)
-    newTable = functions.liquipediaStringToSidebar(functions.liquipediaEventsIntoLines(functions.getLiquipediaEvents()))
+    newTable = functions.getCurrentLiquipediaEventsForSidebar()
     firstSidebar = functions.subEventTableIntoSidebar(originalSidebar, newTable)
     secondSidebar = functions.subEventTableIntoSidebar(firstSidebar, newTable)
     self.assertEqual(firstSidebar, secondSidebar)
