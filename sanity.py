@@ -3,7 +3,6 @@ import praw
 import httplib
 import re
 from itertools import groupby
-import settings
 
 import functions
 
@@ -96,8 +95,7 @@ class CheckSanity(unittest.TestCase):
 
   def test_stabilityOfMultipleSidebarUpdatesWithLiveData(self):
     r = praw.Reddit(user_agent='r/starcraft event tracker')
-    r.login(settings.reddituser, settings.redditpass)
-    originalSidebar = functions.getCurrentSidebar(r)
+    originalSidebar = functions.liquipediaStringToSidebar(open('lpevents.txt', 'r').readlines())
     newTable = functions.getCurrentLiquipediaEventsForSidebar()
     firstSidebar = functions.subEventTableIntoSidebar(originalSidebar, newTable)
     secondSidebar = functions.subEventTableIntoSidebar(firstSidebar, newTable)
