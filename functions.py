@@ -96,8 +96,12 @@ def getCurrentSidebar(prawLogin):
 def setWikiPage(prawLogin):
   prawLogin.edit_wiki_page(prawLogin.get_subreddit("Starcraft"), "eventlist", getCurrentLiquipediaEvents(), "beep boop")
 
+def replaceCarriageReturn(html):
+  return html.replace("\r","")
+
 def subEventTableIntoSidebar(sidebar, table):
-  return re.sub(r"\*\*Event List\*\*\n\n(\|[^\n]+\n)+", "**Event List**\n\n" + table, sidebar)
+  cleaned = replaceCarriageReturn(sidebar)
+  return re.sub(r"\*\*Event List\*\*\n\n(\|[^\n]+\n)+", "**Event List**\n\n" + table, cleaned)
 
 def cleanHtml(html):
   return html.replace("&gt;",">").replace("&amp;","&")
