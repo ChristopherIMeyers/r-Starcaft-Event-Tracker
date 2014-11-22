@@ -13,7 +13,7 @@ class CheckSanity(unittest.TestCase):
     self.assertEqual(sum(1 for _ in frontpage), 25)
 
   def test_http(self):
-    self.assertTrue(len(functions.getLiquipediaEvents()) > 4000)
+    self.assertTrue(len(functions.getLiquipediaEvents()) > 3000)
 
   def test_intoLines(self):
     self.assertTrue(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEvents())) > 70)
