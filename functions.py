@@ -101,7 +101,7 @@ def replaceCarriageReturn(html):
 
 def subEventTableIntoSidebar(sidebar, table):
   cleaned = replaceCarriageReturn(sidebar)
-  return re.sub(r"\*\*Event List\*\*\n\n(\|[^\n]+\n)+", "**Event List**\n\n" + table, cleaned)
+  return re.sub(r"\*\*Event List\*\*\n\n(\|[^\n]+\n)+", u"**Event List**\n\n" + unicode(table, "UTF-8"), cleaned)
 
 def cleanHtml(html):
   return html.replace("&gt;",">").replace("&amp;","&")
