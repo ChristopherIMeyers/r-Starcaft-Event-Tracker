@@ -42,7 +42,15 @@ def getSectionName(str):
   return re.match(".*box_header tnl-header.*>([A-Z]+)", str).group(1)
 
 def splitBySection(lines):
-  return [list(group) for k, group in groupby(lines, lambda x: isSectionLine(x)) if not k]
+  sections = []
+  section = []
+  for line in lines:
+    if isSectionLine(line):
+      sections.append(section)
+      section = []
+    section.append(line)
+  sections.append(section)
+  return sections
 
 def formatEventRow(event):
   return "|[{0}]({1}) | {2} | {3} |\n".format(event['name'], event['link'], event['start'], event['end'])
