@@ -104,8 +104,8 @@ def getCurrentLiquipediaEventsForWiki(game):
 def getCurrentLiquipediaEventsForSidebar(game):
   return liquipediaStringToSidebar(game, liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents(game))))
 
-def getCurrentSidebar(prawLogin):
-  return prawLogin.get_settings(prawLogin.get_subreddit("Starcraft"))['description']
+def getCurrentSidebar(prawLogin, subreddit):
+  return prawLogin.get_settings(prawLogin.get_subreddit(subreddit))['description']
 
 def setWikiPage(prawLogin, subredditName, wikiPageName, game):
   prawLogin.edit_wiki_page(prawLogin.get_subreddit(subredditName), wikiPageName, getCurrentLiquipediaEventsForWiki(game), "beep boop")
@@ -120,8 +120,8 @@ def subEventTableIntoSidebar(sidebar, table):
 def cleanHtml(html):
   return html.replace("&gt;",">").replace("&amp;","&")
 
-def setSidebar(prawLogin, game):
-  currentSidebar = getCurrentSidebar(prawLogin)
+def setSidebar(prawLogin, subreddit, game):
+  currentSidebar = getCurrentSidebar(prawLogin, subreddit)
   newTable = getCurrentLiquipediaEventsForSidebar(game)
   newSidebar = cleanHtml(subEventTableIntoSidebar(currentSidebar, newTable))
-  prawLogin.update_settings(prawLogin.get_subreddit("Starcraft"), description=newSidebar)
+  prawLogin.update_settings(prawLogin.get_subreddit(subreddit), description=newSidebar)

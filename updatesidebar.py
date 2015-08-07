@@ -5,4 +5,4 @@ import settings
 prawLogin = praw.Reddit(user_agent='r/starcraft event tracker script')
 prawLogin.login(settings.reddituser, settings.redditpass)
 
-functions.setSidebar(prawLogin, "starcraft2")
+functions.setSidebar(prawLogin, "Starcraft", "starcraft2")
