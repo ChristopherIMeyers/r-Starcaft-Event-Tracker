@@ -97,8 +97,8 @@ def liquipediaStringToWiki(game, lines):
 def liquipediaStringToSidebar(game, lines):
   return formatTable(linesToEventStrings(game, lines))
 
-def getCurrentLiquipediaEventsForWiki():
-  wiki = liquipediaStringToWiki("starcraft2", liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents("starcraft2"))))
+def getCurrentLiquipediaEventsForWiki(game):
+  wiki = liquipediaStringToWiki(game, liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents(game))))
   return wiki
 
 def getCurrentLiquipediaEventsForSidebar():
@@ -107,8 +107,8 @@ def getCurrentLiquipediaEventsForSidebar():
 def getCurrentSidebar(prawLogin):
   return prawLogin.get_settings(prawLogin.get_subreddit("Starcraft"))['description']
 
-def setWikiPage(prawLogin, subredditName, wikiPageName):
-  prawLogin.edit_wiki_page(prawLogin.get_subreddit(subredditName), wikiPageName, getCurrentLiquipediaEventsForWiki(), "beep boop")
+def setWikiPage(prawLogin, subredditName, wikiPageName, game):
+  prawLogin.edit_wiki_page(prawLogin.get_subreddit(subredditName), wikiPageName, getCurrentLiquipediaEventsForWiki(game), "beep boop")
 
 def replaceCarriageReturn(html):
   return html.replace("\r","")
