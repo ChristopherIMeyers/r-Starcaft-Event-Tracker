@@ -28,6 +28,12 @@ class CheckSanity(unittest.TestCase):
     maps = filter(functions.isEventLine, lines);
     self.assertEqual(len(maps), 51)
 
+  def test_cleanLiquipediaEvents(self):
+    fDirty = open('lpevents.heroes.txt', 'r').read()
+    fClean = open('lpevents.heroes.clean.txt', 'r').read()
+    cleaned = functions.cleanLiquipediaEvents(fDirty);
+    self.assertEqual(cleaned, fClean)
+
   def test_getSections(self):
     f = open('lpevents.txt', 'r')
     lines = f.readlines()

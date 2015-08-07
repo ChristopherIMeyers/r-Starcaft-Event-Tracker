@@ -12,6 +12,11 @@ def getLiquipediaEvents():
   conn.send('')
   return conn.getresponse().read()
 
+def cleanLiquipediaEvents(events):
+  strippedNoInclude = re.sub(r"<noinclude>.*?</noinclude>", "", events, flags=re.DOTALL)
+  strippedHtml = re.sub(r"<!--.*?-->", r'', strippedNoInclude, flags=re.DOTALL)
+  return strippedHtml
+
 def liquipediaEventsIntoLines(events):
   return events.split('\n')
 

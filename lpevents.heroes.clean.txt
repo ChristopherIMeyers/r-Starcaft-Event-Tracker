@@ -1,0 +1,52 @@
+Array
+(
+    [query] => Array
+        (
+            [normalized] => Array
+                (
+                    [0] => Array
+                        (
+                            [from] => Liquipedia:Tournament_News
+                            [to] => Liquipedia:Tournament News
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [2257] => Array
+                        (
+                            [pageid] => 2257
+                            [ns] => 4
+                            [title] => Liquipedia:Tournament News
+                            [revisions] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [contentformat] => text/x-wiki
+                                            [contentmodel] => wikitext
+                                            [*] => <div class="box_header tnl-header" style="background-color: #eaf5fe; margin-top:12px;">UPCOMING<span class="plainlinks smalledit">&#91;[http://wiki.teamliquid.net/heroes/index.php?title=Liquipedia:Tournament_News&action=edit edit]&#93;</span></div>
+{{TournamentNewsLine|link=[[2015_Heroes_of_the_Storm_World_Championship/Qualifier/America/August_Open|2015 HWC NA Qua. August]]|league=hwc |sdate=08 Aug|edate=23 Aug}}
+{{TournamentNewsLine|link=[[2015_Heroes_of_the_Storm_World_Championship/Qualifier/Europe/August_Open|2015 HWC EU Qua. August]]|league=hwc |sdate=08 Aug|edate=23 Aug}}
+{{TournamentNewsLine|link=[[2015_Heroes_of_the_Storm_World_Championship/Qualifier/America/Southeast_Asia|2015 HWC SEA Champioship]]|league=hwc |sdate=08 Aug|edate=08 Aug}}
+<div class="box_header tnl-header" style="background-color:#ebfeea;">ONGOING<span class="plainlinks smalledit">&#91;[http://wiki.teamliquid.net/heroes/index.php?title=Liquipedia:Tournament_News&action=edit edit]&#93;</span></div>
+{{TournamentNewsLine|link=[[Heroes_Major_League/Americas/Season_3|Heroes Major League NA S3]]|league=hml |sdate=07 Jul|edate=Aug}}
+{{TournamentNewsLine|link=[[Heroes_Major_League/Europe/Season_3|Heroes Major League EU S3]]|league=hml |sdate=07 Jul|edate=Aug}}
+{{TournamentNewsLine|link=[[World_Cyber_Arena_2015/Qualifier/Global_Pro_Qualifier/EU_Region|WCA 2015 EU Pro Qualifier]]|league=wca |sdate=21 Jul|edate=09 Aug}}
+<div class="box_header tnl-header" style="background-color:#feeeea;">COMPLETED<span class="plainlinks smalledit">&#91;[http://wiki.teamliquid.net/heroes/index.php?title=Liquipedia:Tournament_News&action=edit edit]&#93;</span></div>
+{{TournamentNewsLine|link=[[2015_Heroes_of_the_Storm_World_Championship/Qualifier/Europe/July_Open|2015 HWC EU Qua. July Open]]|league=hwc |sdate=25 Jul|edate=02 Aug}}
+{{TournamentNewsLine|link=[[Storm_League_2015/Season_2|Storm League 2015 S2]]|league=sl |sdate=09 Jun|edate=28 Jul}}
+{{TournamentNewsLine|link=[[Gold_Series_Heroes_League_2015/Season_1|GHL 2015 Season 1]]|league=gs |sdate=31 May|edate=26 Jul}}
+{{TournamentNewsLine|link=[[IEM_Season_X_-_Shenzhen|IEM Season X - Shenzhen]]|league=iem |sdate=20 Jul|edate=20 Jul}}
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
