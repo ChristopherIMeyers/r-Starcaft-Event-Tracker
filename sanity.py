@@ -110,7 +110,7 @@ class CheckSanity(unittest.TestCase):
   def test_stabilityOfMultipleSidebarUpdatesWithLiveData(self):
     r = praw.Reddit(user_agent='r/starcraft event tracker')
     originalSidebar = functions.liquipediaStringToSidebar("starcraft2", open('lpevents.txt', 'r').readlines())
-    newTable = functions.getCurrentLiquipediaEventsForSidebar()
+    newTable = functions.getCurrentLiquipediaEventsForSidebar("starcraft2")
     firstSidebar = functions.subEventTableIntoSidebar(originalSidebar, newTable)
     secondSidebar = functions.subEventTableIntoSidebar(firstSidebar, newTable)
     self.assertEqual(firstSidebar, secondSidebar)
