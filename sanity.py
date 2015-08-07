@@ -23,6 +23,10 @@ class CheckSanity(unittest.TestCase):
     lines = f.readlines()
     maps = filter(functions.isEventLine, lines);
     self.assertEqual(len(maps), 13)
+    f = open('lpevents.heroes.txt', 'r')
+    lines = f.readlines()
+    maps = filter(functions.isEventLine, lines);
+    self.assertEqual(len(maps), 51)
 
   def test_getSections(self):
     f = open('lpevents.txt', 'r')

@@ -16,7 +16,7 @@ def liquipediaEventsIntoLines(events):
   return events.split('\n')
 
 def isEventLine(str):
-  return re.match("{{TNL\|link=\[\[.*}}", str) != None
+  return re.match("{{(TNL|TournamentNewsLine)\|link=\[\[.*}}", str) != None
 
 def convertEventLineToEventDict(eventLine):
   matches = re.match("{{TNL\|link=\[\[(.*)\|(.*)\]\].*sdate=(.*)\|edate=(.*)}}", eventLine)
