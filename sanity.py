@@ -85,7 +85,7 @@ class CheckSanity(unittest.TestCase):
 
   def test_liquipediaStringToWiki(self):
     f = open('lpevents.txt', 'r')
-    wiki = functions.liquipediaStringToWiki(f.readlines())
+    wiki = functions.liquipediaStringToWiki("starcraft2", f.readlines())
     self.assertEqual(len(wiki), 1671)
 
   def test_subEventTableIntoSidebar(self):
@@ -104,12 +104,12 @@ class CheckSanity(unittest.TestCase):
 
   def test_liquipediaStringToSidebar(self):
     f = open('lpevents.txt', 'r')
-    sidebar = functions.liquipediaStringToSidebar(f.readlines())
+    sidebar = functions.liquipediaStringToSidebar("starcraft2", f.readlines())
     self.assertEqual(len(sidebar), 1541)
 
   def test_stabilityOfMultipleSidebarUpdatesWithLiveData(self):
     r = praw.Reddit(user_agent='r/starcraft event tracker')
-    originalSidebar = functions.liquipediaStringToSidebar(open('lpevents.txt', 'r').readlines())
+    originalSidebar = functions.liquipediaStringToSidebar("starcraft2", open('lpevents.txt', 'r').readlines())
     newTable = functions.getCurrentLiquipediaEventsForSidebar()
     firstSidebar = functions.subEventTableIntoSidebar(originalSidebar, newTable)
     secondSidebar = functions.subEventTableIntoSidebar(firstSidebar, newTable)

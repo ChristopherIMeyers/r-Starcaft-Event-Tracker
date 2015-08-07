@@ -89,20 +89,20 @@ def formatTable(eventStrings):
   output += formatSection("Completed", eventStrings[2])
   return output
 
-def liquipediaStringToWiki(lines):
+def liquipediaStringToWiki(game, lines):
   output = formatWikiHeader()
-  output += formatTable(linesToEventStrings("starcraft2", lines))
+  output += formatTable(linesToEventStrings(game, lines))
   return output
 
-def liquipediaStringToSidebar(lines):
-  return formatTable(linesToEventStrings("starcraft2", lines))
+def liquipediaStringToSidebar(game, lines):
+  return formatTable(linesToEventStrings(game, lines))
 
 def getCurrentLiquipediaEventsForWiki():
-  wiki = liquipediaStringToWiki(liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents("starcraft2"))))
+  wiki = liquipediaStringToWiki("starcraft2", liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents("starcraft2"))))
   return wiki
 
 def getCurrentLiquipediaEventsForSidebar():
-  return liquipediaStringToSidebar(liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents("starcraft2"))))
+  return liquipediaStringToSidebar("starcraft2", liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents("starcraft2"))))
 
 def getCurrentSidebar(prawLogin):
   return prawLogin.get_settings(prawLogin.get_subreddit("Starcraft"))['description']
