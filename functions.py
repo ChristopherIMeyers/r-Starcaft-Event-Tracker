@@ -97,11 +97,11 @@ def liquipediaStringToSidebar(lines):
   return formatTable(linesToEventStrings(lines))
 
 def getCurrentLiquipediaEvents():
-  wiki = liquipediaStringToWiki(liquipediaEventsIntoLines(getLiquipediaEvents()))
+  wiki = liquipediaStringToWiki(liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents())))
   return wiki
 
 def getCurrentLiquipediaEventsForSidebar():
-  return liquipediaStringToSidebar(liquipediaEventsIntoLines(getLiquipediaEvents()))
+  return liquipediaStringToSidebar(liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents())))
 
 def getCurrentSidebar(prawLogin):
   return prawLogin.get_settings(prawLogin.get_subreddit("Starcraft"))['description']
