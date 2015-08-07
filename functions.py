@@ -4,10 +4,10 @@ import httplib
 import re
 from itertools import groupby
 
-def getLiquipediaEvents():
+def getLiquipediaEvents(game):
   conn = httplib.HTTPConnection('wiki.teamliquid.net')
   conn.connect()
-  request = conn.putrequest('GET','/starcraft2/api.php?format=txt&action=query&titles=Liquipedia:Tournament_News&prop=revisions&rvprop=content')
+  request = conn.putrequest('GET','/' + game + '/api.php?format=txt&action=query&titles=Liquipedia:Tournament_News&prop=revisions&rvprop=content')
   conn.endheaders()
   conn.send('')
   return conn.getresponse().read()
@@ -97,11 +97,11 @@ def liquipediaStringToSidebar(lines):
   return formatTable(linesToEventStrings(lines))
 
 def getCurrentLiquipediaEventsForWiki():
-  wiki = liquipediaStringToWiki(liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents())))
+  wiki = liquipediaStringToWiki(liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents("starcraft2"))))
   return wiki
 
 def getCurrentLiquipediaEventsForSidebar():
-  return liquipediaStringToSidebar(liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents())))
+  return liquipediaStringToSidebar(liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents("starcraft2"))))
 
 def getCurrentSidebar(prawLogin):
   return prawLogin.get_settings(prawLogin.get_subreddit("Starcraft"))['description']

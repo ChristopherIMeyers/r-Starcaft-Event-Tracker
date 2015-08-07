@@ -13,10 +13,10 @@ class CheckSanity(unittest.TestCase):
     self.assertEqual(sum(1 for _ in frontpage), 25)
 
   def test_http(self):
-    self.assertTrue(len(functions.getLiquipediaEvents()) > 3000)
+    self.assertTrue(len(functions.getLiquipediaEvents("starcraft2")) > 3000)
 
   def test_intoLines(self):
-    self.assertTrue(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEvents())) > 70)
+    self.assertTrue(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEvents("starcraft2"))) > 70)
 
   def test_isEventLine(self):
     f = open('lpevents.txt', 'r')
