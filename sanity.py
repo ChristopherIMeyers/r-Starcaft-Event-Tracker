@@ -27,6 +27,10 @@ class CheckSanity(unittest.TestCase):
     lines = f.readlines()
     maps = filter(functions.isEventLine, lines);
     self.assertEqual(len(maps), 51)
+    f = open('lpevents.heroes.clean.txt', 'r')
+    lines = f.readlines()
+    maps = filter(functions.isEventLine, lines);
+    self.assertEqual(len(maps), 10)
 
   def test_cleanLiquipediaEvents(self):
     fDirty = open('lpevents.heroes.txt', 'r').read()
