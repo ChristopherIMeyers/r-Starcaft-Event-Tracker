@@ -23,21 +23,21 @@ def liquipediaEventsIntoLines(events):
 def isEventLine(str):
   return re.match("{{(TNL|TournamentNewsLine)\|link=\[\[.*}}", str) != None
 
-def convertEventLineToEventDict(eventLine):
+def convertEventLineToEventDict(game, eventLine):
   matches = re.match("{{TNL\|link=\[\[(.*)\|(.*)\]\].*sdate=(.*)\|edate=(.*)}}", eventLine)
   if matches != None:
     eventName = matches.group(2)
     eventLink = matches.group(1)
     eventStart = matches.group(3)
     eventEnd = matches.group(4)
-    return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/"+eventLink, start = eventStart, end = eventEnd)
+    return dict(name= eventName, link = "http://wiki.teamliquid.net/" + game + "/"+eventLink, start = eventStart, end = eventEnd)
   matches = re.match("{{TNL\|link=\[\[(.*)\]\].*sdate=(.*)\|edate=(.*)}}", eventLine)
   if matches != None:
     eventName = matches.group(1)
     eventLink = matches.group(1).replace(" ", "_")
     eventStart = matches.group(2)
     eventEnd = matches.group(3)
-    return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/"+eventLink, start = eventStart, end = eventEnd)
+    return dict(name= eventName, link = "http://wiki.teamliquid.net/" + game + "/"+eventLink, start = eventStart, end = eventEnd)
   return None
 
 def isSectionLine(str):
@@ -76,9 +76,10 @@ def formatSection(sectionName, sectionData):
   return output + "".join(sectionData)
 
 def linesToEventStrings(lines):
+  curriedEventLineToEventDict = lambda x:convertEventLineToEventDict("starcraft2", x)
   sections = splitBySection(lines)
   eventLines = (filter(isEventLine, sections[1]), filter(isEventLine, sections[2]), filter(isEventLine, sections[3]))
-  eventDicts = (map(convertEventLineToEventDict, eventLines[0]), map(convertEventLineToEventDict, eventLines[1]), map(convertEventLineToEventDict, eventLines[2]))
+  eventDicts = (map(curriedEventLineToEventDict, eventLines[0]), map(curriedEventLineToEventDict, eventLines[1]), map(curriedEventLineToEventDict, eventLines[2]))
   return (map(formatEventRow, eventDicts[0]), map(formatEventRow, eventDicts[1]), map(formatEventRow, eventDicts[2]))
 
 def formatTable(eventStrings):

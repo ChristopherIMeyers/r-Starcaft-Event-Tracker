@@ -73,15 +73,15 @@ class CheckSanity(unittest.TestCase):
   def test_convertEventLineToEventDict(self):
     exampleEventLine = "{{TNL|link=[[2014_Proleague/Round_1/Playoffs|2014 Proleague]]|league=pl|sdate=29 Dec|edate=9 Aug}}"
     expectedDict = dict(name= "2014 Proleague", link = "http://wiki.teamliquid.net/starcraft2/2014_Proleague/Round_1/Playoffs", start = "29 Dec", end = "9 Aug")
-    self.assertEqual(functions.convertEventLineToEventDict(exampleEventLine), expectedDict)
+    self.assertEqual(functions.convertEventLineToEventDict("starcraft2", exampleEventLine), expectedDict)
 
     exampleEventLine = "{{TNL|link=[[NationWars]]|sdate=17 Jan|edate=19 Jan}}"
-    expectedDict = dict(name= "NationWars", link = "http://wiki.teamliquid.net/starcraft2/NationWars", start = "17 Jan", end = "19 Jan")
-    self.assertEqual(functions.convertEventLineToEventDict(exampleEventLine), expectedDict)
+    expectedDict = dict(name= "NationWars", link = "http://wiki.teamliquid.net/starcraft3/NationWars", start = "17 Jan", end = "19 Jan")
+    self.assertEqual(functions.convertEventLineToEventDict("starcraft3", exampleEventLine), expectedDict)
 
     exampleEventLine = "{{TNL|link=[[Warer.com Invitational]]|sdate=23 Jan|edate=7 Feb}}"
-    expectedDict = dict(name= "Warer.com Invitational", link = "http://wiki.teamliquid.net/starcraft2/Warer.com_Invitational", start = "23 Jan", end = "7 Feb")
-    self.assertEqual(functions.convertEventLineToEventDict(exampleEventLine), expectedDict)
+    expectedDict = dict(name= "Warer.com Invitational", link = "http://wiki.teamliquid.net/heroes/Warer.com_Invitational", start = "23 Jan", end = "7 Feb")
+    self.assertEqual(functions.convertEventLineToEventDict("heroes", exampleEventLine), expectedDict)
 
   def test_liquipediaStringToWiki(self):
     f = open('lpevents.txt', 'r')
