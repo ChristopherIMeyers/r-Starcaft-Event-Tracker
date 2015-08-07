@@ -75,8 +75,8 @@ def formatSection(sectionName, sectionData):
     return output
   return output + "".join(sectionData)
 
-def linesToEventStrings(lines):
-  curriedEventLineToEventDict = lambda x:convertEventLineToEventDict("starcraft2", x)
+def linesToEventStrings(game, lines):
+  curriedEventLineToEventDict = lambda x:convertEventLineToEventDict(game, x)
   sections = splitBySection(lines)
   eventLines = (filter(isEventLine, sections[1]), filter(isEventLine, sections[2]), filter(isEventLine, sections[3]))
   eventDicts = (map(curriedEventLineToEventDict, eventLines[0]), map(curriedEventLineToEventDict, eventLines[1]), map(curriedEventLineToEventDict, eventLines[2]))
@@ -91,11 +91,11 @@ def formatTable(eventStrings):
 
 def liquipediaStringToWiki(lines):
   output = formatWikiHeader()
-  output += formatTable(linesToEventStrings(lines))
+  output += formatTable(linesToEventStrings("starcraft2", lines))
   return output
 
 def liquipediaStringToSidebar(lines):
-  return formatTable(linesToEventStrings(lines))
+  return formatTable(linesToEventStrings("starcraft2", lines))
 
 def getCurrentLiquipediaEventsForWiki():
   wiki = liquipediaStringToWiki(liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents("starcraft2"))))
