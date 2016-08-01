@@ -83,6 +83,14 @@ class CheckSanity(unittest.TestCase):
     expectedDict = dict(name= "Warer.com Invitational", link = "http://wiki.teamliquid.net/heroes/Warer.com_Invitational", start = "23 Jan", end = "7 Feb")
     self.assertEqual(functions.convertEventLineToEventDict("heroes", exampleEventLine), expectedDict)
 
+    exampleEventLine = "{{TNL|link=[[SHOUTcraft/Kings/2016/July|SHOUTcraft Kings July]]|date=24 Jul}}"
+    expectedDict = dict(name= "SHOUTcraft Kings July", link = "http://wiki.teamliquid.net/starcraft2/SHOUTcraft/Kings/2016/July", start = "24 Jul", end = "24 Jul")
+    self.assertEqual(functions.convertEventLineToEventDict("starcraft2", exampleEventLine), expectedDict)
+
+    exampleEventLine = "{{TNL|link=[[TotallyFake]]|date=5 May}}"
+    expectedDict = dict(name= "TotallyFake", link = "http://wiki.teamliquid.net/starcraft2/TotallyFake", start = "5 May", end = "5 May")
+    self.assertEqual(functions.convertEventLineToEventDict("starcraft2", exampleEventLine), expectedDict)
+
   def test_liquipediaStringToWiki(self):
     f = open('lpevents.txt', 'r')
     wiki = functions.liquipediaStringToWiki("starcraft2", f.readlines())

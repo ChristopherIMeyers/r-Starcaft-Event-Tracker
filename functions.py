@@ -32,11 +32,28 @@ def convertEventLineToEventDict(game, eventLine):
     eventEnd = matches.group(4)
     return dict(name= eventName, link = "http://wiki.teamliquid.net/" + game + "/"+eventLink, start = eventStart, end = eventEnd)
   matches = re.match("{{(?:TNL|TournamentNewsLine)\|link=\[\[(.*)\]\].*sdate=(.*)\|edate=(.*)}}", eventLine)
+
   if matches != None:
     eventName = matches.group(1)
     eventLink = matches.group(1).replace(" ", "_")
     eventStart = matches.group(2)
     eventEnd = matches.group(3)
+    return dict(name= eventName, link = "http://wiki.teamliquid.net/" + game + "/"+eventLink, start = eventStart, end = eventEnd)
+
+  matches = re.match("{{(?:TNL|TournamentNewsLine)\|link=\[\[(.*)\|(.*)\]\].*date=(.*)}}", eventLine)
+  if matches != None:
+    eventName = matches.group(2)
+    eventLink = matches.group(1).replace(" ", "_")
+    eventStart = matches.group(3)
+    eventEnd = matches.group(3)
+    return dict(name= eventName, link = "http://wiki.teamliquid.net/" + game + "/"+eventLink, start = eventStart, end = eventEnd)
+
+  matches = re.match("{{(?:TNL|TournamentNewsLine)\|link=\[\[(.*)\]\].*date=(.*)}}", eventLine)
+  if matches != None:
+    eventName = matches.group(1)
+    eventLink = matches.group(1).replace(" ", "_")
+    eventStart = matches.group(2)
+    eventEnd = matches.group(2)
     return dict(name= eventName, link = "http://wiki.teamliquid.net/" + game + "/"+eventLink, start = eventStart, end = eventEnd)
   return None
 
