@@ -27,7 +27,7 @@ def convertEventLineToEventDict(game, eventLine):
   matches = re.match("{{(?:TNL|TournamentNewsLine)\|link=\[\[(.*)\|(.*)\]\].*sdate=(.*)\|edate=(.*)}}", eventLine)
   if matches != None:
     eventName = matches.group(2)
-    eventLink = matches.group(1)
+    eventLink = matches.group(1).replace(" ", "_")
     eventStart = matches.group(3)
     eventEnd = matches.group(4)
     return dict(name= eventName, link = "http://wiki.teamliquid.net/" + game + "/"+eventLink, start = eventStart, end = eventEnd)
