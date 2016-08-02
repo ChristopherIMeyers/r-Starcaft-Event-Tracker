@@ -7,10 +7,12 @@ Update Script on Server
 ---
 ```bash
 rm -r eventtracker
-wget https://github.com/Jo3M3tal/r-Starcaft-Event-Tracker/archive/master.zip
+wget https://github.com/ChristopherIMeyers/r-Starcaft-Event-Tracker/archive/master.zip
 unzip master.zip
 rm master.zip
 mv r-Starcaft-Event-Tracker-master eventtracker
+cd eventtracker/
+vim settings.py
 ```
 
 Project Goals
