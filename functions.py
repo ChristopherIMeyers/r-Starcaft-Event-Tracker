@@ -138,8 +138,11 @@ def subEventTableIntoSidebar(sidebar, table):
 def cleanHtml(html):
   return html.replace("&gt;",">").replace("&amp;","&")
 
-def setSidebar(prawLogin, subreddit, game):
+def getNewSidebar(prawLogin, subreddit, game):
   currentSidebar = getCurrentSidebar(prawLogin, subreddit)
   newTable = getCurrentLiquipediaEventsForSidebar(game)
-  newSidebar = cleanHtml(subEventTableIntoSidebar(currentSidebar, newTable))
+  return cleanHtml(subEventTableIntoSidebar(currentSidebar, newTable))
+
+def setSidebar(prawLogin, subreddit, game):
+  newSidebar = getNewSidebar(prawLogin, subreddit, game)
   prawLogin.update_settings(prawLogin.get_subreddit(subreddit), description=newSidebar)
