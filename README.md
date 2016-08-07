@@ -3,6 +3,14 @@ r-Starcaft-Event-Tracker [![Build Status](https://travis-ci.org/ChristopherIMeye
 
 The r/Starcraft Event Tracker
 
+Update AWS Server
+---
+```bash
+sudo yum install python27
+sudo yum install python27-pip
+sudo python27 -m pip install praw
+```
+
 Update Script on Server
 ---
 ```bash
