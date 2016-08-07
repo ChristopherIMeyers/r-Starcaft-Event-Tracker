@@ -12,7 +12,7 @@ wget https://github.com/ChristopherIMeyers/r-Starcaft-Event-Tracker/archive/mast
 unzip master.zip
 rm master.zip
 mv r-Starcaft-Event-Tracker-master eventtracker
-cp settings.py eventtracker/settings.py
+mv settings.py eventtracker/settings.py
 ```
 
 Project Goals
