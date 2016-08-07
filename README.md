@@ -6,13 +6,13 @@ The r/Starcraft Event Tracker
 Update Script on Server
 ---
 ```bash
+cp eventtracker/settings.py settings.py
 rm -r eventtracker
 wget https://github.com/ChristopherIMeyers/r-Starcaft-Event-Tracker/archive/master.zip
 unzip master.zip
 rm master.zip
 mv r-Starcaft-Event-Tracker-master eventtracker
-cd eventtracker/
-vim settings.py
+cp settings.py eventtracker/settings.py
 ```
 
 Project Goals
