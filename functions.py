@@ -41,9 +41,10 @@ def jsonEventToDict(event):
   return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/" + eventLink, start = eventStart, end = eventEnd)
 
 def formatJsonSection(section):
+  sectionHeader = section[0][1:]
   dicts = map(jsonEventToDict, section[1:])
   formatted = map(formatEventRow, dicts)
-  return section[0][1:] + "\n" + "".join(formatted)
+  return formatSectionRow(sectionHeader) + "".join(formatted)
 
 def liquipediaEventsJsonToSidebar(data):
   src = liquipediaEventsJsonIntoSource(data)

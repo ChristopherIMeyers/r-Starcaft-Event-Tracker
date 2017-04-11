@@ -4,6 +4,7 @@ import httplib
 import re
 import json
 from itertools import groupby
+import codecs
 
 import functions
 
@@ -16,8 +17,8 @@ class CheckSanity(unittest.TestCase):
     self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data)), 1265)
 
   def test_liquipediaEventsJsonToSidebar(self):
-    inputData = open('lpevents.json.txt', 'r').read()
-    expectedData = open('lpevents.json.output.txt', 'r').read()
+    inputData = codecs.open('lpevents.json.txt', 'r', "utf-8").read()
+    expectedData = codecs.open('lpevents.json.output.txt', 'r', "utf-8").read()
     self.assertEqual(functions.liquipediaEventsJsonToSidebar(inputData), expectedData)
 
 
