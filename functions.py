@@ -32,15 +32,25 @@ def splitByJsonSection(lines):
   sections.append(section)
   return sections
 
+def jsonEventToDict(event):
+  matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)\| *enddate=([^\|]+)", event)
+  eventLink = matches.group(1).strip().replace(" ", "_")
+  eventName = matches.group(2).strip()
+  eventStart = matches.group(3).strip()
+  eventEnd = matches.group(4).strip()
+  return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/" + eventLink, start = eventStart, end = eventEnd)
+
 def formatJsonSection(section):
-  return section[0] + "\n===\n" + "\n---\n".join(section[1:])
+  dicts = map(jsonEventToDict, section[1:])
+  formatted = map(formatEventRow, dicts)
+  return section[0][1:] + "\n" + "".join(formatted)
 
 def liquipediaEventsJsonToSidebar(data):
   src = liquipediaEventsJsonIntoSource(data)
   lines = liquipediaEventsIntoLines(src)
   split = splitByJsonSection(lines)
   formattedSections = map(formatJsonSection, split[1:])
-  return formattedSections[0]
+  return "\n".join(formattedSections)
 
 
 
@@ -119,7 +129,7 @@ def splitBySection(lines):
   return sections
 
 def formatEventRow(event):
-  return "|[{0}]({1}) | {2} | {3} |\n".format(event['name'], event['link'], event['start'], event['end'])
+  return u"|[{0}]({1}) | {2} | {3} |\n".format(event['name'], event['link'], event['start'], event['end'])
 
 def formatSectionRow(sectionName):
   return "| **{0}**| | |\n".format(sectionName)
