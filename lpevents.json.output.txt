@@ -1,1 +1,5 @@
-*Upcoming*Ongoing*Completed**2017 Global StarCraft II League Season 1 | 2017 Global StarCraft II League Season 1 | startdate=Jan 04| enddate=Mar 26| icon=gsl
+*Upcoming
+===
+**2017 Global StarCraft II League Season 2 | 2017 Global StarCraft II League Season 2 | startdate=Apr 19| enddate=Jun 24| icon=gsl
+---
+**2017 WCS Austin | 2017 WCS Austin | startdate=Apr 28| enddate=Apr 30| icon=wcs
