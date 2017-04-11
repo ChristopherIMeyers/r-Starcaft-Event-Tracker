@@ -51,7 +51,7 @@ def liquipediaEventsJsonToSidebar(data):
   lines = liquipediaEventsIntoLines(src)
   split = splitByJsonSection(lines)
   formattedSections = map(formatJsonSection, split[1:])
-  return "\n".join(formattedSections)
+  return "".join(formattedSections)
 
 
 
