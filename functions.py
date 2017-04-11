@@ -21,11 +21,22 @@ def liquipediaEventsJsonIntoSource(data):
 def isJsonSectionLine(str):
   return re.match("^\*[^*].*", str) != None
 
+def splitByJsonSection(lines):
+  sections = []
+  section = []
+  for line in lines:
+    if isJsonSectionLine(line):
+      sections.append(section)
+      section = []
+    section.append(line)
+  sections.append(section)
+  return sections
+
 def liquipediaEventsJsonToSidebar(data):
   src = liquipediaEventsJsonIntoSource(data)
-  split = liquipediaEventsIntoLines(src)
-  filtered = filter(isJsonSectionLine, split)
-  return "".join(filtered)
+  lines = liquipediaEventsIntoLines(src)
+  split = splitByJsonSection(lines)
+  return split[1][0] + split[2][0] + split[3][0] + split[3][3]
 
 
 
