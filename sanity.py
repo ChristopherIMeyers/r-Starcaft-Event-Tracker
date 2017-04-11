@@ -8,11 +8,6 @@ from itertools import groupby
 import functions
 
 class CheckSanity(unittest.TestCase):
-  def test_praw(self):
-    r = praw.Reddit(user_agent='r/starcraft event tracker')
-    frontpage = r.get_front_page()
-    self.assertEqual(sum(1 for _ in frontpage), 25)
-
   def test_http(self):
     self.assertTrue(len(functions.getLiquipediaEvents("starcraft2")) > 3000)
 
@@ -126,14 +121,6 @@ class CheckSanity(unittest.TestCase):
     f = open('lpevents.txt', 'r')
     sidebar = functions.liquipediaStringToSidebar("starcraft2", f.readlines())
     self.assertEqual(len(sidebar), 1541)
-
-  def test_stabilityOfMultipleSidebarUpdatesWithLiveData(self):
-    r = praw.Reddit(user_agent='r/starcraft event tracker')
-    originalSidebar = functions.liquipediaStringToSidebar("starcraft2", open('lpevents.txt', 'r').readlines())
-    newTable = functions.getCurrentLiquipediaEventsForSidebar("starcraft2")
-    firstSidebar = functions.subEventTableIntoSidebar(originalSidebar, newTable)
-    secondSidebar = functions.subEventTableIntoSidebar(firstSidebar, newTable)
-    self.assertEqual(firstSidebar, secondSidebar)
 
 if __name__ == '__main__':
   unittest.main()
