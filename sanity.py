@@ -2,6 +2,7 @@ import unittest
 import praw
 import httplib
 import re
+import json
 from itertools import groupby
 
 import functions
@@ -14,6 +15,17 @@ class CheckSanity(unittest.TestCase):
 
   def test_http(self):
     self.assertTrue(len(functions.getLiquipediaEvents("starcraft2")) > 3000)
+
+  def test_liquipediaEventsJsonIntoSource(self):
+    data = open('lpevents.json.txt', 'r').read()
+    self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data)), 1265)
+
+
+
+
+
+
+
 
   def test_intoLines(self):
     self.assertTrue(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEvents("starcraft2"))) > 70)
