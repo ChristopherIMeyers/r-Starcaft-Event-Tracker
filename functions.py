@@ -5,13 +5,6 @@ import re
 import json
 from itertools import groupby
 
-def getLiquipediaEvents(game):
-  conn = httplib.HTTPConnection('wiki.teamliquid.net')
-  conn.connect()
-  request = conn.putrequest('GET','/' + game + '/api.php?format=txt&action=query&titles=Liquipedia:Tournament_News&prop=revisions&rvprop=content')
-  conn.endheaders()
-  conn.send('')
-  return conn.getresponse().read()
 
 def getLiquipediaEventsJson():
   conn = httplib.HTTPConnection('wiki.teamliquid.net')
@@ -24,6 +17,29 @@ def getLiquipediaEventsJson():
 def liquipediaEventsJsonIntoSource(data):
   jsonData = json.loads(data)
   return jsonData['query']['pages'].values()[0]['revisions'][0]['*']
+
+def isJsonSectionLine(str):
+  return re.match("^\*[^*].*", str) != None
+
+def liquipediaEventsJsonToSidebar(data):
+  src = liquipediaEventsJsonIntoSource(data)
+  split = liquipediaEventsIntoLines(src)
+  filtered = filter(isJsonSectionLine, split)
+  return "".join(filtered)
+
+
+
+
+
+
+
+def getLiquipediaEvents(game):
+  conn = httplib.HTTPConnection('wiki.teamliquid.net')
+  conn.connect()
+  request = conn.putrequest('GET','/' + game + '/api.php?format=txt&action=query&titles=Liquipedia:Tournament_News&prop=revisions&rvprop=content')
+  conn.endheaders()
+  conn.send('')
+  return conn.getresponse().read()
 
 def cleanLiquipediaEvents(events):
   strippedNoInclude = re.sub(r"<noinclude>.*?</noinclude>", "", events, flags=re.DOTALL)

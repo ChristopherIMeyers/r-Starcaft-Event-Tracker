@@ -15,7 +15,10 @@ class CheckSanity(unittest.TestCase):
     data = open('lpevents.json.txt', 'r').read()
     self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data)), 1265)
 
-
+  def test_liquipediaEventsJsonToSidebar(self):
+    inputData = open('lpevents.json.txt', 'r').read()
+    expectedData = open('lpevents.json.output.txt', 'r').read()
+    self.assertEqual(functions.liquipediaEventsJsonToSidebar(inputData), expectedData)
 
 
 
