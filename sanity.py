@@ -27,7 +27,7 @@ class CheckSanity(unittest.TestCase):
 
 
   def test_intoLines(self):
-    self.assertTrue(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEvents("starcraft2"))) > 70)
+    self.assertTrue(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEvents("starcraft2"))) > 30)
 
   def test_isEventLine(self):
     f = open('lpevents.txt', 'r')
