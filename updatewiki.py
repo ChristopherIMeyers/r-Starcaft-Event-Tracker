@@ -2,7 +2,6 @@ import praw
 import functions
 import settings
 
-r = praw.Reddit(user_agent='r/starcraft event tracker script')
-r.login(settings.reddituser, settings.redditpass)
+prawLogin = functions.GetPraw()
 
-functions.setWikiPage(r, "Starcraft", "eventlist", "starcraft2")
+functions.setWikiPage(prawLogin, "Starcraft", "eventlist", "starcraft2")

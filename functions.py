@@ -4,7 +4,16 @@ import httplib
 import re
 import json
 from itertools import groupby
+import os
 
+if os.path.exists('settings.py'):
+  import settings
+  def GetPraw():
+    return praw.Reddit(client_id = settings.client_id,
+                       client_secret = settings.client_secret,
+                       username = settings.reddituser,
+                       password = settings.redditpass,
+                       user_agent = 'r/starcraft event tracker script')
 
 def getLiquipediaEventsJson():
   conn = httplib.HTTPConnection('wiki.teamliquid.net')
