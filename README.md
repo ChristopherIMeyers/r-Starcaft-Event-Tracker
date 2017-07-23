@@ -7,8 +7,8 @@ Update AWS Server
 ---
 ```bash
 sudo yum install python27
-sudo yum install python27-pip
-sudo python27 -m pip install praw
+sudo python27 -m pip install --upgrade pip
+sudo python27 -m pip install --upgrade praw
 ```
 
 Update Script on Server
