@@ -60,7 +60,7 @@ def liquipediaEventsJsonToSidebar(data):
   lines = liquipediaEventsIntoLines(src)
   split = splitByJsonSection(lines)
   formattedSections = map(formatJsonSection, split[1:])
-  return "".join(formattedSections)
+  return formatTableHeader() + "".join(formattedSections)
 
 
 
@@ -172,14 +172,14 @@ def formatTable(eventStrings):
 
 def liquipediaStringToWiki(game, lines):
   output = formatWikiHeader()
-  output += formatTable(linesToEventStrings(game, lines))
+  output += lines
   return output
 
 def liquipediaStringToSidebar(game, lines):
   return formatTable(linesToEventStrings(game, lines))
 
 def getCurrentLiquipediaEventsForWiki(game):
-  wiki = liquipediaStringToWiki(game, liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents(game))))
+  wiki = liquipediaStringToWiki(game, liquipediaEventsJsonToSidebar(getLiquipediaEventsJson()))
   return wiki
 
 def getCurrentLiquipediaEventsForSidebar(game):

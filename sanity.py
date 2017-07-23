@@ -102,11 +102,6 @@ class CheckSanity(unittest.TestCase):
     expectedDict = dict(name= "TotallyFake", link = "http://wiki.teamliquid.net/starcraft2/TotallyFake", start = "5 May", end = "5 May")
     self.assertEqual(functions.convertEventLineToEventDict("starcraft2", exampleEventLine), expectedDict)
 
-  def test_liquipediaStringToWiki(self):
-    f = open('lpevents.txt', 'r')
-    wiki = functions.liquipediaStringToWiki("starcraft2", f.readlines())
-    self.assertEqual(len(wiki), 1671)
-
   def test_subEventTableIntoSidebar(self):
     oldSidebar = "**Event List**\n\n| table|\n| cells|\n\n"
     expectedSidebar = "**Event List**\n\nnew table text\n\n"
