@@ -189,7 +189,9 @@ def getCurrentSidebar(prawLogin, subreddit):
   return prawLogin.get_settings(prawLogin.get_subreddit(subreddit))['description']
 
 def setWikiPage(prawLogin, subredditName, wikiPageName, game):
-  prawLogin.edit_wiki_page(prawLogin.get_subreddit(subredditName), wikiPageName, getCurrentLiquipediaEventsForWiki(game), "beep boop")
+  subreddit = prawLogin.subreddit(subredditName)
+  newContent = getCurrentLiquipediaEventsForWiki(game)
+  subreddit.wiki[wikiPageName].edit(newContent, 'beep boop - backing up event data')
 
 def replaceCarriageReturn(html):
   return html.replace("\r","")
