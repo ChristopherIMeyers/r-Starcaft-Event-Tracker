@@ -14,7 +14,7 @@ class CheckSanity(unittest.TestCase):
 
   def test_liquipediaEventsJsonIntoSource(self):
     data = open('lpevents.json.txt', 'r').read()
-    self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data)), 1265)
+    self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data)), 1406)
 
   def test_liquipediaEventsJsonToSidebar(self):
     inputData = codecs.open('lpevents.json.txt', 'r', "utf-8").read()
@@ -27,7 +27,7 @@ class CheckSanity(unittest.TestCase):
 
 
   def test_intoLines(self):
-    self.assertTrue(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEvents("starcraft2"))) > 70)
+    self.assertTrue(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEvents("starcraft2"))) > 30)
 
   def test_isEventLine(self):
     f = open('lpevents.txt', 'r')
@@ -102,11 +102,6 @@ class CheckSanity(unittest.TestCase):
     expectedDict = dict(name= "TotallyFake", link = "http://wiki.teamliquid.net/starcraft2/TotallyFake", start = "5 May", end = "5 May")
     self.assertEqual(functions.convertEventLineToEventDict("starcraft2", exampleEventLine), expectedDict)
 
-  def test_liquipediaStringToWiki(self):
-    f = open('lpevents.txt', 'r')
-    wiki = functions.liquipediaStringToWiki("starcraft2", f.readlines())
-    self.assertEqual(len(wiki), 1671)
-
   def test_subEventTableIntoSidebar(self):
     oldSidebar = "**Event List**\n\n| table|\n| cells|\n\n"
     expectedSidebar = "**Event List**\n\nnew table text\n\n"
@@ -125,6 +120,22 @@ class CheckSanity(unittest.TestCase):
     f = open('lpevents.txt', 'r')
     sidebar = functions.liquipediaStringToSidebar("starcraft2", f.readlines())
     self.assertEqual(len(sidebar), 1541)
+
+  def test_eventNameReplacements(self):
+    self.assertEqual(functions.eventNameReplacements("Season 2"), "S2")
+    self.assertEqual(functions.eventNameReplacements("season 2"), "S2")
+    self.assertEqual(functions.eventNameReplacements("abcseason 2abc"), "abcS2abc")
+    self.assertEqual(functions.eventNameReplacements("xxxglobal StarCraft II leaguexxx"), "xxxGSLxxx")
+    self.assertEqual(functions.eventNameReplacements("xxxGlobal starCraft II Leaguexxx"), "xxxGSLxxx")
+    self.assertEqual(functions.eventNameReplacements("xxxglobal StarCraft leaguexxx"), "xxxGSLxxx")
+    self.assertEqual(functions.eventNameReplacements("xxxGlobal starCraft Leaguexxx"), "xxxGSLxxx")
+
+  def test_filterOnEventName(self):
+    self.assertEqual(functions.filterOnEventName(dict(name = "some event")), True)
+    self.assertEqual(functions.filterOnEventName(dict(name = "some event qualifier")), False)
+    self.assertEqual(functions.filterOnEventName(dict(name = "some event qualifier junk")), False)
+    self.assertEqual(functions.filterOnEventName(dict(name = "qualifier junk")), False)
+
 
 if __name__ == '__main__':
   unittest.main()

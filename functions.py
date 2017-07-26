@@ -4,7 +4,16 @@ import httplib
 import re
 import json
 from itertools import groupby
+import os
 
+if os.path.exists('settings.py'):
+  import settings
+  def GetPraw():
+    return praw.Reddit(client_id = settings.client_id,
+                       client_secret = settings.client_secret,
+                       username = settings.reddituser,
+                       password = settings.redditpass,
+                       user_agent = 'r/starcraft event tracker script')
 
 def getLiquipediaEventsJson():
   conn = httplib.HTTPConnection('wiki.teamliquid.net')
@@ -35,7 +44,7 @@ def splitByJsonSection(lines):
 def jsonEventToDict(event):
   matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)\| *enddate=([^\|]+)", event)
   eventLink = matches.group(1).strip().replace(" ", "_")
-  eventName = matches.group(2).strip()
+  eventName = eventNameReplacements(matches.group(2).strip())
   eventStart = matches.group(3).strip()
   eventEnd = matches.group(4).strip()
   return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/" + eventLink, start = eventStart, end = eventEnd)
@@ -43,7 +52,8 @@ def jsonEventToDict(event):
 def formatJsonSection(section):
   sectionHeader = section[0][1:]
   dicts = map(jsonEventToDict, section[1:])
-  formatted = map(formatEventRow, dicts)
+  filteredDicts = filter(filterOnEventName, dicts)
+  formatted = map(formatEventRow, filteredDicts)
   return formatSectionRow(sectionHeader) + "".join(formatted)
 
 def liquipediaEventsJsonToSidebar(data):
@@ -51,7 +61,17 @@ def liquipediaEventsJsonToSidebar(data):
   lines = liquipediaEventsIntoLines(src)
   split = splitByJsonSection(lines)
   formattedSections = map(formatJsonSection, split[1:])
-  return "".join(formattedSections)
+  return formatTableHeader() + "".join(formattedSections)
+
+def eventNameReplacements(eventName):
+  newName = eventName
+  newName = re.sub("[Ss]eason ([0-9])", "S\\1", newName)
+  newName = re.sub("[Gg]lobal [Ss]tarCraft (II )?[Ll]eague", "GSL", newName)
+  return newName
+
+def filterOnEventName(event):
+  eventName = event['name']
+  return re.match(".*[Qq]ualifier", eventName) == None
 
 
 
@@ -163,14 +183,14 @@ def formatTable(eventStrings):
 
 def liquipediaStringToWiki(game, lines):
   output = formatWikiHeader()
-  output += formatTable(linesToEventStrings(game, lines))
+  output += lines
   return output
 
 def liquipediaStringToSidebar(game, lines):
   return formatTable(linesToEventStrings(game, lines))
 
 def getCurrentLiquipediaEventsForWiki(game):
-  wiki = liquipediaStringToWiki(game, liquipediaEventsIntoLines(cleanLiquipediaEvents(getLiquipediaEvents(game))))
+  wiki = liquipediaStringToWiki(game, liquipediaEventsJsonToSidebar(getLiquipediaEventsJson()))
   return wiki
 
 def getCurrentLiquipediaEventsForSidebar(game):
@@ -180,7 +200,9 @@ def getCurrentSidebar(prawLogin, subreddit):
   return prawLogin.get_settings(prawLogin.get_subreddit(subreddit))['description']
 
 def setWikiPage(prawLogin, subredditName, wikiPageName, game):
-  prawLogin.edit_wiki_page(prawLogin.get_subreddit(subredditName), wikiPageName, getCurrentLiquipediaEventsForWiki(game), "beep boop")
+  subreddit = prawLogin.subreddit(subredditName)
+  newContent = getCurrentLiquipediaEventsForWiki(game)
+  subreddit.wiki[wikiPageName].edit(newContent, 'beep boop - backing up event data')
 
 def replaceCarriageReturn(html):
   return html.replace("\r","")
