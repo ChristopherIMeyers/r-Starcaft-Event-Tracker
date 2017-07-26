@@ -52,7 +52,8 @@ def jsonEventToDict(event):
 def formatJsonSection(section):
   sectionHeader = section[0][1:]
   dicts = map(jsonEventToDict, section[1:])
-  formatted = map(formatEventRow, dicts)
+  filteredDicts = filter(filterOnEventName, dicts)
+  formatted = map(formatEventRow, filteredDicts)
   return formatSectionRow(sectionHeader) + "".join(formatted)
 
 def liquipediaEventsJsonToSidebar(data):
@@ -64,6 +65,10 @@ def liquipediaEventsJsonToSidebar(data):
 
 def eventNameReplacements(eventName):
   return re.sub("[Ss]eason ([0-9])", "S\\1", eventName)
+
+def filterOnEventName(event):
+  eventName = event['name']
+  return re.match(".*[Qq]ualifier", eventName) == None
 
 
 

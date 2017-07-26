@@ -14,7 +14,7 @@ class CheckSanity(unittest.TestCase):
 
   def test_liquipediaEventsJsonIntoSource(self):
     data = open('lpevents.json.txt', 'r').read()
-    self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data)), 1265)
+    self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data)), 1406)
 
   def test_liquipediaEventsJsonToSidebar(self):
     inputData = codecs.open('lpevents.json.txt', 'r', "utf-8").read()
@@ -125,6 +125,12 @@ class CheckSanity(unittest.TestCase):
     self.assertEqual(functions.eventNameReplacements("Season 2"), "S2")
     self.assertEqual(functions.eventNameReplacements("season 2"), "S2")
     self.assertEqual(functions.eventNameReplacements("abcseason 2abc"), "abcS2abc")
+
+  def test_filterOnEventName(self):
+    self.assertEqual(functions.filterOnEventName(dict(name = "some event")), True)
+    self.assertEqual(functions.filterOnEventName(dict(name = "some event qualifier")), False)
+    self.assertEqual(functions.filterOnEventName(dict(name = "some event qualifier junk")), False)
+    self.assertEqual(functions.filterOnEventName(dict(name = "qualifier junk")), False)
 
 
 if __name__ == '__main__':
