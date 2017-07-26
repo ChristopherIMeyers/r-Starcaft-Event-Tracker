@@ -64,7 +64,10 @@ def liquipediaEventsJsonToSidebar(data):
   return formatTableHeader() + "".join(formattedSections)
 
 def eventNameReplacements(eventName):
-  return re.sub("[Ss]eason ([0-9])", "S\\1", eventName)
+  newName = eventName
+  newName = re.sub("[Ss]eason ([0-9])", "S\\1", newName)
+  newName = re.sub("[Gg]lobal [Ss]tarCraft (II )?[Ll]eague", "GSL", newName)
+  return newName
 
 def filterOnEventName(event):
   eventName = event['name']

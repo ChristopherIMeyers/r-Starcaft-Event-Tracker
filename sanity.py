@@ -125,6 +125,10 @@ class CheckSanity(unittest.TestCase):
     self.assertEqual(functions.eventNameReplacements("Season 2"), "S2")
     self.assertEqual(functions.eventNameReplacements("season 2"), "S2")
     self.assertEqual(functions.eventNameReplacements("abcseason 2abc"), "abcS2abc")
+    self.assertEqual(functions.eventNameReplacements("xxxglobal StarCraft II leaguexxx"), "xxxGSLxxx")
+    self.assertEqual(functions.eventNameReplacements("xxxGlobal starCraft II Leaguexxx"), "xxxGSLxxx")
+    self.assertEqual(functions.eventNameReplacements("xxxglobal StarCraft leaguexxx"), "xxxGSLxxx")
+    self.assertEqual(functions.eventNameReplacements("xxxGlobal starCraft Leaguexxx"), "xxxGSLxxx")
 
   def test_filterOnEventName(self):
     self.assertEqual(functions.filterOnEventName(dict(name = "some event")), True)
