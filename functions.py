@@ -44,7 +44,7 @@ def splitByJsonSection(lines):
 def jsonEventToDict(event):
   matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)\| *enddate=([^\|]+)", event)
   eventLink = matches.group(1).strip().replace(" ", "_")
-  eventName = matches.group(2).strip()
+  eventName = eventNameReplacements(matches.group(2).strip())
   eventStart = matches.group(3).strip()
   eventEnd = matches.group(4).strip()
   return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/" + eventLink, start = eventStart, end = eventEnd)
@@ -61,6 +61,9 @@ def liquipediaEventsJsonToSidebar(data):
   split = splitByJsonSection(lines)
   formattedSections = map(formatJsonSection, split[1:])
   return formatTableHeader() + "".join(formattedSections)
+
+def eventNameReplacements(eventName):
+  return re.sub("[Ss]eason ([0-9])", "S\\1", eventName)
 
 
 

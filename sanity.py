@@ -121,5 +121,11 @@ class CheckSanity(unittest.TestCase):
     sidebar = functions.liquipediaStringToSidebar("starcraft2", f.readlines())
     self.assertEqual(len(sidebar), 1541)
 
+  def test_eventNameReplacements(self):
+    self.assertEqual(functions.eventNameReplacements("Season 2"), "S2")
+    self.assertEqual(functions.eventNameReplacements("season 2"), "S2")
+    self.assertEqual(functions.eventNameReplacements("abcseason 2abc"), "abcS2abc")
+
+
 if __name__ == '__main__':
   unittest.main()
