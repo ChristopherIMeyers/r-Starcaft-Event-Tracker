@@ -43,11 +43,21 @@ def splitByJsonSection(lines):
 
 def jsonEventToDict(event):
   matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)\| *enddate=([^\|]+)", event)
-  eventLink = matches.group(1).strip().replace(" ", "_")
-  eventName = eventNameReplacements(matches.group(2).strip())
-  eventStart = matches.group(3).strip()
-  eventEnd = matches.group(4).strip()
-  return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/" + eventLink, start = eventStart, end = eventEnd)
+  if matches != None:
+    eventLink = matches.group(1).strip().replace(" ", "_")
+    eventName = eventNameReplacements(matches.group(2).strip())
+    eventStart = matches.group(3).strip()
+    eventEnd = matches.group(4).strip()
+    return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/" + eventLink, start = eventStart, end = eventEnd)
+  matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)", event)
+  if matches != None:
+    eventLink = matches.group(1).strip().replace(" ", "_")
+    eventName = eventNameReplacements(matches.group(2).strip())
+    eventStart = matches.group(3).strip()
+    eventEnd = eventStart
+    return dict(name= eventName, link = "http://wiki.teamliquid.net/starcraft2/" + eventLink, start = eventStart, end = eventEnd)
+  raise ValueError('event line is malformed')
+
 
 def formatJsonSection(section):
   sectionHeader = section[0][1:]
