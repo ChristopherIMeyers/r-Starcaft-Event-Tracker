@@ -1,16 +1,16 @@
 | |Starts |Ends |
 |:-----------|:------------|:------------|
 | **Upcoming**| | |
-|[2017 GSL S2](http://wiki.teamliquid.net/starcraft2/2017_Global_StarCraft_II_League_Season_2) | Apr 19 | Jun 24 |
-|[2017 WCS Austin](http://wiki.teamliquid.net/starcraft2/2017_WCS_Austin) | Apr 28 | Apr 30 |
+|[2017 GSL S2](http://liquipedia.net/starcraft2/2017_Global_StarCraft_II_League_Season_2) | Apr 19 | Jun 24 |
+|[2017 WCS Austin](http://liquipedia.net/starcraft2/2017_WCS_Austin) | Apr 28 | Apr 30 |
 | **Ongoing**| | |
-|[2017 VSL S1 - Individual League](http://wiki.teamliquid.net/starcraft2/2017_VSL_Season_1/Individual_League) | Mar 16 | Apr 20 |
-|[2017 StarCraft II StarLeague S1](http://wiki.teamliquid.net/starcraft2/2017_StarCraft_II_StarLeague_Season_1) | Mar 20 | Jun 10 |
+|[2017 VSL S1 - Individual League](http://liquipedia.net/starcraft2/2017_VSL_Season_1/Individual_League) | Mar 16 | Apr 20 |
+|[2017 StarCraft II StarLeague S1](http://liquipedia.net/starcraft2/2017_StarCraft_II_StarLeague_Season_1) | Mar 20 | Jun 10 |
 | **Completed**| | |
-|[GPL 2017 S1](http://wiki.teamliquid.net/starcraft2/GPL_2017_Season_1) | Mar 23 | Apr 09 |
-|[2017 AfreecaTV GSL Super Tournament #1](http://wiki.teamliquid.net/starcraft2/2017_AfreecaTV_GSL_Super_Tournament_1) | Apr 06 | Apr 09 |
-|[2017 GSL S1](http://wiki.teamliquid.net/starcraft2/2017_Global_StarCraft_II_League_Season_1) | Jan 04 | Mar 26 |
-|[Copa América 2017 S1](http://wiki.teamliquid.net/starcraft2/Copa_America_2017/Season_1) | Mar 18 | Mar 26 |
-|[Ting Open S3](http://wiki.teamliquid.net/starcraft2/Ting_Open_Season_3) | Feb 08 | Mar 26 |
-|[IEM Season XI - World Championship](http://wiki.teamliquid.net/starcraft2/IEM_Season_XI_-_World_Championship) | Feb 27 | Mar 05 |
-|[World Electronic Sports Games 2016](http://wiki.teamliquid.net/starcraft2/World_Electronic_Sports_Games_2016) | Jan 12 | Jan 15 |
+|[GPL 2017 S1](http://liquipedia.net/starcraft2/GPL_2017_Season_1) | Mar 23 | Apr 09 |
+|[2017 AfreecaTV GSL Super Tournament #1](http://liquipedia.net/starcraft2/2017_AfreecaTV_GSL_Super_Tournament_1) | Apr 06 | Apr 09 |
+|[2017 GSL S1](http://liquipedia.net/starcraft2/2017_Global_StarCraft_II_League_Season_1) | Jan 04 | Mar 26 |
+|[Copa América 2017 S1](http://liquipedia.net/starcraft2/Copa_America_2017/Season_1) | Mar 18 | Mar 26 |
+|[Ting Open S3](http://liquipedia.net/starcraft2/Ting_Open_Season_3) | Feb 08 | Mar 26 |
+|[IEM Season XI - World Championship](http://liquipedia.net/starcraft2/IEM_Season_XI_-_World_Championship) | Feb 27 | Mar 05 |
+|[World Electronic Sports Games 2016](http://liquipedia.net/starcraft2/World_Electronic_Sports_Games_2016) | Jan 12 | Jan 15 |
