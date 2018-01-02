@@ -16,7 +16,7 @@ if os.path.exists('settings.py'):
                        user_agent = 'r/starcraft event tracker script')
 
 def getLiquipediaEventsJson():
-  conn = httplib.HTTPConnection('wiki.teamliquid.net')
+  conn = httplib.HTTPConnection('liquipedia.net')
   conn.connect()
   request = conn.putrequest('GET','/starcraft2/api.php?format=json&action=query&titles=Liquipedia:Tournaments&prop=revisions&rvprop=content')
   conn.endheaders()
