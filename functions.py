@@ -62,7 +62,7 @@ def jsonEventToDict(event):
 def formatJsonSection(section):
   sectionHeader = section[0][1:]
   dicts = map(jsonEventToDict, section[1:])
-  filteredDicts = filter(filterOnEventName, dicts)
+  filteredDicts = filter(filterEvents, dicts)
   formatted = map(formatEventRow, filteredDicts)
   return formatSectionRow(sectionHeader) + "".join(formatted)
 
@@ -79,9 +79,10 @@ def eventNameReplacements(eventName):
   newName = re.sub("[Gg]lobal [Ss]tarCraft (II )?[Ll]eague", "GSL", newName)
   return newName
 
-def filterOnEventName(event):
+def filterEvents(event):
   eventName = event['name']
-  return re.match(".*[Qq]ualifier", eventName) == None
+  eventLink = event['link']
+  return re.match(".*[Qq]ualifier", eventName) == None and re.match(".*[Qq]ualifier.*", eventLink) == None
 
 
 
