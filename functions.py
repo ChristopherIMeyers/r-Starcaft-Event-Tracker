@@ -41,27 +41,29 @@ def splitByJsonSection(lines):
   sections.append(section)
   return sections
 
-def jsonEventToDict(event):
-  matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)\| *enddate=([^\|]+)", event)
-  if matches != None:
-    eventLink = matches.group(1).strip().replace(" ", "_")
-    eventName = eventNameReplacements(matches.group(2).strip())
-    eventStart = matches.group(3).strip()
-    eventEnd = matches.group(4).strip()
-    return dict(name= eventName, link = "http://liquipedia.net/starcraft2/" + eventLink, start = eventStart, end = eventEnd)
-  matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)", event)
-  if matches != None:
-    eventLink = matches.group(1).strip().replace(" ", "_")
-    eventName = eventNameReplacements(matches.group(2).strip())
-    eventStart = matches.group(3).strip()
-    eventEnd = eventStart
-    return dict(name= eventName, link = "http://liquipedia.net/starcraft2/" + eventLink, start = eventStart, end = eventEnd)
-  raise ValueError('event line is malformed')
+def jsonEventToDict(game):
+  def jsonEventToDictInner(event):
+    matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)\| *enddate=([^\|]+)", event)
+    if matches != None:
+      eventLink = matches.group(1).strip().replace(" ", "_")
+      eventName = eventNameReplacements(matches.group(2).strip())
+      eventStart = matches.group(3).strip()
+      eventEnd = matches.group(4).strip()
+      return dict(name= eventName, link = "http://liquipedia.net/" + game + "/" + eventLink, start = eventStart, end = eventEnd)
+    matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)", event)
+    if matches != None:
+      eventLink = matches.group(1).strip().replace(" ", "_")
+      eventName = eventNameReplacements(matches.group(2).strip())
+      eventStart = matches.group(3).strip()
+      eventEnd = eventStart
+      return dict(name= eventName, link = "http://liquipedia.net/" + game + "/" + eventLink, start = eventStart, end = eventEnd)
+    raise ValueError('event line is malformed')
+  return jsonEventToDictInner
 
 
 def formatJsonSection(section):
   sectionHeader = section[0][1:]
-  dicts = map(jsonEventToDict, section[1:])
+  dicts = map(jsonEventToDict('starcraft2'), section[1:])
   filteredDicts = filter(filterEvents, dicts)
   formatted = map(formatEventRow, filteredDicts)
   return formatSectionRow(sectionHeader) + "".join(formatted)
