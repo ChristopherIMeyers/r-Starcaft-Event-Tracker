@@ -10,7 +10,7 @@ import functions
 
 class CheckSanity(unittest.TestCase):
   def test_http(self):
-    self.assertTrue(len(functions.getLiquipediaEventsJson()), 3000)
+    self.assertTrue(len(functions.getLiquipediaEventsJson('starcraft2')), 3000)
 
   def test_liquipediaEventsJsonIntoSource(self):
     data = open('lpevents.json.txt', 'r').read()
@@ -22,7 +22,7 @@ class CheckSanity(unittest.TestCase):
     self.assertEqual(functions.liquipediaEventsJsonToSidebar(inputData), expectedData)
 
   def test_intoLines(self):
-    self.assertEqual(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEventsJson())), 1)
+    self.assertEqual(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEventsJson('starcraft2'))), 1)
 
   def test_formatEventRow(self):
     eventObj = dict(name= "2013 DH Summer", link = "http://wiki.teamliquid.net/starcraft2/2013_DreamHack_Open/Summer", start = "15 Jun", end = "17 Jun")

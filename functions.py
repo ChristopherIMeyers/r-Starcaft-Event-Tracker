@@ -15,10 +15,10 @@ if os.path.exists('settings.py'):
                        password = settings.redditpass,
                        user_agent = 'r/starcraft event tracker script')
 
-def getLiquipediaEventsJson():
+def getLiquipediaEventsJson(game):
   conn = httplib.HTTPConnection('liquipedia.net')
   conn.connect()
-  request = conn.putrequest('GET','/starcraft2/api.php?format=json&action=query&titles=Liquipedia:Tournaments&prop=revisions&rvprop=content')
+  request = conn.putrequest('GET','/' + game + '/api.php?format=json&action=query&titles=Liquipedia:Tournaments&prop=revisions&rvprop=content')
   conn.endheaders()
   conn.send('')
   return conn.getresponse().read()
@@ -105,7 +105,7 @@ def liquipediaStringToWiki(game, lines):
   return output
 
 def getCurrentLiquipediaEventsForWiki(game):
-  wiki = liquipediaStringToWiki(game, liquipediaEventsJsonToSidebar(getLiquipediaEventsJson()))
+  wiki = liquipediaStringToWiki(game, liquipediaEventsJsonToSidebar(getLiquipediaEventsJson('starcraft2')))
   return wiki
 
 def setWikiPage(prawLogin, subredditName, wikiPageName, game):
