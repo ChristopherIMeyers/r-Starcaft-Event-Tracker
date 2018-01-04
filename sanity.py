@@ -25,9 +25,9 @@ class CheckSanity(unittest.TestCase):
     self.assertEqual(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEventsJson('starcraft2'))), 1)
 
   def test_formatEventRow(self):
-    eventObj = dict(name= "2013 DH Summer", link = "http://wiki.teamliquid.net/starcraft2/2013_DreamHack_Open/Summer", start = "15 Jun", end = "17 Jun")
-    expectedOutput = "|[2013 DH Summer](http://wiki.teamliquid.net/starcraft2/2013_DreamHack_Open/Summer) | 15 Jun | 17 Jun |\n"
-    self.assertEqual(functions.formatEventRow(eventObj), expectedOutput)
+    eventObj = dict(name= "2013 DH Summer", link = "somelink", start = "15 Jun", end = "17 Jun")
+    expectedOutput = "|[2013 DH Summer](http://liquipedia.net/somegame/somelink) | 15 Jun | 17 Jun |\n"
+    self.assertEqual(functions.formatEventRow('somegame')(eventObj), expectedOutput)
 
   def test_formatSectionRow(self):
     sectionName = "Upcoming"

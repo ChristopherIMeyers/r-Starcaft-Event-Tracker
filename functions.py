@@ -41,24 +41,22 @@ def splitByJsonSection(lines):
   sections.append(section)
   return sections
 
-def jsonEventToDict(game):
-  def jsonEventToDictInner(event):
-    matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)\| *enddate=([^\|]+)", event)
-    if matches != None:
-      eventLink = matches.group(1).strip().replace(" ", "_")
-      eventName = eventNameReplacements(matches.group(2).strip())
-      eventStart = matches.group(3).strip()
-      eventEnd = matches.group(4).strip()
-      return dict(name= eventName, link = "http://liquipedia.net/" + game + "/" + eventLink, start = eventStart, end = eventEnd)
-    matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)", event)
-    if matches != None:
-      eventLink = matches.group(1).strip().replace(" ", "_")
-      eventName = eventNameReplacements(matches.group(2).strip())
-      eventStart = matches.group(3).strip()
-      eventEnd = eventStart
-      return dict(name= eventName, link = "http://liquipedia.net/" + game + "/" + eventLink, start = eventStart, end = eventEnd)
-    raise ValueError('event line is malformed')
-  return jsonEventToDictInner
+def jsonEventToDict(event):
+  matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)\| *enddate=([^\|]+)", event)
+  if matches != None:
+    eventLink = matches.group(1).strip().replace(" ", "_")
+    eventName = eventNameReplacements(matches.group(2).strip())
+    eventStart = matches.group(3).strip()
+    eventEnd = matches.group(4).strip()
+    return dict(name= eventName, link = eventLink, start = eventStart, end = eventEnd)
+  matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)", event)
+  if matches != None:
+    eventLink = matches.group(1).strip().replace(" ", "_")
+    eventName = eventNameReplacements(matches.group(2).strip())
+    eventStart = matches.group(3).strip()
+    eventEnd = eventStart
+    return dict(name= eventName, link = eventLink, start = eventStart, end = eventEnd)
+  raise ValueError('event line is malformed')
 
 
 def formatJsonSection(section):
@@ -67,13 +65,13 @@ def formatJsonSection(section):
 
   sectionHeader = sc1[0][1:]
 
-  dicts1 = map(jsonEventToDict('starcraft'), sc1[1:])
+  dicts1 = map(jsonEventToDict, sc1[1:])
   filteredDicts1 = filter(filterEvents, dicts1)
-  formatted1 = map(formatEventRow, filteredDicts1)
+  formatted1 = map(formatEventRow('starcraft'), filteredDicts1)
 
-  dicts2 = map(jsonEventToDict('starcraft2'), sc2[1:])
+  dicts2 = map(jsonEventToDict, sc2[1:])
   filteredDicts2 = filter(filterEvents, dicts2)
-  formatted2 = map(formatEventRow, filteredDicts2)
+  formatted2 = map(formatEventRow('starcraft2'), filteredDicts2)
 
   formattedBoth = formatted1 + formatted2
 
@@ -107,8 +105,10 @@ def filterEvents(event):
 def liquipediaEventsIntoLines(events):
   return events.split('\n')
 
-def formatEventRow(event):
-  return u"|[{0}]({1}) | {2} | {3} |\n".format(event['name'], event['link'], event['start'], event['end'])
+def formatEventRow(game):
+  def formatEventRowInner(event):
+    return u"|[{0}](http://liquipedia.net/{1}/{2}) | {3} | {4} |\n".format(event['name'], game, event['link'], event['start'], event['end'])
+  return formatEventRowInner
 
 def formatSectionRow(sectionName):
   return "| **{0}**| | |\n".format(sectionName)
