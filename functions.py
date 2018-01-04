@@ -62,17 +62,35 @@ def jsonEventToDict(game):
 
 
 def formatJsonSection(section):
-  sectionHeader = section[0][1:]
-  dicts = map(jsonEventToDict('starcraft2'), section[1:])
-  filteredDicts = filter(filterEvents, dicts)
-  formatted = map(formatEventRow, filteredDicts)
-  return formatSectionRow(sectionHeader) + "".join(formatted)
+  sc1 = section[0]
+  sc2 = section[1]
 
-def liquipediaEventsJsonToSidebar(data):
-  src = liquipediaEventsJsonIntoSource(data)
-  lines = liquipediaEventsIntoLines(src)
-  split = splitByJsonSection(lines)
-  formattedSections = map(formatJsonSection, split[1:])
+  sectionHeader = sc1[0][1:]
+
+  dicts1 = map(jsonEventToDict('starcraft'), sc1[1:])
+  filteredDicts1 = filter(filterEvents, dicts1)
+  formatted1 = map(formatEventRow, filteredDicts1)
+
+  dicts2 = map(jsonEventToDict('starcraft2'), sc2[1:])
+  filteredDicts2 = filter(filterEvents, dicts2)
+  formatted2 = map(formatEventRow, filteredDicts2)
+
+  formattedBoth = formatted1 + formatted2
+
+  return formatSectionRow(sectionHeader) + "".join(formattedBoth)
+
+def liquipediaEventsJsonToSidebar(data1, data2):
+  src1 = liquipediaEventsJsonIntoSource(data1)
+  lines1 = liquipediaEventsIntoLines(src1)
+  split1 = splitByJsonSection(lines1)
+
+  src2 = liquipediaEventsJsonIntoSource(data2)
+  lines2 = liquipediaEventsIntoLines(src2)
+  split2 = splitByJsonSection(lines2)
+
+  zipped = zip(split1[1:], split2[1:])
+
+  formattedSections = map(formatJsonSection, zipped)
   return formatTableHeader() + "".join(formattedSections)
 
 def eventNameReplacements(eventName):
@@ -107,7 +125,7 @@ def liquipediaStringToWiki(game, lines):
   return output
 
 def getCurrentLiquipediaEventsForWiki(game):
-  wiki = liquipediaStringToWiki(game, liquipediaEventsJsonToSidebar(getLiquipediaEventsJson('starcraft2')))
+  wiki = liquipediaStringToWiki(game, liquipediaEventsJsonToSidebar(getLiquipediaEventsJson('starcraft'), getLiquipediaEventsJson('starcraft2')))
   return wiki
 
 def setWikiPage(prawLogin, subredditName, wikiPageName, game):
