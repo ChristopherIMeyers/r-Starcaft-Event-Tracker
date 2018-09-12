@@ -1,27 +1,27 @@
 | |Starts |Ends |
 |:-----------|:------------|:------------|
 | **Upcoming**| | |
-|[OSC SC:R Open #14](http://liquipedia.net/starcraft/OSC_SC:R_Open/14) | Jan 06 | Jan 06 |
-|[Clash for Char #14](http://liquipedia.net/starcraft/Clashforchar14) | Jan 07 | Jan 07 |
-|[2017 GSL S2](http://liquipedia.net/starcraft2/2017_Global_StarCraft_II_League_Season_2) | Apr 19 | Jun 24 |
-|[2017 WCS Austin](http://liquipedia.net/starcraft2/2017_WCS_Austin) | Apr 28 | Apr 30 |
+|[OSC SC:R Open #14](http://liquipedia.net/starcraft/OSC_SC:R_Open/14) | Jan&nbsp;06 | Jan&nbsp;06 |
+|[Clash for Char #14](http://liquipedia.net/starcraft/Clashforchar14) | Jan&nbsp;07 | Jan&nbsp;07 |
+|[2017 GSL S2](http://liquipedia.net/starcraft2/2017_Global_StarCraft_II_League_Season_2) | Apr&nbsp;19 | Jun&nbsp;24 |
+|[2017 WCS Austin](http://liquipedia.net/starcraft2/2017_WCS_Austin) | Apr&nbsp;28 | Apr&nbsp;30 |
 | **Ongoing**| | |
-|[Bombastic StarLeague 3](http://liquipedia.net/starcraft/Bombastic_StarLeague_3) | Oct 25 | Jan 20 |
-|[SK Team League: S1](http://liquipedia.net/starcraft/SK_Team_League_Season_1) | Nov 04 | Feb 18 |
-|[2017 VSL S1 - Individual League](http://liquipedia.net/starcraft2/2017_VSL_Season_1/Individual_League) | Mar 16 | Apr 20 |
-|[2017 StarCraft II StarLeague S1](http://liquipedia.net/starcraft2/2017_StarCraft_II_StarLeague_Season_1) | Mar 20 | Jun 10 |
+|[Bombastic StarLeague 3](http://liquipedia.net/starcraft/Bombastic_StarLeague_3) | Oct&nbsp;25 | Jan&nbsp;20 |
+|[SK Team League: S1](http://liquipedia.net/starcraft/SK_Team_League_Season_1) | Nov&nbsp;04 | Feb&nbsp;18 |
+|[2017 VSL S1 - Individual League](http://liquipedia.net/starcraft2/2017_VSL_Season_1/Individual_League) | Mar&nbsp;16 | Apr&nbsp;20 |
+|[2017 StarCraft II StarLeague S1](http://liquipedia.net/starcraft2/2017_StarCraft_II_StarLeague_Season_1) | Mar&nbsp;20 | Jun&nbsp;10 |
 | **Completed**| | |
-|[Clash for Christmas](http://liquipedia.net/starcraft/Clashforcharchristmas) | Dec 23 | Dec 23 |
-|[OSC SC:R Open #13](http://liquipedia.net/starcraft/OSC_SC:R_Open/13) | Dec 22 | Dec 22 |
-|[Twitch Starcraft Holiday Bash](http://liquipedia.net/starcraft/Twitch_Starcraft_Holiday_Bash) | Dec 18 | Dec 20 |
-|[Rus Brain Cup S1](http://liquipedia.net/starcraft/Rus_Brain_Cup_S1) | Dec 17 | Dec 17 |
-|[DanJJING Star League S1](http://liquipedia.net/starcraft/DanJJING_Star_League_Season_1) | Nov 27 | Dec 17 |
-|[Rus Brain Cup S1: Decider](http://liquipedia.net/starcraft/Rus_Brain_Cup_S1/Decider) | Dec 10 | Dec 10 |
-|[Clan SK Weekly Tournament](http://liquipedia.net/starcraft/Clan_SK_Tour_2017_12_8) | Dec 08 | Dec 08 |
-|[GPL 2017 S1](http://liquipedia.net/starcraft2/GPL_2017_Season_1) | Mar 23 | Apr 09 |
-|[2017 AfreecaTV GSL Super Tournament #1](http://liquipedia.net/starcraft2/2017_AfreecaTV_GSL_Super_Tournament_1) | Apr 06 | Apr 09 |
-|[2017 GSL S1](http://liquipedia.net/starcraft2/2017_Global_StarCraft_II_League_Season_1) | Jan 04 | Mar 26 |
-|[Copa América 2017 S1](http://liquipedia.net/starcraft2/Copa_America_2017/Season_1) | Mar 18 | Mar 26 |
-|[Ting Open S3](http://liquipedia.net/starcraft2/Ting_Open_Season_3) | Feb 08 | Mar 26 |
-|[IEM Season XI - World Championship](http://liquipedia.net/starcraft2/IEM_Season_XI_-_World_Championship) | Feb 27 | Mar 05 |
-|[World Electronic Sports Games 2016](http://liquipedia.net/starcraft2/World_Electronic_Sports_Games_2016) | Jan 12 | Jan 15 |
+|[Clash for Christmas](http://liquipedia.net/starcraft/Clashforcharchristmas) | Dec&nbsp;23 | Dec&nbsp;23 |
+|[OSC SC:R Open #13](http://liquipedia.net/starcraft/OSC_SC:R_Open/13) | Dec&nbsp;22 | Dec&nbsp;22 |
+|[Twitch Starcraft Holiday Bash](http://liquipedia.net/starcraft/Twitch_Starcraft_Holiday_Bash) | Dec&nbsp;18 | Dec&nbsp;20 |
+|[Rus Brain Cup S1](http://liquipedia.net/starcraft/Rus_Brain_Cup_S1) | Dec&nbsp;17 | Dec&nbsp;17 |
+|[DanJJING Star League S1](http://liquipedia.net/starcraft/DanJJING_Star_League_Season_1) | Nov&nbsp;27 | Dec&nbsp;17 |
+|[Rus Brain Cup S1: Decider](http://liquipedia.net/starcraft/Rus_Brain_Cup_S1/Decider) | Dec&nbsp;10 | Dec&nbsp;10 |
+|[Clan SK Weekly Tournament](http://liquipedia.net/starcraft/Clan_SK_Tour_2017_12_8) | Dec&nbsp;08 | Dec&nbsp;08 |
+|[GPL 2017 S1](http://liquipedia.net/starcraft2/GPL_2017_Season_1) | Mar&nbsp;23 | Apr&nbsp;09 |
+|[2017 AfreecaTV GSL Super Tournament #1](http://liquipedia.net/starcraft2/2017_AfreecaTV_GSL_Super_Tournament_1) | Apr&nbsp;06 | Apr&nbsp;09 |
+|[2017 GSL S1](http://liquipedia.net/starcraft2/2017_Global_StarCraft_II_League_Season_1) | Jan&nbsp;04 | Mar&nbsp;26 |
+|[Copa América 2017 S1](http://liquipedia.net/starcraft2/Copa_America_2017/Season_1) | Mar&nbsp;18 | Mar&nbsp;26 |
+|[Ting Open S3](http://liquipedia.net/starcraft2/Ting_Open_Season_3) | Feb&nbsp;08 | Mar&nbsp;26 |
+|[IEM Season XI - World Championship](http://liquipedia.net/starcraft2/IEM_Season_XI_-_World_Championship) | Feb&nbsp;27 | Mar&nbsp;05 |
+|[World Electronic Sports Games 2016](http://liquipedia.net/starcraft2/World_Electronic_Sports_Games_2016) | Jan&nbsp;12 | Jan&nbsp;15 |

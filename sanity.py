@@ -46,5 +46,8 @@ class CheckSanity(unittest.TestCase):
     self.assertEqual(functions.eventNameReplacements("xxxglobal StarCraft leaguexxx"), "xxxGSLxxx")
     self.assertEqual(functions.eventNameReplacements("xxxGlobal starCraft Leaguexxx"), "xxxGSLxxx")
 
+  def test_dateReplacements(self):
+    self.assertEqual(functions.dateReplacements("Sep 07"), "Sep&nbsp;07")
+
 if __name__ == '__main__':
   unittest.main()

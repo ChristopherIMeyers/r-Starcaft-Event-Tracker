@@ -46,15 +46,15 @@ def jsonEventToDict(event):
   if matches != None:
     eventLink = matches.group(1).strip().replace(" ", "_")
     eventName = eventNameReplacements(matches.group(2).strip())
-    eventStart = matches.group(3).strip()
-    eventEnd = matches.group(4).strip()
+    eventStart = dateReplacements(matches.group(3).strip())
+    eventEnd = dateReplacements(matches.group(4).strip())
     return dict(name= eventName, link = eventLink, start = eventStart, end = eventEnd)
   matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)", event)
   if matches != None:
     eventLink = matches.group(1).strip().replace(" ", "_")
     eventName = eventNameReplacements(matches.group(2).strip())
-    eventStart = matches.group(3).strip()
-    eventEnd = eventStart
+    eventStart = dateReplacements(matches.group(3).strip())
+    eventEnd = dateReplacements(eventStart)
     return dict(name= eventName, link = eventLink, start = eventStart, end = eventEnd)
   raise ValueError('event line is malformed')
 
@@ -95,6 +95,11 @@ def eventNameReplacements(eventName):
   newName = eventName
   newName = re.sub("[Ss]eason ([0-9])", "S\\1", newName)
   newName = re.sub("[Gg]lobal [Ss]tarCraft (II )?[Ll]eague", "GSL", newName)
+  return newName
+
+def dateReplacements(dateString):
+  newName = dateString
+  newName = re.sub(" ", "&nbsp;", newName)
   return newName
 
 def filterEvents(event):
