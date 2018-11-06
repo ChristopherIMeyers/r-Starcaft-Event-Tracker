@@ -1,4 +1,3 @@
-import unittest
 import praw
 import re
 import json
