@@ -1,10 +1,12 @@
 import unittest
 import praw
-import httplib
 import re
 import json
 from itertools import groupby
 import os
+from StringIO import StringIO
+import gzip
+import urllib2
 
 if os.path.exists('settings.py'):
   import settings
@@ -16,12 +18,14 @@ if os.path.exists('settings.py'):
                        user_agent = 'r/starcraft event tracker script')
 
 def getLiquipediaEventsJson(game):
-  conn = httplib.HTTPSConnection('liquipedia.net')
-  conn.connect()
-  request = conn.putrequest('GET','/' + game + '/api.php?format=json&action=query&titles=Liquipedia:Tournaments&prop=revisions&rvprop=content')
-  conn.endheaders()
-  conn.send('')
-  return conn.getresponse().read()
+  request = urllib2.Request('https://liquipedia.net/' + game + '/api.php?format=json&action=query&titles=Liquipedia:Tournaments&prop=revisions&rvprop=content')
+  request.add_header('Accept-encoding', 'gzip')
+  response = urllib2.urlopen(request)
+  if response.info().get('Content-Encoding') == 'gzip':
+      buf = StringIO(response.read())
+      f = gzip.GzipFile(fileobj=buf)
+      return f.read()
+  raise ValueError("Expected server to respond with Content-Encoding: gzip but was missing")
 
 def liquipediaEventsJsonIntoSource(data):
   jsonData = json.loads(data)
