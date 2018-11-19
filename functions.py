@@ -22,9 +22,9 @@ def getLiquipediaEventsJson(game):
   request.add_header('User-Agent', 'reddit.com/r/starcraft event list bot')
   response = urllib2.urlopen(request)
   if response.info().get('Content-Encoding') == 'gzip':
-      buf = StringIO(response.read())
-      f = gzip.GzipFile(fileobj=buf)
-      return f.read()
+    buf = StringIO(response.read())
+    f = gzip.GzipFile(fileobj=buf)
+    return f.read()
   raise ValueError("Expected server to respond with Content-Encoding: gzip but was missing")
 
 def liquipediaEventsJsonIntoSource(data):
