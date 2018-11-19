@@ -19,6 +19,7 @@ if os.path.exists('settings.py'):
 def getLiquipediaEventsJson(game):
   request = urllib2.Request('https://liquipedia.net/' + game + '/api.php?format=json&action=query&titles=Liquipedia:Tournaments&prop=revisions&rvprop=content')
   request.add_header('Accept-encoding', 'gzip')
+  request.add_header('User-Agent', 'reddit.com/r/starcraft event list bot')
   response = urllib2.urlopen(request)
   if response.info().get('Content-Encoding') == 'gzip':
       buf = StringIO(response.read())
