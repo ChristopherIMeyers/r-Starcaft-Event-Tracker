@@ -32,6 +32,10 @@ class CheckSanity(unittest.TestCase):
     expectedOutput = "|[2013 DH Summer](http://liquipedia.net/somegame/somelink) | 15 Jun | 17 Jun |\n"
     self.assertEqual(functions.formatEventRow('somegame')(eventObj), expectedOutput)
 
+  def test_isJsonSectionLine(self):
+    self.assertEqual(functions.isJsonSectionLine("*Upcoming"), True)
+    self.assertEqual(functions.isJsonSectionLine("**2019 WCS Summer | 2019 WCS Summer | startdate=Jul 12 | enddate=Jul 14 | icon=wcs"), False)
+
   def test_formatSectionRow(self):
     sectionName = "Upcoming"
     expectedOutput = "| **Upcoming**| | |\n"
