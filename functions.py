@@ -112,7 +112,9 @@ def filterEvents(event):
   return re.match(".*[Qq]ualifier", eventName) == None and re.match(".*[Qq]ualifier.*", eventLink) == None
 
 def liquipediaEventsIntoLines(events):
-  return events.split('\n')
+  lines = events.split('\n')
+  def f(x): return x != ''
+  return filter(f, lines)
 
 def formatEventRow(game):
   def formatEventRowInner(event):
