@@ -81,7 +81,7 @@ def formatJsonSection(section):
 
   return formatSectionRow(sectionHeader) + "".join(formattedBoth)
 
-def liquipediaEventsJsonToSidebar(data1, data2):
+def liquipediaEventsJsonToZippedData(data1, data2):
   src1 = liquipediaEventsJsonIntoSource(data1)
   lines1 = liquipediaEventsIntoLines(src1)
   split1 = splitByJsonSection(lines1)
@@ -90,8 +90,10 @@ def liquipediaEventsJsonToSidebar(data1, data2):
   lines2 = liquipediaEventsIntoLines(src2)
   split2 = splitByJsonSection(lines2)
 
-  zipped = zip(split1[1:], split2[1:])
+  return zip(split1[1:], split2[1:])
 
+def liquipediaEventsJsonToSidebar(data1, data2):
+  zipped = liquipediaEventsJsonToZippedData(data1, data2)
   formattedSections = map(formatJsonSection, zipped)
   return formatTableHeader() + "".join(formattedSections)
 
