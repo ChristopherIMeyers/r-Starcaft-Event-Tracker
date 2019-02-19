@@ -97,6 +97,15 @@ def liquipediaEventsJsonToSidebar(data1, data2):
   formattedSections = map(formatJsonSection, zipped)
   return formatTableHeader() + "".join(formattedSections)
 
+def liquipediaEventsJsonToNewSidebar(data1, data2):
+  def prependTableHaders(section):
+    return formatNewTableHeader() + section + '\n'
+
+  zipped = liquipediaEventsJsonToZippedData(data1, data2)
+  formattedSections = map(formatJsonSection, zipped)
+  sectionsWithHeaders = map(prependTableHaders, formattedSections)
+  return "".join(sectionsWithHeaders)
+
 def eventNameReplacements(eventName):
   newName = eventName
   newName = re.sub("[Ss]eason ([0-9])", "S\\1", newName)
@@ -129,6 +138,9 @@ def formatSectionRow(sectionName):
 def formatTableHeader():
   return "| |Starts |Ends |\n|:-----------|:------------|:------------|\n"
 
+def formatNewTableHeader():
+  return "| | | |\n|:-----------|:------------|:------------|\n"
+
 def formatWikiHeader():
   return "#Starcraft Event List\nUpdated by /u/Automaton2000    \nSourced from [Liquipedia](http://wiki.teamliquid.net/starcraft2/Main_Page)\n\n"
 
@@ -140,6 +152,10 @@ def liquipediaStringToWiki(game, lines):
 def getCurrentLiquipediaEventsForWiki(game):
   wiki = liquipediaStringToWiki(game, liquipediaEventsJsonToSidebar(getLiquipediaEventsJson('starcraft'), getLiquipediaEventsJson('starcraft2')))
   return wiki
+
+def getCurrentLiquipediaEventsForNewWiki(game):
+  wiki = liquipediaEventsJsonToNewSidebar(getLiquipediaEventsJson('starcraft'), getLiquipediaEventsJson('starcraft2'))
+  return wiki + '[^source: ^liquipedia](https://liquipedia.net/starcraft2/Main_Page) ^under ^[CC-BY-SA](https://liquipedia.net/starcraft2/Liquipedia:Copyrights)'
 
 def setWikiPage(prawLogin, subredditName, wikiPageName, game):
   subreddit = prawLogin.subreddit(subredditName)
