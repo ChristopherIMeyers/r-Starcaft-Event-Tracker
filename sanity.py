@@ -27,6 +27,13 @@ class CheckSanity(unittest.TestCase):
     expectedData = codecs.open('testdata/lpevents.json.output.txt', 'r', "utf-8").read()
     self.assertEqual(functions.liquipediaEventsJsonToSidebar(inputData1, inputData2), expectedData)
 
+  def test_liquipediaEventsJsonToNewSidebar(self):
+    self.maxDiff = None
+    inputData1 = codecs.open('testdata/lpevents.1.json.txt', 'r', "utf-8").read()
+    inputData2 = codecs.open('testdata/lpevents.2.json.txt', 'r', "utf-8").read()
+    expectedData = codecs.open('testdata/newsidebar.output.txt', 'r', "utf-8").read()
+    self.assertEqual(functions.liquipediaEventsJsonToNewSidebar(inputData1, inputData2), expectedData)
+
   def test_intoLines(self):
     self.assertEqual(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEventsJson('starcraft2'))), 1)
 
