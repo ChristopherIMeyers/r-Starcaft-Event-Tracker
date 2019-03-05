@@ -161,3 +161,8 @@ def setWikiPage(prawLogin, subredditName, wikiPageName, game):
   subreddit = prawLogin.subreddit(subredditName)
   newContent = getCurrentLiquipediaEventsForWiki(game)
   subreddit.wiki[wikiPageName].edit(newContent, 'beep boop - backing up event data')
+
+def setNewWikiPage(prawLogin, subredditName, wikiPageName, game):
+  subreddit = prawLogin.subreddit(subredditName)
+  newContent = getCurrentLiquipediaEventsForNewWiki(game)
+  subreddit.wiki[wikiPageName].edit(newContent, 'beep boop - backing up event data')
