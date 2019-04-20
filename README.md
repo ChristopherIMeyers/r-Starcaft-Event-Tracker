@@ -22,3 +22,12 @@ rm master.zip
 mv r-Starcaft-Event-Tracker-master eventtracker
 mv settings.py eventtracker/settings.py
 ```
+
+Settings.py
+---
+```python
+reddituser=''
+redditpass=''
+client_id=''
+client_secret=''
+```
