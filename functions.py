@@ -141,16 +141,8 @@ def formatTableHeader():
 def formatNewTableHeader():
   return "| | | |\n|:-----------|:------------|:------------|\n"
 
-def formatWikiHeader():
-  return "#Starcraft Event List\nUpdated by /u/Automaton2000    \nSourced from [Liquipedia](http://wiki.teamliquid.net/starcraft2/Main_Page)\n\n"
-
-def liquipediaStringToWiki(game, lines):
-  output = formatWikiHeader()
-  output += lines
-  return output
-
 def getCurrentLiquipediaEventsForWiki(game):
-  wiki = liquipediaStringToWiki(game, liquipediaEventsJsonToSidebar(getLiquipediaEventsJson('starcraft'), getLiquipediaEventsJson('starcraft2')))
+  wiki = liquipediaEventsJsonToSidebar(getLiquipediaEventsJson('starcraft'), getLiquipediaEventsJson('starcraft2'))
   return wiki
 
 def getCurrentLiquipediaEventsForNewWiki(game):
