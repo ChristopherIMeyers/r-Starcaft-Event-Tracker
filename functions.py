@@ -145,6 +145,10 @@ def getCurrentLiquipediaEventsForWiki():
   wiki = liquipediaEventsJsonToSidebar(getLiquipediaEventsJson('starcraft'), getLiquipediaEventsJson('starcraft2'))
   return wiki
 
+def replaceNewEventTable(oldContent, newTable):
+  newContent = re.sub("(\| \|Starts \|Ends \|\r\n\|[^\r\n]+\r\n)(\|[^\r\n]+\r\n)*", newTable, oldContent)
+  return newContent
+
 def getCurrentLiquipediaEventsForNewWiki():
   wiki = liquipediaEventsJsonToNewSidebar(getLiquipediaEventsJson('starcraft'), getLiquipediaEventsJson('starcraft2'))
   return wiki + '[^source: ^liquipedia](https://liquipedia.net/starcraft2/Main_Page) ^under ^[CC-BY-SA](https://liquipedia.net/starcraft2/Liquipedia:Copyrights)'
@@ -157,4 +161,12 @@ def setWikiPage(prawLogin, subredditName, wikiPageName):
 def setNewWikiPage(prawLogin, subredditName, wikiPageName):
   subreddit = prawLogin.subreddit(subredditName)
   newContent = getCurrentLiquipediaEventsForNewWiki()
+  subreddit.wiki[wikiPageName].edit(newContent, 'beep boop - backing up event data')
+
+def updateSidebar(prawLogin, subredditName):
+  wikiPageName = "config/sidebar"
+  subreddit = prawLogin.subreddit(subredditName)
+  newTable = getCurrentLiquipediaEventsForWiki()
+  oldContent = subreddit.wiki[wikiPageName].content_md
+  newContent = replaceNewEventTable(oldContent, newTable)
   subreddit.wiki[wikiPageName].edit(newContent, 'beep boop - backing up event data')
