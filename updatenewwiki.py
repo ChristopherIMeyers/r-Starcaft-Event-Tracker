@@ -4,4 +4,4 @@ import settings
 
 prawLogin = functions.GetPraw()
 
-functions.setNewWikiPage(prawLogin, "eventlistnew")
+functions.setNewWikiPage(prawLogin)
