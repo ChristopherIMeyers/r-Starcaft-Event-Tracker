@@ -145,7 +145,7 @@ def getCurrentLiquipediaEventsForWiki():
   wiki = liquipediaEventsJsonToSidebar(getLiquipediaEventsJson('starcraft'), getLiquipediaEventsJson('starcraft2'))
   return wiki
 
-def getCurrentLiquipediaEventsForNewWiki(game):
+def getCurrentLiquipediaEventsForNewWiki():
   wiki = liquipediaEventsJsonToNewSidebar(getLiquipediaEventsJson('starcraft'), getLiquipediaEventsJson('starcraft2'))
   return wiki + '[^source: ^liquipedia](https://liquipedia.net/starcraft2/Main_Page) ^under ^[CC-BY-SA](https://liquipedia.net/starcraft2/Liquipedia:Copyrights)'
 
@@ -156,5 +156,5 @@ def setWikiPage(prawLogin, subredditName, wikiPageName, game):
 
 def setNewWikiPage(prawLogin, subredditName, wikiPageName, game):
   subreddit = prawLogin.subreddit(subredditName)
-  newContent = getCurrentLiquipediaEventsForNewWiki(game)
+  newContent = getCurrentLiquipediaEventsForNewWiki()
   subreddit.wiki[wikiPageName].edit(newContent, 'beep boop - backing up event data')
