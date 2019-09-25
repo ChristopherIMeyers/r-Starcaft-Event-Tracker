@@ -1,65 +1,61 @@
 >* Filters
 * *[How to use Filters](/r/starcraft/w/filtering_guide)*
-* [Normal (everything)](http://www.reddit.com/r/starcraft/)
-* [Fluff](http://fl.reddit.com/r/starcraft/)
-* [Fluffless](http://nf.reddit.com/r/starcraft/)
-* [No Spoilers](http://qq.reddit.com/r/starcraft/)
-* [No Spoilers/Fluff](http://fs.reddit.com/r/starcraft/)
-* [Videos](http://vd.reddit.com/r/starcraft/)
-* [Discussions](http://dp.reddit.com/r/starcraft/)
-* [Press](http://pr.reddit.com/r/starcraft/)
-* [Results](http://gg.reddit.com/r/starcraft/)
-* [No Flair](http://ff.reddit.com/r/starcraft/)
+* [Normal (everything)](https://www.reddit.com/r/starcraft)
+* [Fluff](https://www.reddit.com/r/starcraft/search?q=flair%3AFluff&restrict_sr=on&sort=new&t=all)
+* [Fluffless](https://www.reddit.com/r/starcraft/search?q=-flair%3AFluff&restrict_sr=on&sort=new&t=all)
+* [No Spoilers](https://www.reddit.com/r/starcraft/search?q=-flair%3Aspoiler+-flair%3A%22To+be+tagged%22&restrict_sr=on&sort=new&t=all)
+* [No Spoilers/Fluff](https://www.reddit.com/r/starcraft/search?q=-flair%3Aspoiler+-flair%3AFluff&restrict_sr=on&sort=new&t=all)
+* [Videos](https://www.reddit.com/r/starcraft/search?q=flair%3AVideo&restrict_sr=on&sort=new&t=all)
+* [eSports](https://www.reddit.com/r/starcraft/search?q=flair%3Aesports&restrict_sr=on&sort=new&t=all)
+* [Meta and BluePosts](https://goo.gl/Md7IV3)
+* [No User Flair](http://goo.gl/IfHo7G)
 
 >#
 
 >* Community
-* [New to /r/starcraft?](/r/starcraft/w/new)
 * [Rules](/r/starcraft/w/rules)
 * [FAQ](/r/starcraft/w/FAQ)
 * [Wiki](/r/starcraft/w/index)
-* [IRC channel](http://webchat.quakenet.org/?channels=r/starcraft&uio=d4)
+* [Reddit "Blue/Dev Tracker"](/r/starcraft/w/bluetracker)
+* [IRC Channel](http://goo.gl/Jnj9UX)
+* [Discord Server](https://discord.gg/0g2SxTpnHG3A1mBB)
 * [Reddit In-Game Group](/19zg8o)
-* [Wallpapers](http://mrmaple.imgur.com/)
 
 >#
 
 >* Events
-* *General*
-* [Liquipedia WCS 2014 Portal](http://wiki.teamliquid.net/starcraft2/Portal:2014_WCS)
-* [TL Event Tracker](http://goo.gl/PDDVL)
-* [TL Calendar](http://www.teamliquid.net/calendar/)
-* [TL Tournament Tracker](http://www.teamliquid.net/tournaments/)
-* [TL Liquipedia Listing](http://wiki.teamliquid.net/starcraft2/Main_Page)
-* *Redditors*
-* [Tournament Archive](http://www.screddit.eu/tournaments/)
+* [Liquipedia WCS 2018 Portal](https://wiki.teamliquid.net/starcraft2/Portal:WCS)
+* [TL Event Tracker](https://liquipedia.net/starcraft2/Premier_Tournaments)
+* [TL Calendar](https://www.teamliquid.net/calendar/)
+* [TL Tournament Tracker](https://www.teamliquid.net/tournaments/)
+* [TL Liquipedia Listing](https://liquipedia.net/starcraft2/Main_Page)
 
 >#
 
 >* Streams
-* [Team Liquid list](http://www.teamliquid.net/video/streams/)
-* [Teevox](http://teevox.com/sc)
-* [Twitch.tv](http://goo.gl/Bl0KW)
-* [More...](/r/starcraft/w/streams_vods)
-
+* [Team Liquid list](https://www.teamliquid.net/video/streams/)
+* [Twitch.tv](http://goo.gl/MgYPb0)
+* [More](/r/starcraft/w/streams_vods)
 
 >#
 
 >* VODs
 * [SC2Casts](http://sc2casts.com/)
-* [SC2Ratings](http://sc2ratings.com/)
 * [SC2Links](http://sc2links.com/)
 * /r/SpoilerFreeSC
-* [More...](/r/starcraft/w/streams_vods)
+* [More](/r/starcraft/w/streams_vods)
 
 >#
 
 >* Replays
-* [drop.sc](http://drop.sc/)
 * [GGTracker](http://ggtracker.com/)
 * [SC2ReplayStats](http://sc2replaystats.com/)
-* [More...](http://goo.gl/rstHt)
+* [SpawningTool](http://spawningtool.com/)
+* [More](http://goo.gl/rstHt)
 
+[New to r/Starcraft?](https://www.reddit.com/r/starcraft/wiki/new)
+
+[chat on discord](https://discord.gg/0g2SxTpnHG3A1mBB)
 
 **General information**
 
@@ -68,7 +64,6 @@
 * [Green verification check mark guide and verified users list](/r/starcraft/w/verified_users)
 
 * To hide spoilers use format: \[text to hide](/spoiler) ([details](/r/StarcraftArchives/comments/14dwcy/_/c7ceync))
-
 
 **Tag Meanings**
 
@@ -86,28 +81,43 @@ Color|Meaning
 | |Starts |Ends |
 |:-----------|:------------|:------------|
 | **Upcoming**| | |
-|[2014 Dreamhack Valencia](http://wiki.teamliquid.net/starcraft2/2014_DreamHack_Open/Valencia) | 18 Jul | 19 Jul |
-|[2014 GSL Season 3](http://wiki.teamliquid.net/starcraft2/2014_Global_StarCraft_II_League_Season_3) | 16 Jul | 4 Oct |
-|[IEM Season IX - Shenzhen](http://wiki.teamliquid.net/starcraft2/IEM_Season_IX_-_Shenzhen) | 16 Jul | 21 Jul |
-|[Red Bull BG: Atlanta](http://wiki.teamliquid.net/starcraft2/2014 Red Bull Battle Grounds: Atlanta) | 11 Jul | 13 Jul |
+|[BW Jeez weekly 43](http://liquipedia.net/starcraft/BW_Jeez_weekly_43) | Oct&nbsp;27 | Oct&nbsp;27 |
+|[BW Jeez weekly 42](http://liquipedia.net/starcraft/BW_Jeez_weekly_42) | Oct&nbsp;20 | Oct&nbsp;20 |
+|[BW Jeez weekly 41](http://liquipedia.net/starcraft/BW_Jeez_weekly_41) | Oct&nbsp;13 | Oct&nbsp;13 |
+|[Corrupted Cup 2019](http://liquipedia.net/starcraft/Corrupted_Cup_2019) | Oct&nbsp;12 | Oct&nbsp;13 |
+|[BW Jeez weekly 40](http://liquipedia.net/starcraft/BW_Jeez_weekly_40) | Oct&nbsp;06 | Oct&nbsp;06 |
+|[BWCL S49](http://liquipedia.net/starcraft/BWCL_Season_49) | Oct&nbsp;01 | Feb&nbsp;01 |
+|[BW Jeez weekly 39](http://liquipedia.net/starcraft/BW_Jeez_weekly_39) | Sep&nbsp;29 | Sep&nbsp;29 |
+|[World Electronic Sports Games 2019](http://liquipedia.net/starcraft2/World_Electronic_Sports_Games/2019) | Mar&nbsp;01 | Mar&nbsp;01 |
+|[HomeStory Cup XX](http://liquipedia.net/starcraft2/HomeStory_Cup/20) | Nov&nbsp;21 | Nov&nbsp;24 |
+|[2019 WCS Global Finals](http://liquipedia.net/starcraft2/2019_WCS_Global_Finals) | Oct&nbsp;25 | Nov&nbsp;02 |
+|[2019 AfreecaTV GSL Super Tournament 2](http://liquipedia.net/starcraft2/2019_AfreecaTV_GSL_Super_Tournament_2) | Oct&nbsp;03 | Oct&nbsp;06 |
+|[StarCraft II: NationWars 2019](http://liquipedia.net/starcraft2/StarCraft_II:_NationWars_2019) | Sep&nbsp;30 | Dec&nbsp;08 |
 | **Ongoing**| | |
-|[2014 Proleague](http://wiki.teamliquid.net/starcraft2/2014_Proleague/Round_4/Round_Robin) | 29 Dec | 9 Aug |
-|[EPS Germany 2014](http://wiki.teamliquid.net/starcraft2/ESL_Pro_Series_Germany/Summer_Season_2014) | 18 Jun | 8 Aug |
-|[Nation Wars II](http://wiki.teamliquid.net/starcraft2/NationWars_II) | 7 May | 26 July |
-|[TeSL 2013-2014 S4](http://wiki.teamliquid.net/starcraft2/Taiwan_eSports_League/2013-2014/Season_4) | 9 May | 6 July |
-|[2014 WCS S2 America](http://wiki.teamliquid.net/starcraft2/2014_WCS_Season_2_America/Premier) | 29 Apr | 6 Jul |
-|[2014 WCS S2 Europe](http://wiki.teamliquid.net/starcraft2/2014_WCS_Season_2_Europe/Premier) | 29 Apr | 6 Jul |
-|[2014 GSL Season 2](http://wiki.teamliquid.net/starcraft2/2014_Global_StarCraft_II_League_Season_2/Code_S) | 9 Apr | 28 Jun |
+|[Costa Rica StarCraft League 1](http://liquipedia.net/starcraft/Costa_Rica_StarCraft_League_1) | Aug&nbsp;12 | Nov&nbsp;17 |
+|[Bombastic StarLeague 7](http://liquipedia.net/starcraft/Bombastic_StarLeague_7) | Sep&nbsp;14 | Nov&nbsp;02 |
+|[King of Kings 48](http://liquipedia.net/starcraft/BWCL_Season_48/KoK) | Sep&nbsp;15 | Oct&nbsp;13 |
+|[NeXT 2019 Autumn](http://liquipedia.net/starcraft2/Netease_Esports_X_Tournaments/2019/Autumn) | Sep&nbsp;17 | Nov&nbsp;08 |
+|[China Team Championship 2019 S2](http://liquipedia.net/starcraft2/China_Team_Championship_2019_Season/2) | Aug&nbsp;25 | Oct&nbsp;13 |
+|[2019 GSL S3](http://liquipedia.net/starcraft2/2019_Global_StarCraft_II_League_Season_3) | Jul&nbsp;03 | Sep&nbsp;28 |
 | **Completed**| | |
-|[2014 MLG Anaheim](http://wiki.teamliquid.net/starcraft2/2014_MLG_Anaheim) | 20 Jun | 22 Jun |
-|[Red Bull BG North America](http://wiki.teamliquid.net/starcraft2/2014_Red_Bull_Battle_Grounds:_North_America) | 17 Jun | 19 Jun |
-
-
-[^^source](http://wiki.teamliquid.net/starcraft2/Main_Page)
+|[BW Jeez weekly 38](http://liquipedia.net/starcraft/BW_Jeez_weekly_38) | Sep&nbsp;22 | Sep&nbsp;22 |
+|[BW Jeez weekly 37](http://liquipedia.net/starcraft/BW_Jeez_weekly_37) | Sep&nbsp;15 | Sep&nbsp;15 |
+|[DreamHack Montreal 2019 BW LAN](http://liquipedia.net/starcraft/Dreamhack_Montreal_2019) | Sep&nbsp;06 | Sep&nbsp;08 |
+|[BW Jeez weekly 36](http://liquipedia.net/starcraft/BW_Jeez_weekly_36) | Sep&nbsp;08 | Sep&nbsp;08 |
+|[BSL7 Ladder Tournament #3](http://liquipedia.net/starcraft/BSL7_Ladder_Tournament_3) | Sep&nbsp;07 | Sep&nbsp;07 |
+|[KCM Race Survival S11](http://liquipedia.net/starcraft/KCM_Race_Survival/Season_11) | Jul&nbsp;18 | Sep&nbsp;05 |
+|[BW Jeez weekly 35](http://liquipedia.net/starcraft/BW_Jeez_weekly_35) | Sep&nbsp;01 | Sep&nbsp;01 |
+|[2019 WCS Fall](http://liquipedia.net/starcraft2/2019_WCS_Fall) | Sep&nbsp;06 | Sep&nbsp;08 |
+|[2019 GSL vs the World](http://liquipedia.net/starcraft2/2019_GSL_vs._the_World) | Aug&nbsp;15 | Aug&nbsp;18 |
+|[Copa América 2019 S2](http://liquipedia.net/starcraft2/Copa_America_2019/Season_2) | Jul&nbsp;27 | Aug&nbsp;11 |
+[^source: ^liquipedia](https://liquipedia.net/starcraft2/Main_Page) ^under ^[CC-BY-SA](https://liquipedia.net/starcraft2/Liquipedia:Copyrights)
 
 **Moderators remove** ([rule list](/r/starcraft/w/rules)):
 
 * Personal information
+
+* Excessive trolling
 
 * Direct threats
 
@@ -123,23 +133,24 @@ Color|Meaning
 
 * Promotional submissions that exceed "2 per 1 per 1"
 
-* Same- and similar-topic submissions that exceed 10 per top 25
+* Duplicate results posts for the same individual match will be removed.
 
-* Excessive trolling
+* Same- and similar-topic submissions that exceed 4 per top 25
 
 
 **Related reddits**
 
-* /r/allthingsprotoss
-* /r/AllThingsTerran
-* /r/allthingszerg
-* /r/BarCraft
-* /r/castit
-* /r/day9
-* /r/esports
-* /r/sc2partners
 * /r/SpoilerFreeSC
-* /r/starcraft_strategy
-* /r/starcraft2_class
-* /r/StarcraftCirclejerk
+* /r/AllThingsProtoss
+* /r/AllThingsTerran
+* /r/AllThingsZerg
+* /r/starcraft2coop 
 * [More related reddits](/r/starcraft/w/related_reddits)
+
+**More Blizzard Games**
+
+/r/wow
+/r/diablo
+/r/hearthstone
+/r/heroesofthestorm
+/r/overwatch

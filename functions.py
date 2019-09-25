@@ -141,7 +141,7 @@ def formatTableHeader():
 def formatNewTableHeader():
   return "| | | |\n|:-----------|:------------|:------------|\n"
 
-def getCurrentLiquipediaEventsForWiki(game):
+def getCurrentLiquipediaEventsForWiki():
   wiki = liquipediaEventsJsonToSidebar(getLiquipediaEventsJson('starcraft'), getLiquipediaEventsJson('starcraft2'))
   return wiki
 
@@ -151,7 +151,7 @@ def getCurrentLiquipediaEventsForNewWiki(game):
 
 def setWikiPage(prawLogin, subredditName, wikiPageName, game):
   subreddit = prawLogin.subreddit(subredditName)
-  newContent = getCurrentLiquipediaEventsForWiki(game)
+  newContent = getCurrentLiquipediaEventsForWiki()
   subreddit.wiki[wikiPageName].edit(newContent, 'beep boop - backing up event data')
 
 def setNewWikiPage(prawLogin, subredditName, wikiPageName, game):
