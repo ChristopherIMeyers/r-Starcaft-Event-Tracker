@@ -4,4 +4,4 @@ import settings
 
 prawLogin = functions.GetPraw()
 
-functions.setWikiPage(prawLogin, "Starcraft", "eventlist", "starcraft2")
+functions.setWikiPage(prawLogin, "Starcraft", "eventlist")
