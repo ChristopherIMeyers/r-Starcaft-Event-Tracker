@@ -173,4 +173,4 @@ def updateSidebar(prawLogin):
   newTable = getCurrentLiquipediaEventsForWiki()
   oldContent = subreddit.wiki[wikiPageName].content_md
   newContent = replaceNewEventTable(oldContent, newTable)
-  subreddit.wiki[wikiPageName].edit(newContent, 'beep boop - backing up event data')
+  subreddit.wiki[wikiPageName].edit(newContent, 'beep boop - updating event data')
