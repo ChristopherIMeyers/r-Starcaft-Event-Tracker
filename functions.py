@@ -182,3 +182,9 @@ def updateSidebar(prawLogin):
   oldContent = subreddit.wiki[wikiPageName].content_md
   newContent = replaceNewEventTable(oldContent, newTable)
   subreddit.wiki[wikiPageName].edit(newContent, 'beep boop - updating event data')
+
+def updateWidget(prawLogin):
+  newContent = getCurrentLiquipediaEventsForNewWiki()
+  subreddit = prawLogin.subreddit(subredditName)
+  widget = getEventListWidget(subreddit)
+  widget.mod.update(text = newContent)
