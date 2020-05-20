@@ -155,6 +155,14 @@ def getCurrentLiquipediaEventsForNewWiki():
   wiki = liquipediaEventsJsonToNewSidebar(getLiquipediaEventsJson('starcraft'), getLiquipediaEventsJson('starcraft2'))
   return wiki + '[^source: ^liquipedia](https://liquipedia.net/starcraft2/Main_Page) ^under ^[CC-BY-SA](https://liquipedia.net/starcraft2/Liquipedia:Copyrights)'
 
+def getEventListWidget(subreddit):
+  for widget in subreddit.widgets.sidebar:
+    if isinstance(widget, praw.models.TextArea):
+      if widget.shortName == 'Event List':
+        return widget
+  raise ValueError('Event List widget not found')
+
+
 def setWikiPage(prawLogin):
   wikiPageName = 'eventlist'
   subreddit = prawLogin.subreddit(subredditName)
