@@ -3,9 +3,9 @@ import re
 import json
 from itertools import groupby
 import os
-from StringIO import StringIO
+from io import StringIO
 import gzip
-import urllib2
+import requests
 
 subredditName = 'starcraft'
 
@@ -19,19 +19,13 @@ if os.path.exists('settings.py'):
                        user_agent = 'r/starcraft event tracker script')
 
 def getLiquipediaEventsJson(game):
-  request = urllib2.Request('https://liquipedia.net/' + game + '/api.php?format=json&action=query&titles=Liquipedia:Tournaments&prop=revisions&rvprop=content')
-  request.add_header('Accept-encoding', 'gzip')
-  request.add_header('User-Agent', 'reddit.com/r/starcraft event list bot')
-  response = urllib2.urlopen(request)
-  if response.info().get('Content-Encoding') == 'gzip':
-    buf = StringIO(response.read())
-    f = gzip.GzipFile(fileobj=buf)
-    return f.read()
-  raise ValueError("Expected server to respond with Content-Encoding: gzip but was missing")
+  request = requests.get('https://liquipedia.net/' + game + '/api.php?format=json&action=query&titles=Liquipedia:Tournaments&prop=revisions&rvprop=content',
+                         headers={'User-Agent': 'reddit.com/r/starcraft event list bot'})
+  return request.text
 
 def liquipediaEventsJsonIntoSource(data):
   jsonData = json.loads(data)
-  return jsonData['query']['pages'].values()[0]['revisions'][0]['*']
+  return list(jsonData['query']['pages'].values())[0]['revisions'][0]['*']
 
 def isJsonSectionLine(str):
   return re.match("^\*[^*].*", str) != None
@@ -71,13 +65,13 @@ def formatJsonSection(section):
 
   sectionHeader = sc1[0][1:]
 
-  dicts1 = map(jsonEventToDict, sc1[1:])
-  filteredDicts1 = filter(filterEvents, dicts1)
-  formatted1 = map(formatEventRow('starcraft'), filteredDicts1)
+  dicts1 = list(map(jsonEventToDict, sc1[1:]))
+  filteredDicts1 = list(filter(filterEvents, dicts1))
+  formatted1 = list(map(formatEventRow('starcraft'), filteredDicts1))
 
-  dicts2 = map(jsonEventToDict, sc2[1:])
-  filteredDicts2 = filter(filterEvents, dicts2)
-  formatted2 = map(formatEventRow('starcraft2'), filteredDicts2)
+  dicts2 = list(map(jsonEventToDict, sc2[1:]))
+  filteredDicts2 = list(filter(filterEvents, dicts2))
+  formatted2 = list(map(formatEventRow('starcraft2'), filteredDicts2))
 
   formattedBoth = formatted1 + formatted2
 
@@ -92,11 +86,11 @@ def liquipediaEventsJsonToZippedData(data1, data2):
   lines2 = liquipediaEventsIntoLines(src2)
   split2 = splitByJsonSection(lines2)
 
-  return zip(split1[1:], split2[1:])
+  return list(zip(split1[1:], split2[1:]))
 
 def liquipediaEventsJsonToSidebar(data1, data2):
   zipped = liquipediaEventsJsonToZippedData(data1, data2)
-  formattedSections = map(formatJsonSection, zipped)
+  formattedSections = list(map(formatJsonSection, zipped))
   return formatTableHeader() + "".join(formattedSections)
 
 def liquipediaEventsJsonToNewSidebar(data1, data2):
@@ -104,8 +98,8 @@ def liquipediaEventsJsonToNewSidebar(data1, data2):
     return formatNewTableHeader() + section + '\n'
 
   zipped = liquipediaEventsJsonToZippedData(data1, data2)
-  formattedSections = map(formatJsonSection, zipped)
-  sectionsWithHeaders = map(prependTableHaders, formattedSections)
+  formattedSections = list(map(formatJsonSection, zipped))
+  sectionsWithHeaders = list(map(prependTableHaders, formattedSections))
   return "".join(sectionsWithHeaders)
 
 def eventNameReplacements(eventName):
@@ -127,11 +121,11 @@ def filterEvents(event):
 def liquipediaEventsIntoLines(events):
   lines = events.split('\n')
   def f(x): return x != ''
-  return filter(f, lines)
+  return list(filter(f, lines))
 
 def formatEventRow(game):
   def formatEventRowInner(event):
-    return u"|[{0}](http://liquipedia.net/{1}/{2}) | {3} | {4} |\n".format(event['name'], game, event['link'], event['start'], event['end'])
+    return "|[{0}](http://liquipedia.net/{1}/{2}) | {3} | {4} |\n".format(event['name'], game, event['link'], event['start'], event['end'])
   return formatEventRowInner
 
 def formatSectionRow(sectionName):
@@ -148,7 +142,8 @@ def getCurrentLiquipediaEventsForWiki():
   return wiki
 
 def replaceNewEventTable(oldContent, newTable):
-  newContent = re.sub("(\| \|Starts \|Ends \|\r\n\|[^\r\n]+\r\n)(\|[^\r\n]+\r\n)*", newTable, oldContent)
+  oldContentNoReturns = re.sub("\r", "", oldContent)
+  newContent = re.sub("(\| \|Starts \|Ends \|\n\|[^\n]+\n)(\|[^\n]+\n)*", newTable, oldContentNoReturns)
   return newContent
 
 def getCurrentLiquipediaEventsForNewWiki():

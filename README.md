@@ -3,24 +3,13 @@ r-Starcaft-Event-Tracker [![Build Status](https://travis-ci.org/ChristopherIMeye
 
 The r/Starcraft Event Tracker
 
-Update AWS Server
+install locally (windows)
 ---
 ```bash
-sudo yum install python27
-sudo python27 -m pip install --upgrade pip
-sudo python27 -m pip install --upgrade praw
-```
+choco install python3
 
-Update Script on Server
----
-```bash
-cp eventtracker/settings.py settings.py
-rm -r eventtracker
-wget https://github.com/ChristopherIMeyers/r-Starcaft-Event-Tracker/archive/master.zip
-unzip master.zip
-rm master.zip
-mv r-Starcaft-Event-Tracker-master eventtracker
-mv settings.py eventtracker/settings.py
+pip install praw -t .
+pip install requests -t .
 ```
 
 Settings.py
