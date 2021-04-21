@@ -9,6 +9,7 @@ install locally (windows)
 choco install python3
 
 pip install praw -t .
+pip install requests -t .
 ```
 
 Settings.py
