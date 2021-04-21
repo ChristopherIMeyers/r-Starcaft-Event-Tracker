@@ -143,7 +143,8 @@ def getCurrentLiquipediaEventsForWiki():
   return wiki
 
 def replaceNewEventTable(oldContent, newTable):
-  newContent = re.sub("(\| \|Starts \|Ends \|\r\n\|[^\r\n]+\r\n)(\|[^\r\n]+\r\n)*", newTable, oldContent)
+  oldContentNoReturns = re.sub("\r", "", oldContent)
+  newContent = re.sub("(\| \|Starts \|Ends \|\n\|[^\n]+\n)(\|[^\n]+\n)*", newTable, oldContentNoReturns)
   return newContent
 
 def getCurrentLiquipediaEventsForNewWiki():
