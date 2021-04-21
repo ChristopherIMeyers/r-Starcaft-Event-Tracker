@@ -5,7 +5,6 @@ from itertools import groupby
 import os
 from io import StringIO
 import gzip
-import urllib.request, urllib.error, urllib.parse
 import requests
 
 subredditName = 'starcraft'
