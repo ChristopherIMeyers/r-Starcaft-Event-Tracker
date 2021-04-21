@@ -6,6 +6,7 @@ import os
 from io import StringIO
 import gzip
 import urllib.request, urllib.error, urllib.parse
+import requests
 
 subredditName = 'starcraft'
 
@@ -19,15 +20,9 @@ if os.path.exists('settings.py'):
                        user_agent = 'r/starcraft event tracker script')
 
 def getLiquipediaEventsJson(game):
-  request = urllib.request.Request('https://liquipedia.net/' + game + '/api.php?format=json&action=query&titles=Liquipedia:Tournaments&prop=revisions&rvprop=content')
-  request.add_header('Accept-encoding', 'gzip')
-  request.add_header('User-Agent', 'reddit.com/r/starcraft event list bot')
-  response = urllib.request.urlopen(request)
-  if response.info().get('Content-Encoding') == 'gzip':
-    buf = StringIO(response.read())
-    f = gzip.GzipFile(fileobj=buf)
-    return f.read()
-  raise ValueError("Expected server to respond with Content-Encoding: gzip but was missing")
+  request = requests.get('https://liquipedia.net/' + game + '/api.php?format=json&action=query&titles=Liquipedia:Tournaments&prop=revisions&rvprop=content',
+                         headers={'User-Agent': 'reddit.com/r/starcraft event list bot'})
+  return request.text
 
 def liquipediaEventsJsonIntoSource(data):
   jsonData = json.loads(data)
