@@ -10,22 +10,30 @@ class CheckSanity(unittest.TestCase):
     self.assertTrue(len(content) < 3000)
 
   def test_liquipediaEventsJsonIntoSource(self):
-    data1 = open('testdata/lpevents.1.json.txt', 'r').read()
-    data2 = open('testdata/lpevents.2.json.txt', 'r').read()
+    with open('testdata/lpevents.1.json.txt', 'r') as f:
+      data1 = f.read()
+    with open('testdata/lpevents.2.json.txt', 'r') as f:
+      data2 = f.read()
     self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data1)), 834)
     self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data2)), 2056)
 
   def test_liquipediaEventsJsonToSidebar(self):
-    inputData1 = open('testdata/lpevents.1.json.txt', 'r').read()
-    inputData2 = open('testdata/lpevents.2.json.txt', 'r').read()
-    expectedData = open('testdata/lpevents.json.output.txt', 'r').read()
+    with open('testdata/lpevents.1.json.txt', 'r') as f:
+      inputData1 = f.read()
+    with open('testdata/lpevents.2.json.txt', 'r') as f:
+      inputData2 = f.read()
+    with open('testdata/lpevents.json.output.txt', 'r') as f:
+      expectedData = f.read()
     self.assertEqual(functions.liquipediaEventsJsonToSidebar(inputData1, inputData2), expectedData)
 
   def test_liquipediaEventsJsonToNewSidebar(self):
     self.maxDiff = None
-    inputData1 = open('testdata/lpevents.1.json.txt', 'r').read()
-    inputData2 = open('testdata/lpevents.2.json.txt', 'r').read()
-    expectedData = open('testdata/newsidebar.output.txt', 'r').read()
+    with open('testdata/lpevents.1.json.txt', 'r') as f:
+      inputData1 = f.read()
+    with open('testdata/lpevents.2.json.txt', 'r') as f:
+      inputData2 = f.read()
+    with open('testdata/newsidebar.output.txt', 'r') as f:
+      expectedData = f.read()
     self.assertEqual(functions.liquipediaEventsJsonToNewSidebar(inputData1, inputData2), expectedData)
 
   def test_intoLines(self):
