@@ -1,5 +1,4 @@
 import unittest
-import codecs
 
 import functions
 
@@ -17,16 +16,16 @@ class CheckSanity(unittest.TestCase):
     self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data2)), 2056)
 
   def test_liquipediaEventsJsonToSidebar(self):
-    inputData1 = codecs.open('testdata/lpevents.1.json.txt', 'r', "utf-8").read()
-    inputData2 = codecs.open('testdata/lpevents.2.json.txt', 'r', "utf-8").read()
-    expectedData = codecs.open('testdata/lpevents.json.output.txt', 'r', "utf-8").read()
+    inputData1 = open('testdata/lpevents.1.json.txt', 'r').read()
+    inputData2 = open('testdata/lpevents.2.json.txt', 'r').read()
+    expectedData = open('testdata/lpevents.json.output.txt', 'r').read()
     self.assertEqual(functions.liquipediaEventsJsonToSidebar(inputData1, inputData2), expectedData)
 
   def test_liquipediaEventsJsonToNewSidebar(self):
     self.maxDiff = None
-    inputData1 = codecs.open('testdata/lpevents.1.json.txt', 'r', "utf-8").read()
-    inputData2 = codecs.open('testdata/lpevents.2.json.txt', 'r', "utf-8").read()
-    expectedData = codecs.open('testdata/newsidebar.output.txt', 'r', "utf-8").read()
+    inputData1 = open('testdata/lpevents.1.json.txt', 'r').read()
+    inputData2 = open('testdata/lpevents.2.json.txt', 'r').read()
+    expectedData = open('testdata/newsidebar.output.txt', 'r').read()
     self.assertEqual(functions.liquipediaEventsJsonToNewSidebar(inputData1, inputData2), expectedData)
 
   def test_intoLines(self):
