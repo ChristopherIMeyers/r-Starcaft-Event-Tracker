@@ -1,33 +1,32 @@
 | |Starts |Ends |
 |:-----------|:------------|:------------|
 | **Upcoming**| | |
-|[BW Jeez weekly 8](http://liquipedia.net/starcraft/BW_Jeez_weekly_8) | Feb&nbsp;24 | Feb&nbsp;24 |
-|[2019 WCS Summer](http://liquipedia.net/starcraft2/2019_WCS_Summer) | Jul&nbsp;12 | Jul&nbsp;14 |
-|[2019 GSL S3](http://liquipedia.net/starcraft2/2019_Global_StarCraft_II_League_Season_3) | Jul&nbsp;03 | Sep&nbsp;21 |
-|[2019 WCS Spring](http://liquipedia.net/starcraft2/2019_WCS_Spring) | May&nbsp;17 | May&nbsp;19 |
-|[2019 GSL S2](http://liquipedia.net/starcraft2/2019_Global_StarCraft_II_League_Season_2) | Apr&nbsp;29 | Jun&nbsp;22 |
-|[2019 AfreecaTV GSL Super Tournament 1](http://liquipedia.net/starcraft2/2019_AfreecaTV_GSL_Super_Tournament_1) | Apr&nbsp;18 | Apr&nbsp;21 |
-|[World Electronic Sports Games 2018](http://liquipedia.net/starcraft2/World_Electronic_Sports_Games_2018) | Mar&nbsp;11 | Mar&nbsp;17 |
-|[IEM Season XIII - Katowice](http://liquipedia.net/starcraft2/IEM_Season_XIII_-_Katowice) | Feb&nbsp;25 | Mar&nbsp;03 |
+|[CSL 10: 2023 Fall](http://liquipedia.net/starcraft/China_Seasons_League/10) | Aug&nbsp;21 | Sep&nbsp;30 |
+|[Tournament of Legends International S4](http://liquipedia.net/starcraft/Tournament_of_Legends/4) | Sep&nbsp;09 | Sep&nbsp;09 |
+|[Copa Latinoamericana S2](http://liquipedia.net/starcraft/Copa_Latinoamericana/2) | Oct&nbsp;10 | Nov&nbsp;11 |
+|[Bombastic 25th Anniversary LAN](http://liquipedia.net/starcraft/Bombastic_Starleague/25th_Anniversary_LAN) | Dec&nbsp;09 | Dec&nbsp;10 |
+|[ESL Winter](http://liquipedia.net/starcraft2/ESL_Pro_Tour/2023/24/Masters/Winter) | Dec&nbsp;16 | Dec&nbsp;17 |
+|[2023 GSL S3: Code S](http://liquipedia.net/starcraft2/Global_StarCraft_II_League/2023/Season_3) | Oct&nbsp;10 | Nov&nbsp;02 |
+|[WTL 2023 Winter](http://liquipedia.net/starcraft2/World_Team_League/2023/Winter) | Sep&nbsp;29 | Jan&nbsp;17 |
+|[PiG Sty Festival 4.0](http://liquipedia.net/starcraft2/PiG_Sty_Festival/4) | Sep&nbsp;20 | Sep&nbsp;24 |
+|[WardiTV Korean Royale S2](http://liquipedia.net/starcraft2/WardiTV_Korean_Royale/2) | Sep&nbsp;12 | Oct&nbsp;01 |
+|[Master's Coliseum 6](http://liquipedia.net/starcraft2/Master's_Coliseum/6) | Aug&nbsp;21 | Sep&nbsp;10 |
 | **Ongoing**| | |
-|[BWCL S47](http://liquipedia.net/starcraft/BWCL_Season_47) | Jan&nbsp;20 | May&nbsp;01 |
-|[2018 Shinhan Tank Proleague](http://liquipedia.net/starcraft/Stpl) | Mar&nbsp;26 | May&nbsp;01 |
-|[Bombastic StarLeague 6](http://liquipedia.net/starcraft/Bombastic_StarLeague_6) | Feb&nbsp;02 | Mar&nbsp;24 |
-|[Afreeca Starleague S7](http://liquipedia.net/starcraft/Afreeca_Starleague_Season_7) | Jan&nbsp;13 | Mar&nbsp;20 |
-|[2019 WCS Winter Americas](http://liquipedia.net/starcraft2/2019_WCS_Winter/Americas) | Jan&nbsp;31 | Apr&nbsp;14 |
-|[2019 WCS Winter Europe](http://liquipedia.net/starcraft2/2019_WCS_Winter/Europe) | Jan&nbsp;31 | Apr&nbsp;14 |
-|[2019 GSL S1](http://liquipedia.net/starcraft2/2019_Global_StarCraft_II_League_Season_1) | Feb&nbsp;02 | Apr&nbsp;13 |
-|[OSC Team Championship 2018](http://liquipedia.net/starcraft2/OSC_Team_Championship_2018) | May&nbsp;01 | Feb&nbsp;28 |
+|[FS Mania](http://liquipedia.net/starcraft/Fighting_Spirit_Mania) | Dec&nbsp;05 | Oct&nbsp;15 |
+|[KCM Ladies Race Survival 2023 S3](http://liquipedia.net/starcraft/KCM/Race_Survival/Ladies/2023/3) | Jul&nbsp;04 | Sep&nbsp;05 |
+|[KCM Race Survival 2023 S3](http://liquipedia.net/starcraft/KCM/Race_Survival/2023/3) | Jul&nbsp;05 | Sep&nbsp;06 |
+|[NWSL S1](http://liquipedia.net/starcraft/New_Worlds_Star_League_Season/1) | Jul&nbsp;06 | Sep&nbsp;01 |
+|[ASL S16](http://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/16) | Aug&nbsp;14 | Oct&nbsp;13 |
 | **Completed**| | |
-|[BW Jeez weekly 7](http://liquipedia.net/starcraft/BW_Jeez_weekly_7) | Feb&nbsp;17 | Feb&nbsp;17 |
-|[Coach Pupil League S3](http://liquipedia.net/starcraft/Coach_pupil_league_S3) | Sep&nbsp;09 | Feb&nbsp;10 |
-|[BW Jeez weekly 6](http://liquipedia.net/starcraft/BW_Jeez_weekly_6) | Feb&nbsp;10 | Feb&nbsp;10 |
-|[BW Jeez weekly 5](http://liquipedia.net/starcraft/BW_Jeez_weekly_5) | Feb&nbsp;03 | Feb&nbsp;03 |
-|[Have At You! #28](http://liquipedia.net/starcraft/Have_At_You_28) | Feb&nbsp;03 | Feb&nbsp;03 |
-|[BW Jeez weekly 4](http://liquipedia.net/starcraft/BW_Jeez_weekly_4) | Jan&nbsp;27 | Jan&nbsp;27 |
-|[EGM Fight Night #1](http://liquipedia.net/starcraft/EGM_Fight_Night_1) | Jan&nbsp;26 | Jan&nbsp;26 |
-|[WardiTV Team Liquid Map Contest Tournament #4](http://liquipedia.net/starcraft2/WardiTV_Team_Liquid_Map_Contest_Tournament_4) | Feb&nbsp;11 | Feb&nbsp;17 |
-|[NeXT 2018 Winter](http://liquipedia.net/starcraft2/Netease_Esports_X_Tournaments/2018/Winter) | Jan&nbsp;18 | Jan&nbsp;19 |
-|[GPL 2018 - Grand Finals](http://liquipedia.net/starcraft2/GPL_2018_Grand_Finals) | Dec&nbsp;22 | Jan&nbsp;11 |
-|[National Electronic Sports Open 2018](http://liquipedia.net/starcraft2/National_Electronic_Sports_Open_2018) | Jan&nbsp;04 | Jan&nbsp;06 |
-|[Cup of Russia 2018](http://liquipedia.net/starcraft2/Cup_of_Russia_2018) | Nov&nbsp;24 | Dec&nbsp;16 |
+|[GRS S6](http://liquipedia.net/starcraft/GAN_Race_Survival/6) | Apr&nbsp;22 | Aug&nbsp;12 |
+|[LASL S16](http://liquipedia.net/starcraft/AfreecaTV/Ladies_StarCraft_League/16) | Jul&nbsp;27 | Aug&nbsp;12 |
+|[CSCL: Masked Kings S2](http://liquipedia.net/starcraft/CSCL/2) | Jul&nbsp;01 | Aug&nbsp;08 |
+|[Gamers8 2023: Legends](http://liquipedia.net/starcraft/Gamers8/2023/Legends) | Aug&nbsp;06 | Aug&nbsp;06 |
+|[CasterMuse Narak StarLeague S6](http://liquipedia.net/starcraft/CasterMuse_StarLeague/Narak/6) | Jun&nbsp;19 | Aug&nbsp;02 |
+|[WTL 2023 Summer](http://liquipedia.net/starcraft2/World_Team_League/2023/Summer) | Apr&nbsp;18 | Aug&nbsp;13 |
+|[Gamers8 2023](http://liquipedia.net/starcraft2/Gamers8/2023) | Aug&nbsp;03 | Aug&nbsp;06 |
+|[Gamers8 2023: Legends](http://liquipedia.net/starcraft2/Gamers8/2023/Legends) | Aug&nbsp;05 | Aug&nbsp;05 |
+|[2023 GSL S2: Code S](http://liquipedia.net/starcraft2/Global_StarCraft_II_League/2023/Season_2) | Jul&nbsp;04 | Jul&nbsp;27 |
+|[AfreecaTV Champions Cup 2](http://liquipedia.net/starcraft2/AfreecaTV_Champions_Cup/2) | Jul&nbsp;21 | Jul&nbsp;23 |
+|[WardiTV Spring 2023](http://liquipedia.net/starcraft2/WardiTV_Spring_Championship/2023) | Jun&nbsp;22 | Jul&nbsp;09 |
+|[HSC XXIII](http://liquipedia.net/starcraft2/HomeStory_Cup/23) | Jun&nbsp;30 | Jul&nbsp;02 |
