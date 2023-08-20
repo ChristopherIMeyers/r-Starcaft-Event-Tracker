@@ -38,6 +38,19 @@ class CheckSanity(unittest.TestCase):
       expectedData = f.read()
     self.assertEqual(functions.liquipediaEventsJsonToNewSidebar(inputData1, inputData2), expectedData)
 
+  def test_eventTableReplacement(self):
+    with open('testdata/lpevents.1.json.txt', 'r') as f:
+      inputData1 = f.read()
+    with open('testdata/lpevents.2.json.txt', 'r') as f:
+      inputData2 = f.read()
+    with open('testdata/sidebar.old.txt', 'r') as f:
+      oldContent = f.read()
+    with open('testdata/sidebar.new.txt', 'r') as f:
+      expectedNew = f.read()
+    newTable = functions.liquipediaEventsJsonToSidebar(inputData1, inputData2)
+    actualNew = functions.replaceNewEventTable(oldContent, newTable)
+    self.assertEqual(actualNew, expectedNew)
+
   def test_intoLines(self):
     self.assertEqual(len(functions.liquipediaEventsIntoLines(functions.getLiquipediaEventsJson('starcraft2'))), 1)
 
