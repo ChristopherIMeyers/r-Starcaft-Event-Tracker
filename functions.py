@@ -42,21 +42,21 @@ def splitByJsonSection(lines):
   return sections
 
 def jsonEventToDict(event):
-  matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)\| *enddate=([^\|]+)", event)
+  matches = re.match("\*\*(?P<link>[^\|]+)\|(?P<name>[^\|]+)\|( *icon[a-z]*=[^\|]+\|)* *startdate=(?P<startdate>[^\|]+)\| *enddate=(?P<enddate>[^\|]+)", event)
   if matches != None:
-    eventLink = matches.group(1).strip().replace(" ", "_")
-    eventName = eventNameReplacements(matches.group(2).strip())
-    eventStart = dateReplacements(matches.group(3).strip())
-    eventEnd = dateReplacements(matches.group(4).strip())
+    eventLink = matches.group('link').strip().replace(" ", "_")
+    eventName = eventNameReplacements(matches.group('name').strip())
+    eventStart = dateReplacements(matches.group('startdate').strip())
+    eventEnd = dateReplacements(matches.group('enddate').strip())
     return dict(name= eventName, link = eventLink, start = eventStart, end = eventEnd)
-  matches = re.match("\*\*([^\|]+)\|([^\|]+)\| *startdate=([^\|]+)", event)
+  matches = re.match("\*\*(?P<link>[^\|]+)\|(?P<name>[^\|]+)\|( *icon[a-z]*=[^\|]+\|)* *startdate=(?P<startdate>[^\|]+)", event)
   if matches != None:
-    eventLink = matches.group(1).strip().replace(" ", "_")
-    eventName = eventNameReplacements(matches.group(2).strip())
-    eventStart = dateReplacements(matches.group(3).strip())
+    eventLink = matches.group('link').strip().replace(" ", "_")
+    eventName = eventNameReplacements(matches.group('name').strip())
+    eventStart = dateReplacements(matches.group('startdate').strip())
     eventEnd = dateReplacements(eventStart)
     return dict(name= eventName, link = eventLink, start = eventStart, end = eventEnd)
-  raise ValueError('event line is malformed')
+  raise ValueError('event line is malformed' + event)
 
 
 def formatJsonSection(section):
