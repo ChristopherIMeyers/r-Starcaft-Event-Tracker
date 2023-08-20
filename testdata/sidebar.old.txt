@@ -3,8 +3,6 @@
 * [Normal (everything)](https://www.reddit.com/r/starcraft)
 * [Fluff](https://www.reddit.com/r/starcraft/search?q=flair%3AFluff&restrict_sr=on&sort=new&t=all)
 * [Fluffless](https://www.reddit.com/r/starcraft/search?q=-flair%3AFluff&restrict_sr=on&sort=new&t=all)
-* [No Spoilers](https://www.reddit.com/r/starcraft/search?q=-flair%3Aspoiler+-flair%3A%22To+be+tagged%22&restrict_sr=on&sort=new&t=all)
-* [No Spoilers/Fluff](https://www.reddit.com/r/starcraft/search?q=-flair%3Aspoiler+-flair%3AFluff&restrict_sr=on&sort=new&t=all)
 * [Videos](https://www.reddit.com/r/starcraft/search?q=flair%3AVideo&restrict_sr=on&sort=new&t=all)
 * [eSports](https://www.reddit.com/r/starcraft/search?q=flair%3Aesports&restrict_sr=on&sort=new&t=all)
 * [Meta and BluePosts](https://goo.gl/Md7IV3)
@@ -18,7 +16,7 @@
 * [Wiki](/r/starcraft/w/index)
 * [Reddit "Blue/Dev Tracker"](/r/starcraft/w/bluetracker)
 * [IRC Channel](http://goo.gl/Jnj9UX)
-* [Discord Server](https://discord.gg/0g2SxTpnHG3A1mBB)
+* [Discord Server](https://discord.gg/M4UT9uy3Ut)
 * [Reddit In-Game Group](/19zg8o)
 
 >#
@@ -48,14 +46,14 @@
 >#
 
 >* Replays
-* [GGTracker](http://ggtracker.com/)
 * [SC2ReplayStats](http://sc2replaystats.com/)
 * [SpawningTool](http://spawningtool.com/)
+* [GGGReplays](https://gggreplays.com/landing_tour)
 * [More](http://goo.gl/rstHt)
 
 [New to r/Starcraft?](https://www.reddit.com/r/starcraft/wiki/new)
 
-[chat on discord](https://discord.gg/0g2SxTpnHG3A1mBB)
+[chat on discord](https://discord.gg/M4UT9uy3Ut)
 
 **General information**
 
@@ -69,48 +67,49 @@
 
 Color|Meaning
 :---|:---
-&nbsp;|Discussions & Selfposts
+&nbsp;|Discussions, Meta, & Selfposts
 &nbsp;|Videos & Stream
-&nbsp;|News & Events
-&nbsp;|Spoilers
-&nbsp;|User Created
-&nbsp;|Fluff & Offbeat
+&nbsp;|E-Sports News, Discussions & Events
+&nbsp;|Arcade, Co-op, & Singleplayer
+&nbsp;|User Created, Fluff, & Offbeat
 
 **Event List**
 
 | |Starts |Ends |
 |:-----------|:------------|:------------|
 | **Upcoming**| | |
-|[BW Jeez weekly 43](http://liquipedia.net/starcraft/BW_Jeez_weekly_43) | Oct&nbsp;27 | Oct&nbsp;27 |
-|[BW Jeez weekly 42](http://liquipedia.net/starcraft/BW_Jeez_weekly_42) | Oct&nbsp;20 | Oct&nbsp;20 |
-|[BW Jeez weekly 41](http://liquipedia.net/starcraft/BW_Jeez_weekly_41) | Oct&nbsp;13 | Oct&nbsp;13 |
-|[Corrupted Cup 2019](http://liquipedia.net/starcraft/Corrupted_Cup_2019) | Oct&nbsp;12 | Oct&nbsp;13 |
-|[BW Jeez weekly 40](http://liquipedia.net/starcraft/BW_Jeez_weekly_40) | Oct&nbsp;06 | Oct&nbsp;06 |
-|[BWCL S49](http://liquipedia.net/starcraft/BWCL_Season_49) | Oct&nbsp;01 | Feb&nbsp;01 |
-|[BW Jeez weekly 39](http://liquipedia.net/starcraft/BW_Jeez_weekly_39) | Sep&nbsp;29 | Sep&nbsp;29 |
-|[World Electronic Sports Games 2019](http://liquipedia.net/starcraft2/World_Electronic_Sports_Games/2019) | Mar&nbsp;01 | Mar&nbsp;01 |
-|[HomeStory Cup XX](http://liquipedia.net/starcraft2/HomeStory_Cup/20) | Nov&nbsp;21 | Nov&nbsp;24 |
-|[2019 WCS Global Finals](http://liquipedia.net/starcraft2/2019_WCS_Global_Finals) | Oct&nbsp;25 | Nov&nbsp;02 |
-|[2019 AfreecaTV GSL Super Tournament 2](http://liquipedia.net/starcraft2/2019_AfreecaTV_GSL_Super_Tournament_2) | Oct&nbsp;03 | Oct&nbsp;06 |
-|[StarCraft II: NationWars 2019](http://liquipedia.net/starcraft2/StarCraft_II:_NationWars_2019) | Sep&nbsp;30 | Dec&nbsp;08 |
+|[Individual Platinum league S1](http://liquipedia.net/starcraft/Individual_Platinum_league/1) | May&nbsp;01 | May&nbsp;20 |
+|[Battle of the Beehive 2: The Second Sting!](http://liquipedia.net/starcraft/Battle_of_the_Beehive/2) | Apr&nbsp;21 | Apr&nbsp;21 |
+|[Individual Bronze League](http://liquipedia.net/starcraft/Individual_Bronze_League/1) | Apr&nbsp;18 | Apr&nbsp;30 |
+|[ESL Summer](http://liquipedia.net/starcraft2/ESL_Pro_Tour/2023/24/Masters/Summer) | Jun&nbsp;16 | Jun&nbsp;18 |
+|[WardiTV Spring 2023](http://liquipedia.net/starcraft2/WardiTV_Spring_Championship/2023) | May&nbsp;29 | Jan&nbsp;01 |
+|[ESL Summer: Asia](http://liquipedia.net/starcraft2/ESL_Pro_Tour/2023/24/Masters/Summer/Regionals/AS) | May&nbsp;02 | May&nbsp;21 |
+|[ESL Summer: Americas](http://liquipedia.net/starcraft2/ESL_Pro_Tour/2023/24/Masters/Summer/Regionals/AM) | May&nbsp;02 | May&nbsp;20 |
+|[ESL Summer: Europe](http://liquipedia.net/starcraft2/ESL_Pro_Tour/2023/24/Masters/Summer/Regionals/EU) | May&nbsp;02 | May&nbsp;21 |
+|[2023 GSL S1: Code S](http://liquipedia.net/starcraft2/Global_StarCraft_II_League/2023/Season_1) | Apr&nbsp;25 | Jan&nbsp;01 |
+|[WTL 2023 Summer](http://liquipedia.net/starcraft2/World_Team_League/2023/Summer) | Apr&nbsp;18 | Jul&nbsp;30 |
 | **Ongoing**| | |
-|[Costa Rica StarCraft League 1](http://liquipedia.net/starcraft/Costa_Rica_StarCraft_League_1) | Aug&nbsp;12 | Nov&nbsp;17 |
-|[Bombastic StarLeague 7](http://liquipedia.net/starcraft/Bombastic_StarLeague_7) | Sep&nbsp;14 | Nov&nbsp;02 |
-|[King of Kings 48](http://liquipedia.net/starcraft/BWCL_Season_48/KoK) | Sep&nbsp;15 | Oct&nbsp;13 |
-|[NeXT 2019 Autumn](http://liquipedia.net/starcraft2/Netease_Esports_X_Tournaments/2019/Autumn) | Sep&nbsp;17 | Nov&nbsp;08 |
-|[China Team Championship 2019 S2](http://liquipedia.net/starcraft2/China_Team_Championship_2019_Season/2) | Aug&nbsp;25 | Oct&nbsp;13 |
-|[2019 GSL S3](http://liquipedia.net/starcraft2/2019_Global_StarCraft_II_League_Season_3) | Jul&nbsp;03 | Sep&nbsp;28 |
+|[FS Mania](http://liquipedia.net/starcraft/Fighting_Spirit_Mania) | Dec&nbsp;05 | May&nbsp;15 |
+|[CWCL S6](http://liquipedia.net/starcraft/Clan_Wars_Clan_League/6) | Feb&nbsp;26 | May&nbsp;14 |
+|[BWCL S58](http://liquipedia.net/starcraft/Brood_War_Clan_League/58) | Feb&nbsp;26 | May&nbsp;07 |
+|[Ascension: World Tour](http://liquipedia.net/starcraft/Ascension:_World_Tour) | Mar&nbsp;28 | Apr&nbsp;30 |
+|[Copa Latinoamericana](http://liquipedia.net/starcraft/Copa_Latinoamericana/1) | Mar&nbsp;01 | Apr&nbsp;30 |
+|[ASL S15](http://liquipedia.net/starcraft/AfreecaTV_StarCraft_League_Remastered/15) | Feb&nbsp;28 | Apr&nbsp;28 |
 | **Completed**| | |
-|[BW Jeez weekly 38](http://liquipedia.net/starcraft/BW_Jeez_weekly_38) | Sep&nbsp;22 | Sep&nbsp;22 |
-|[BW Jeez weekly 37](http://liquipedia.net/starcraft/BW_Jeez_weekly_37) | Sep&nbsp;15 | Sep&nbsp;15 |
-|[DreamHack Montreal 2019 BW LAN](http://liquipedia.net/starcraft/Dreamhack_Montreal_2019) | Sep&nbsp;06 | Sep&nbsp;08 |
-|[BW Jeez weekly 36](http://liquipedia.net/starcraft/BW_Jeez_weekly_36) | Sep&nbsp;08 | Sep&nbsp;08 |
-|[BSL7 Ladder Tournament #3](http://liquipedia.net/starcraft/BSL7_Ladder_Tournament_3) | Sep&nbsp;07 | Sep&nbsp;07 |
-|[KCM Race Survival S11](http://liquipedia.net/starcraft/KCM_Race_Survival/Season_11) | Jul&nbsp;18 | Sep&nbsp;05 |
-|[BW Jeez weekly 35](http://liquipedia.net/starcraft/BW_Jeez_weekly_35) | Sep&nbsp;01 | Sep&nbsp;01 |
-|[2019 WCS Fall](http://liquipedia.net/starcraft2/2019_WCS_Fall) | Sep&nbsp;06 | Sep&nbsp;08 |
-|[2019 GSL vs the World](http://liquipedia.net/starcraft2/2019_GSL_vs._the_World) | Aug&nbsp;15 | Aug&nbsp;18 |
-|[Copa América 2019 S2](http://liquipedia.net/starcraft2/Copa_America_2019/Season_2) | Jul&nbsp;27 | Aug&nbsp;11 |
+|[Torneo Semanal de StarCraft #23](http://liquipedia.net/starcraft/Torneo_Semanal_de_StarCraft/23) | Apr&nbsp;15 | Apr&nbsp;15 |
+|[KOR-CHN Invitational League 12: Tank vs JeDi](http://liquipedia.net/starcraft/KOR-CHN_Invitational_League/12) | Apr&nbsp;13 | Apr&nbsp;13 |
+|[Spring Cup 4: Hangzhou](http://liquipedia.net/starcraft/Sanpao_StarLeague_Spring_Cup/4/China) | Feb&nbsp;14 | Apr&nbsp;12 |
+|[Individual Silver League](http://liquipedia.net/starcraft/Individual_Silver_League/1) | Mar&nbsp;01 | Apr&nbsp;10 |
+|[PSISTORM Fight Night](http://liquipedia.net/starcraft/PSISTORM_Fight_Night) | Apr&nbsp;08 | Apr&nbsp;08 |
+|[KCM Race Survival 2023 S1](http://liquipedia.net/starcraft/KCM/Race_Survival/2023/1) | Feb&nbsp;03 | Apr&nbsp;07 |
+|[KOR-CHN Invitational League 11: Sea vs XiaoShuai](http://liquipedia.net/starcraft/KOR-CHN_Invitational_League/11) | Apr&nbsp;06 | Apr&nbsp;06 |
+|[WardiTV Korean Royale](http://liquipedia.net/starcraft2/WardiTV_Korean_Royale) | Mar&nbsp;21 | Apr&nbsp;09 |
+|[WardiTV Winter 2023](http://liquipedia.net/starcraft2/WardiTV_Winter_Championship/2023) | Mar&nbsp;15 | Mar&nbsp;31 |
+|[PiG Sty Festival 3.0](http://liquipedia.net/starcraft2/PiG_Sty_Festival/3) | Mar&nbsp;15 | Mar&nbsp;19 |
+|[#PassionCraft Knockout](http://liquipedia.net/starcraft2/PassionCraft_Knockout) | Mar&nbsp;11 | Mar&nbsp;12 |
+|[IEM Katowice 2023](http://liquipedia.net/starcraft2/IEM_Katowice/2023) | Feb&nbsp;08 | Feb&nbsp;12 |
+|[OSC Championship S10](http://liquipedia.net/starcraft2/OSC_Championship_10) | Jan&nbsp;05 | Jan&nbsp;22 |
+|[WTL 2022 Winter 2v2 Tour](http://liquipedia.net/starcraft2/World_Team_League/2022/Winter/2v2_Tour) | Jan&nbsp;03 | Jan&nbsp;08 |
 [^source: ^liquipedia](https://liquipedia.net/starcraft2/Main_Page) ^under ^[CC-BY-SA](https://liquipedia.net/starcraft2/Liquipedia:Copyrights)
 
 **Moderators remove** ([rule list](/r/starcraft/w/rules)):

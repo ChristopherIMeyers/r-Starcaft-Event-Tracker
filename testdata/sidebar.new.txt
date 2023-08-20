@@ -3,8 +3,6 @@
 * [Normal (everything)](https://www.reddit.com/r/starcraft)
 * [Fluff](https://www.reddit.com/r/starcraft/search?q=flair%3AFluff&restrict_sr=on&sort=new&t=all)
 * [Fluffless](https://www.reddit.com/r/starcraft/search?q=-flair%3AFluff&restrict_sr=on&sort=new&t=all)
-* [No Spoilers](https://www.reddit.com/r/starcraft/search?q=-flair%3Aspoiler+-flair%3A%22To+be+tagged%22&restrict_sr=on&sort=new&t=all)
-* [No Spoilers/Fluff](https://www.reddit.com/r/starcraft/search?q=-flair%3Aspoiler+-flair%3AFluff&restrict_sr=on&sort=new&t=all)
 * [Videos](https://www.reddit.com/r/starcraft/search?q=flair%3AVideo&restrict_sr=on&sort=new&t=all)
 * [eSports](https://www.reddit.com/r/starcraft/search?q=flair%3Aesports&restrict_sr=on&sort=new&t=all)
 * [Meta and BluePosts](https://goo.gl/Md7IV3)
@@ -18,7 +16,7 @@
 * [Wiki](/r/starcraft/w/index)
 * [Reddit "Blue/Dev Tracker"](/r/starcraft/w/bluetracker)
 * [IRC Channel](http://goo.gl/Jnj9UX)
-* [Discord Server](https://discord.gg/0g2SxTpnHG3A1mBB)
+* [Discord Server](https://discord.gg/M4UT9uy3Ut)
 * [Reddit In-Game Group](/19zg8o)
 
 >#
@@ -48,14 +46,14 @@
 >#
 
 >* Replays
-* [GGTracker](http://ggtracker.com/)
 * [SC2ReplayStats](http://sc2replaystats.com/)
 * [SpawningTool](http://spawningtool.com/)
+* [GGGReplays](https://gggreplays.com/landing_tour)
 * [More](http://goo.gl/rstHt)
 
 [New to r/Starcraft?](https://www.reddit.com/r/starcraft/wiki/new)
 
-[chat on discord](https://discord.gg/0g2SxTpnHG3A1mBB)
+[chat on discord](https://discord.gg/M4UT9uy3Ut)
 
 **General information**
 
@@ -69,12 +67,11 @@
 
 Color|Meaning
 :---|:---
-&nbsp;|Discussions & Selfposts
+&nbsp;|Discussions, Meta, & Selfposts
 &nbsp;|Videos & Stream
-&nbsp;|News & Events
-&nbsp;|Spoilers
-&nbsp;|User Created
-&nbsp;|Fluff & Offbeat
+&nbsp;|E-Sports News, Discussions & Events
+&nbsp;|Arcade, Co-op, & Singleplayer
+&nbsp;|User Created, Fluff, & Offbeat
 
 **Event List**
 
