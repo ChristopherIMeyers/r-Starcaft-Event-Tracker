@@ -1,9 +1,4 @@
 import unittest
-import praw
-import httplib
-import re
-import json
-from itertools import groupby
 import codecs
 
 import functions
