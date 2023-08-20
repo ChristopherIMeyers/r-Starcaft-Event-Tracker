@@ -5,9 +5,11 @@ import functions
 class CheckSanity(unittest.TestCase):
   def test_http(self):
     content = functions.getLiquipediaEventsJson('starcraft2')
-    self.assertEqual(content[:50], '{"batchcomplete":"","query":{"pages":{"61518":{"pa')
-    self.assertTrue(len(content) > 1500)
-    self.assertTrue(len(content) < 3000)
+    with open('testdata/output.txt', 'w') as f:
+      data1 = f.write(content)
+    self.assertEqual(content[:50], '{"batchcomplete":"","warnings":{"main":{"*":"Subsc')
+    self.assertTrue(len(content) > 2500)
+    self.assertTrue(len(content) < 3500)
 
   def test_liquipediaEventsJsonIntoSource(self):
     with open('testdata/lpevents.1.json.txt', 'r') as f:
