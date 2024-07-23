@@ -78,35 +78,36 @@ Color|Meaning
 | |Starts |Ends |
 |:-----------|:------------|:------------|
 | **Upcoming**| | |
-|[CSL 10: 2023 Fall](http://liquipedia.net/starcraft/China_Seasons_League/10) | Aug&nbsp;21 | Sep&nbsp;30 |
-|[Tournament of Legends International S4](http://liquipedia.net/starcraft/Tournament_of_Legends/4) | Sep&nbsp;09 | Sep&nbsp;09 |
-|[Copa Latinoamericana S2](http://liquipedia.net/starcraft/Copa_Latinoamericana/2) | Oct&nbsp;10 | Nov&nbsp;11 |
-|[Bombastic 25th Anniversary LAN](http://liquipedia.net/starcraft/Bombastic_Starleague/25th_Anniversary_LAN) | Dec&nbsp;09 | Dec&nbsp;10 |
-|[ESL Winter](http://liquipedia.net/starcraft2/ESL_Pro_Tour/2023/24/Masters/Winter) | Dec&nbsp;16 | Dec&nbsp;17 |
-|[2023 GSL S3: Code S](http://liquipedia.net/starcraft2/Global_StarCraft_II_League/2023/Season_3) | Oct&nbsp;10 | Nov&nbsp;02 |
-|[WTL 2023 Winter](http://liquipedia.net/starcraft2/World_Team_League/2023/Winter) | Sep&nbsp;29 | Jan&nbsp;17 |
-|[PiG Sty Festival 4.0](http://liquipedia.net/starcraft2/PiG_Sty_Festival/4) | Sep&nbsp;20 | Sep&nbsp;24 |
-|[WardiTV Korean Royale S2](http://liquipedia.net/starcraft2/WardiTV_Korean_Royale/2) | Sep&nbsp;12 | Oct&nbsp;01 |
-|[Master's Coliseum 6](http://liquipedia.net/starcraft2/Master's_Coliseum/6) | Aug&nbsp;21 | Sep&nbsp;10 |
+|[2024 ACS S2](http://liquipedia.net/starcraft/AfreecaTV_Challengers_Starleague/2024/2) | Jul&nbsp;27 | Jul&nbsp;27 |
+|[2024 Changsha Offline CUP](http://liquipedia.net/starcraft/2024_Changsha_Offline_CUP) | Jul&nbsp;27 | Jul&nbsp;28 |
+|[CSL 13: 2024 Summer](http://liquipedia.net/starcraft/China_Seasons_League/13) | Aug&nbsp;01 | Sep&nbsp;15 |
+|[PSL S1: Round 1](http://liquipedia.net/starcraft/Premier_Star_League/1) | Aug&nbsp;03 | Aug&nbsp;24 |
+|[PSL S1: Round 3](http://liquipedia.net/starcraft/Premier_Star_League/3) | Aug&nbsp;08 | Sep&nbsp;28 |
+|[PSL S1: Round 2](http://liquipedia.net/starcraft/Premier_Star_League/2) | Aug&nbsp;18 | Sep&nbsp;07 |
+|[Chat StarLAN 2](http://liquipedia.net/starcraft/Chat_StarLeague/LAN/2) | Aug&nbsp;24 | Aug&nbsp;25 |
+|[HSC XXVI](http://liquipedia.net/starcraft2/HomeStory_Cup/26) | Nov&nbsp;29 | Dec&nbsp;01 |
+|[BGE Stara Zagora 2024](http://liquipedia.net/starcraft2/Bellum_Gens_Elite) | Sep&nbsp;04 | Sep&nbsp;08 |
+|[Esports World Cup 2024](http://liquipedia.net/starcraft2/Esports_World_Cup/2024) | Aug&nbsp;14 | Aug&nbsp;18 |
 | **Ongoing**| | |
 |[FS Mania](http://liquipedia.net/starcraft/Fighting_Spirit_Mania) | Dec&nbsp;05 | Oct&nbsp;15 |
-|[KCM Ladies Race Survival 2023 S3](http://liquipedia.net/starcraft/KCM/Race_Survival/Ladies/2023/3) | Jul&nbsp;04 | Sep&nbsp;05 |
-|[KCM Race Survival 2023 S3](http://liquipedia.net/starcraft/KCM/Race_Survival/2023/3) | Jul&nbsp;05 | Sep&nbsp;06 |
-|[NWSL S1](http://liquipedia.net/starcraft/New_Worlds_Star_League_Season/1) | Jul&nbsp;06 | Sep&nbsp;01 |
-|[ASL S16](http://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/16) | Aug&nbsp;14 | Oct&nbsp;13 |
+|[KCM Ladies Race Survival 2024 S3](http://liquipedia.net/starcraft/KCM/Race_Survival/Ladies/2024/3) | Jun&nbsp;10 | Aug&nbsp;12 |
+|[KCM Race Survival 2024 S3](http://liquipedia.net/starcraft/KCM/Race_Survival/2024/3) | Jun&nbsp;13 | Aug&nbsp;15 |
+|[Copa Latinoamericana S3](http://liquipedia.net/starcraft/Copa_Latinoamericana/3) | Jun&nbsp;24 | Aug&nbsp;01 |
+|[Super Anchor Qualifying S2](http://liquipedia.net/starcraft/China_StarCraft_Anchor_Qualifying/2024) | Jul&nbsp;01 | Aug&nbsp;30 |
+|[BSL Nation Wars](http://liquipedia.net/starcraft/Bombastic_StarLeague/Nation_Wars) | Jul&nbsp;20 | Sep&nbsp;01 |
+|[WTL 2024 Summer](http://liquipedia.net/starcraft2/World_Team_League/2024/Summer) | Apr&nbsp;26 | Sep&nbsp;01 |
 | **Completed**| | |
-|[GRS S6](http://liquipedia.net/starcraft/GAN_Race_Survival/6) | Apr&nbsp;22 | Aug&nbsp;12 |
-|[LASL S16](http://liquipedia.net/starcraft/AfreecaTV/Ladies_StarCraft_League/16) | Jul&nbsp;27 | Aug&nbsp;12 |
-|[CSCL: Masked Kings S2](http://liquipedia.net/starcraft/CSCL/2) | Jul&nbsp;01 | Aug&nbsp;08 |
-|[Gamers8 2023: Legends](http://liquipedia.net/starcraft/Gamers8/2023/Legends) | Aug&nbsp;06 | Aug&nbsp;06 |
-|[CasterMuse Narak StarLeague S6](http://liquipedia.net/starcraft/CasterMuse_StarLeague/Narak/6) | Jun&nbsp;19 | Aug&nbsp;02 |
-|[WTL 2023 Summer](http://liquipedia.net/starcraft2/World_Team_League/2023/Summer) | Apr&nbsp;18 | Aug&nbsp;13 |
-|[Gamers8 2023](http://liquipedia.net/starcraft2/Gamers8/2023) | Aug&nbsp;03 | Aug&nbsp;06 |
-|[Gamers8 2023: Legends](http://liquipedia.net/starcraft2/Gamers8/2023/Legends) | Aug&nbsp;05 | Aug&nbsp;05 |
-|[2023 GSL S2: Code S](http://liquipedia.net/starcraft2/Global_StarCraft_II_League/2023/Season_2) | Jul&nbsp;04 | Jul&nbsp;27 |
-|[AfreecaTV Champions Cup 2](http://liquipedia.net/starcraft2/AfreecaTV_Champions_Cup/2) | Jul&nbsp;21 | Jul&nbsp;23 |
-|[WardiTV Spring 2023](http://liquipedia.net/starcraft2/WardiTV_Spring_Championship/2023) | Jun&nbsp;22 | Jul&nbsp;09 |
-|[HSC XXIII](http://liquipedia.net/starcraft2/HomeStory_Cup/23) | Jun&nbsp;30 | Jul&nbsp;02 |
+|[StarCastTV International League 3](http://liquipedia.net/starcraft/StarCastTV/International_League/3) | Jun&nbsp;25 | Jul&nbsp;22 |
+|[StarCon 2024 NYC LAN](http://liquipedia.net/starcraft/StarCon/2024) | Jul&nbsp;20 | Jul&nbsp;20 |
+|[Proleague 2024-07-19](http://liquipedia.net/starcraft/Daily_Proleague/Major_Proleague/2024-07-19) | Jul&nbsp;19 | Jul&nbsp;19 |
+|[Proleague 2024-07-18](http://liquipedia.net/starcraft/Daily_Proleague/Major_Proleague/2024-07-18) | Jul&nbsp;18 | Jul&nbsp;18 |
+|[Chzzk MurlocKing SC1 vs SC2 Cup](http://liquipedia.net/starcraft2/Chzzk_MurlocKing_SC1_vs_SC2_Cup) | Jul&nbsp;13 | Jul&nbsp;21 |
+|[2024 GSL S2: Code S](http://liquipedia.net/starcraft2/Global_StarCraft_II_League/2024/Season_2) | May&nbsp;02 | Jun&nbsp;29 |
+|[Championship of Russia 2024](http://liquipedia.net/starcraft2/Championship_of_Russia/2024) | May&nbsp;25 | Jun&nbsp;27 |
+|[HSC XXV](http://liquipedia.net/starcraft2/HomeStory_Cup/25) | Jun&nbsp;21 | Jun&nbsp;23 |
+|[WardiTV Korean Royale S3](http://liquipedia.net/starcraft2/WardiTV_Korean_Royale/3) | May&nbsp;14 | Jun&nbsp;09 |
+|[ESL Spring](http://liquipedia.net/starcraft2/ESL_Pro_Tour/2023/24/Masters/Spring) | May&nbsp;31 | Jun&nbsp;02 |
+|[StarsWar 11](http://liquipedia.net/starcraft2/StarsWar_11) | May&nbsp;18 | May&nbsp;19 |
 [^source: ^liquipedia](https://liquipedia.net/starcraft2/Main_Page) ^under ^[CC-BY-SA](https://liquipedia.net/starcraft2/Liquipedia:Copyrights)
 
 **Moderators remove** ([rule list](/r/starcraft/w/rules)):

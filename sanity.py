@@ -14,8 +14,8 @@ class CheckSanity(unittest.TestCase):
       data1 = f.read()
     with open('testdata/lpevents.2.json.txt', 'r') as f:
       data2 = f.read()
-    self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data1)), 3311)
-    self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data2)), 2267)
+    self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data1)), 3573)
+    self.assertEqual(len(functions.liquipediaEventsJsonIntoSource(data2)), 1921)
 
   def test_liquipediaEventsJsonToSidebar(self):
     with open('testdata/lpevents.1.json.txt', 'r') as f:
